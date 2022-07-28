@@ -1,0 +1,225 @@
+
+#=======================================
+#  Storable Class /mso_lifecycle/device
+#=======================================
+
+STORABLE CLASS /mso_lifecycle/device {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	ARRAY PIN_FLD_DEVICES {
+
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID MSO_FLD_NEW_OWNER {
+
+			DESCR = "MSO_FLD_NEW_OWNER";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_STB_ID {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_STB_OBJ {
+
+			DESCR = "STB associated to VC";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_VC_ID {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_VC_OBJ {
+
+			DESCR = "VC Card associated to STB";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING PIN_FLD_DEVICE_ID {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID PIN_FLD_DEVICE_OBJ {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID PIN_FLD_NEW_BRAND {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_NEW_STATE {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_OLD_STATE {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID PIN_FLD_OWNER {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+	}
+
+}
+
+
+#=======================================
+#  Storable Class /mso_lifecycle/device
+#=======================================
+
+STORABLE CLASS /mso_lifecycle/device IMPLEMENTATION ORACLE7 {
+
+
+	#===================
+	#  Fields 
+	#===================
+
+	ARRAY PIN_FLD_DEVICES {
+
+		SQL_TABLE = "MSO_LIFECYCLE_DEVICE_T";
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID MSO_FLD_NEW_OWNER {
+
+			SQL_COLUMN = "NEWOWNER";
+		}
+
+		STRING MSO_FLD_STB_ID {
+
+			SQL_COLUMN = "STB_ID";
+		}
+
+		POID MSO_FLD_STB_OBJ {
+
+			SQL_COLUMN = "STB_POID";
+		}
+
+		STRING MSO_FLD_VC_ID {
+
+			SQL_COLUMN = "VC_ID";
+		}
+
+		POID MSO_FLD_VC_OBJ {
+
+			SQL_COLUMN = "VC_POID";
+		}
+
+		STRING PIN_FLD_DEVICE_ID {
+
+			SQL_COLUMN = "DEVICE_ID";
+		}
+
+		POID PIN_FLD_DEVICE_OBJ {
+
+			SQL_COLUMN = "DEVICE_OBJ";
+		}
+
+		POID PIN_FLD_NEW_BRAND {
+
+			SQL_COLUMN = "New_owner";
+		}
+
+		INT PIN_FLD_NEW_STATE {
+
+			SQL_COLUMN = "NEW_STATE";
+		}
+
+		INT PIN_FLD_OLD_STATE {
+
+			SQL_COLUMN = "OLD_STATE";
+		}
+
+		POID PIN_FLD_OWNER {
+
+			SQL_COLUMN = "OWNER";
+		}
+
+	}
+
+}
+

@@ -1,0 +1,24 @@
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/dsa_commission
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/dsa_commission {
+
+	LABEL = "DSA commission";
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Event for Wholesale Settlement Outcollect Service";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/dsa_commission
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/dsa_commission IMPLEMENTATION ORACLE7 {
+
+}
+

@@ -1,0 +1,23 @@
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/incollect
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/incollect {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Event to track Wholesale Settlement Incollect Services charges";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/incollect
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/incollect IMPLEMENTATION ORACLE7 {
+
+}
+

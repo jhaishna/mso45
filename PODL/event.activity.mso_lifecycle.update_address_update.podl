@@ -1,0 +1,86 @@
+
+#=======================================
+#  Storable Class /event/activity/mso_lifecycle/update_address
+#=======================================
+
+STORABLE CLASS /event/activity/mso_lifecycle/update_address {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+
+	#===================
+	#  Fields 
+	#===================
+
+	ARRAY MSO_FLD_UPDATE_ADDRESS {
+
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		ARRAY PIN_FLD_NAMEINFO {
+
+			ORDER = 0;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+
+			#===================
+			#  Fields 
+			#===================
+                        STRING PIN_FLD_ADDRESS {
+	
+                                ORDER = 0;
+                                LENGTH = 255;
+                                CREATE = Optional;
+                                MODIFY = Writeable;
+                                AUDITABLE = 0;
+                                ENCRYPTABLE = 0;
+                                SERIALIZABLE = 0;
+                        }
+		}
+	}
+}
+
+
+#=======================================
+#  Storable Class /event/activity/mso_lifecycle/update_address
+#=======================================
+
+STORABLE CLASS /event/activity/mso_lifecycle/update_address IMPLEMENTATION ORACLE7 {
+
+	#===================
+	#  Fields 
+	#===================
+	ARRAY MSO_FLD_UPDATE_ADDRESS {
+
+		SQL_TABLE = "mso_evt_lc_update_address_t";
+		SQL_STORAGE = " partition by range (obj_id0) (partition partition_historic values less than (35184372088832), partition partition_last values less than (MAXVALUE))";
+
+		#===================
+		#  Fields 
+		#===================
+
+		ARRAY PIN_FLD_NAMEINFO {
+
+			SQL_TABLE = "mso_evt_lc_nameinfo_address_t";
+
+			#===================
+			#  Fields 
+			#===================
+
+			STRING PIN_FLD_ADDRESS {
+
+				SQL_COLUMN = "address";
+			}
+		}
+	}
+}
+

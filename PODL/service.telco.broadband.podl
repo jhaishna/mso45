@@ -1,0 +1,380 @@
+
+#=======================================
+#  Storable Class /service/telco/broadband
+#=======================================
+
+STORABLE CLASS /service/telco/broadband {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	SUBSTRUCT MSO_FLD_BB_INFO {
+
+		DESCR = "Broadband Provisioning information.";
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		STRING MSO_FLD_AGREEMENT_NO {
+
+			DESCR = "Agreemnt no";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_COMMISION_MODEL {
+
+			DESCR = "Commission Model.";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT MSO_FLD_FUP_STATUS {
+
+			DESCR = "FUP Status. 0 - N/A, 1 - Within FUP Limit, 2 - Over FUP Limit";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_ID {
+
+			DESCR = "Network ID";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT MSO_FLD_IDLE_TIMEOUT {
+
+			DESCR = "Idle timeout.";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_IS1CLICK_FLAG {
+
+			DESCR = "0-False, 1-True";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_ISTAL_FLAG {
+
+			DESCR = "0-Non TAL, 1-TAL\n";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_LEGACY_AGR_NO {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_MAC_ID {
+
+			DESCR = "PC MAC address";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_NETWORK_AMPLIFIER {
+
+			DESCR = "Only For DOCSIS: amplifier";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_NETWORK_ELEMENT {
+
+			DESCR = "Network Element.";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_NETWORK_IP {
+
+			DESCR = "Network IP.";
+			ORDER = 0;
+			LENGTH = 255;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_NETWORK_NODE {
+
+			DESCR = "The network node under which the BB device is getting connected. MUM24Online:ANDHERIEAST1:Area1:street1";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_PASSWORD {
+
+			DESCR = "Password";
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_SALESMAN_OBJ {
+
+			DESCR = "Sales man account poid to be stored in system for reference";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_TECHNOLOGY {
+
+			DESCR = "1-DOCSIS 2.0, 2- DOCSIS 3.0, 3-ETHERNET, 4- FIBER, 5-WIRELESS";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_BILL_WHEN {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING PIN_FLD_CITY {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_INDICATOR {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		TIMESTAMP PIN_FLD_START_T {
+
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+	}
+
+}
+
+
+#=======================================
+#  Storable Class /service/telco/broadband
+#=======================================
+
+STORABLE CLASS /service/telco/broadband IMPLEMENTATION ORACLE7 {
+
+
+	#===================
+	#  Fields 
+	#===================
+
+	SUBSTRUCT MSO_FLD_BB_INFO {
+
+		SQL_TABLE = "service_bb_info_t";
+
+		#===================
+		#  Fields 
+		#===================
+
+		STRING MSO_FLD_AGREEMENT_NO {
+
+			SQL_COLUMN = "agreement_no";
+		}
+
+		ENUM MSO_FLD_COMMISION_MODEL {
+
+			SQL_COLUMN = "commission_model";
+		}
+
+		INT MSO_FLD_FUP_STATUS {
+
+			SQL_COLUMN = "fup_status";
+		}
+
+		STRING MSO_FLD_ID {
+
+			SQL_COLUMN = "NETWORK_ID";
+		}
+
+		INT MSO_FLD_IDLE_TIMEOUT {
+
+			SQL_COLUMN = "idle_timeout";
+		}
+
+		ENUM MSO_FLD_IS1CLICK_FLAG {
+
+			SQL_COLUMN = "is1click_flag";
+		}
+
+		ENUM MSO_FLD_ISTAL_FLAG {
+
+			SQL_COLUMN = "tal_flag";
+		}
+
+		STRING MSO_FLD_LEGACY_AGR_NO {
+
+			SQL_COLUMN = "legacy_agr_no";
+		}
+
+		STRING MSO_FLD_MAC_ID {
+
+			SQL_COLUMN = "MAC_ID";
+		}
+
+		STRING MSO_FLD_NETWORK_AMPLIFIER {
+
+			SQL_COLUMN = "network_amplifier";
+		}
+
+		STRING MSO_FLD_NETWORK_ELEMENT {
+
+			SQL_COLUMN = "network_element";
+		}
+
+		STRING MSO_FLD_NETWORK_IP {
+
+			SQL_COLUMN = "network_ip";
+		}
+
+		STRING MSO_FLD_NETWORK_NODE {
+
+			SQL_COLUMN = "network_node";
+		}
+
+		STRING MSO_FLD_PASSWORD {
+
+			SQL_COLUMN = "password";
+		}
+
+		POID MSO_FLD_SALESMAN_OBJ {
+
+			SQL_COLUMN = "salesman_obj";
+		}
+
+		ENUM MSO_FLD_TECHNOLOGY {
+
+			SQL_COLUMN = "technology";
+		}
+
+		INT PIN_FLD_BILL_WHEN {
+
+			SQL_COLUMN = "bill_when";
+		}
+
+		STRING PIN_FLD_CITY {
+
+			SQL_COLUMN = "city";
+		}
+
+		INT PIN_FLD_INDICATOR {
+
+			SQL_COLUMN = "indicator";
+		}
+
+		TIMESTAMP PIN_FLD_START_T {
+
+			SQL_COLUMN = "start_t";
+		}
+
+	}
+
+}
+

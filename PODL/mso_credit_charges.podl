@@ -1,0 +1,307 @@
+
+#=======================================
+#  Storable Class /mso_credit_charges
+#=======================================
+
+STORABLE CLASS /mso_credit_charges {
+
+	SEQ_START = "1";
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Class to store Credit Charges Refund data";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	STRING PIN_FLD_ACCOUNT_NO {
+
+		DESCR = "Account Number";
+		ORDER = 0;
+		LENGTH = 60;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		DESCR = "Account Object";
+		ORDER = 0;
+		CREATE = Required;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	POID PIN_FLD_SERVICE_OBJ {
+		
+		DESCR = "Service Object";
+		ORDER = 0;
+		CREATE = Required;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	POID PIN_FLD_BAL_GRP_OBJ {
+
+		DESCR = "Balance Group Object";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	
+	POID PIN_FLD_ITEM_OBJ {
+
+		DESCR = "Refund Item Object";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	POID PIN_FLD_AOBJ {
+
+		DESCR = "MSO Adjustment POID Object";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	DECIMAL MSO_FLD_CR_ADJ_AMOUNT {
+	
+		DESCR = "Adjustment Amount";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	} 	
+	
+	ENUM PIN_FLD_STATUS {
+
+		DESCR = "Status(0 - Unprocessed, 1 - Processed)";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	DECIMAL PIN_FLD_AMOUNT {
+	
+		DESCR = "Credit Charges Amount";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	} 	
+	
+	TIMESTAMP PIN_FLD_START_T {
+
+		DESCR = "Last Change Plan Date";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	TIMESTAMP PIN_FLD_EFFECTIVE_T {
+
+		DESCR = "Date on which mso_adjustment is posted";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		DESCR = "Created Date";
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_DESCR {
+
+		DESCR = "Description for Credit Charges";
+		ORDER = 0;
+		LENGTH = 60;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		DESCR = "Modified Date";
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_POID {
+
+		DESCR = "Object Identification Number";
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+	
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+}
+
+
+#=======================================
+#  Storable Class /mso_credit_charges
+#=======================================
+
+STORABLE CLASS /mso_credit_charges IMPLEMENTATION ORACLE7 {
+
+	SQL_TABLE = "mso_credit_charges_t";
+
+	#===================
+	#  Fields 
+	#===================
+
+	STRING PIN_FLD_ACCOUNT_NO {
+
+		SQL_COLUMN = "account_no";		
+	}
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		SQL_COLUMN = "account_obj";
+	}
+	
+	POID PIN_FLD_SERVICE_OBJ {
+
+		SQL_COLUMN = "service_obj";
+	}
+	
+	POID PIN_FLD_BAL_GRP_OBJ {
+
+		SQL_COLUMN = "balgrp_obj";
+	}
+	
+	POID PIN_FLD_ITEM_OBJ {
+
+		SQL_COLUMN = "item_obj";
+	}
+	
+	POID PIN_FLD_AOBJ {
+	
+		SQL_COLUMN = "mso_adj_obj";
+	}
+	
+	DECIMAL MSO_FLD_CR_ADJ_AMOUNT {
+	
+		SQL_COLUMN = "adjusted_amt";
+	}
+		
+	ENUM PIN_FLD_STATUS {
+	
+		SQL_COLUMN = "status";
+	}
+	
+	DECIMAL PIN_FLD_AMOUNT {
+	
+		SQL_COLUMN = "amount";
+	} 
+	
+	TIMESTAMP PIN_FLD_START_T {
+
+		SQL_COLUMN = "changeplan_date";
+	}
+	
+	TIMESTAMP PIN_FLD_EFFECTIVE_T {
+
+		SQL_COLUMN = "adjustment_date";
+	}
+	
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		SQL_COLUMN = "created_t";
+	}
+
+	STRING PIN_FLD_DESCR {
+
+		SQL_COLUMN = "descr";
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		SQL_COLUMN = "mod_t";
+	}
+
+	POID PIN_FLD_POID {
+
+		SQL_COLUMN = "poid";
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		SQL_COLUMN = "read_access";
+	}	
+
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		SQL_COLUMN = "write_access";
+	}
+}
+

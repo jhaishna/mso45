@@ -1,0 +1,69 @@
+#=======================================
+#  Field PIN_FLD_PERMITTED
+#=======================================
+
+STRING PIN_FLD_DEVICE_ID {
+
+    ID = 5551;
+}
+STRING PIN_FLD_MANUFACTURER {
+   
+    ID = 5563;
+}
+
+
+STORABLE CLASS /mso_scheme_device_list {
+
+    SEQ_START = "1000";
+    READ_ACCESS = "BrandLineage";
+    WRITE_ACCESS = "BrandLineage";
+    DESCR = "this table for device  list for schemes";
+    IS_PARTITIONED = "0";
+    
+     STRING PIN_FLD_DEVICE_ID {
+
+        DESCR = "Device object physical ID. It should be unique per device type and manufacturer. Device Management Framework doesn't enforce the uniqueness.";
+        ORDER = 0;
+        LENGTH = 255;
+        CREATE = Required;
+        MODIFY = Writeable;
+        AUDITABLE = 0;
+        ENCRYPTABLE = 0;
+        SERIALIZABLE = 0;
+    }
+
+    STRING PIN_FLD_MANUFACTURER {
+
+        DESCR = "Device object manufacturer name.";
+        ORDER = 0;
+        LENGTH = 255;
+        CREATE = Optional;
+        MODIFY = Writeable;
+        AUDITABLE = 0;
+        ENCRYPTABLE = 0;
+        SERIALIZABLE = 0;
+    }
+
+}
+
+
+#=======================================
+#  Storable Class /config/event_map
+#=======================================
+
+STORABLE CLASS /mso_scheme_device_list IMPLEMENTATION ORACLE7 {
+  
+        SQL_TABLE = "mso_scheme_device_list_t";
+        SQL_STORAGE = "tablespace pin00 storage (initial 500k next 500k maxextents unlimited pctincrease 0 ) ";
+    
+        STRING PIN_FLD_DEVICE_ID {
+
+            SQL_COLUMN = "device_id";
+        }
+        STRING PIN_FLD_MANUFACTURER {
+
+            SQL_COLUMN = "manufacturer";
+        }
+
+  
+}

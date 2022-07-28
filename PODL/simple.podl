@@ -1,0 +1,39 @@
+#=======================================
+
+STRING PIN_FLD_ACCOUNT_NO {
+
+        ID = 106;
+}
+#=======================================
+#  Storable Class /sample1
+#=======================================
+
+STORABLE CLASS /sample1 {
+
+        SEQ_START = "1000";
+        READ_ACCESS = "BrandLineage";
+        WRITE_ACCESS = "BrandLineage";
+        DESCR ="its for sample table cration"; 
+                        IS_PARTITIONED = "0";
+STRING PIN_FLD_ACCOUNT_NO {
+
+        DESCR = "sample account no for account table.";
+        ORDER = 0;
+        LENGTH = 60;
+        CREATE = Optional;
+        MODIFY = Writeable;
+        AUDITABLE = 0;
+        ENCRYPTABLE = 0;
+        SERIALIZABLE = 0;
+    }
+}
+STORABLE CLASS /sample1 IMPLEMENTATION ORACLE7 {
+
+    SQL_TABLE = "sample_t";
+    SQL_STORAGE = "tablespace pin00 storage (initial 500k next 500k maxextents unlimited pctincrease 0 ) ";
+
+    STRING PIN_FLD_ACCOUNT_NO {
+
+        SQL_COLUMN = "sample_no";
+    }
+}

@@ -1,0 +1,21 @@
+#=======================================
+#  Storable Class /event/billing/mso_penalty
+#=======================================
+
+STORABLE CLASS /event/billing/credit_charges {
+
+    READ_ACCESS = "Self";
+    WRITE_ACCESS = "Self";
+    DESCR = "Credit Charges";
+    IS_PARTITIONED = "1";
+    PARTITION_MODE = "Finite";
+}
+
+#=======================================
+#  Storable Class /event/billing/credit_charges
+#=======================================
+
+STORABLE CLASS /event/billing/credit_charges IMPLEMENTATION ORACLE7 {
+
+
+}

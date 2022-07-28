@@ -1,0 +1,62 @@
+
+#=======================================
+#  Storable Class /event/billing/mso_penalty
+#=======================================
+
+STORABLE CLASS /event/billing/non_recurring_charges {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Non Recuring Charges";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+
+	ARRAY PIN_FLD_EVENTS {
+
+                DESCR = "Array to store NCR event's custom data";
+                ORDER = 0;
+                AUDITABLE = 0;
+                ENCRYPTABLE = 0;
+                SERIALIZABLE = 0;
+
+                #===================
+                #  Fields
+                #===================
+
+                DECIMAL PIN_FLD_AMOUNT {
+
+                        DESCR = "subscription charge amount";
+                        ORDER = 0;
+                        CREATE = Optional;
+                        MODIFY = Writeable;
+                        AUDITABLE = 0;
+                        ENCRYPTABLE = 0;
+                        SERIALIZABLE = 0;
+                }
+	}
+
+}
+
+#=======================================
+#  Storable Class /event/billing/non_recurring_charges
+#=======================================
+
+STORABLE CLASS /event/billing/non_recurring_charges IMPLEMENTATION ORACLE7 {
+
+        ARRAY PIN_FLD_EVENTS {
+
+                SQL_TABLE = "mso_ncr_t";
+                SQL_STORAGE = " partition by range (obj_id0) (partition partition_historic values less than (35184372088832), partition partition_last values less than (MAXVALUE))";
+
+                #===================
+                #  Fields
+                #===================
+
+                DECIMAL PIN_FLD_AMOUNT {
+
+                        SQL_COLUMN = "amount";
+                }
+
+	}	
+
+}

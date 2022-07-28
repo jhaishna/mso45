@@ -1,0 +1,21 @@
+#=======================================
+#  Storable Class /event/billing/mso_penalty
+#=======================================
+
+STORABLE CLASS /event/billing/daily_burn_rate {
+
+    READ_ACCESS = "Self";
+    WRITE_ACCESS = "Self";
+    DESCR = "Daily burn rate";
+    IS_PARTITIONED = "1";
+    PARTITION_MODE = "Finite";
+}
+
+#=======================================
+#  Storable Class /event/billing/daily_burn_rate
+#=======================================
+
+STORABLE CLASS /event/billing/daily_burn_rate IMPLEMENTATION ORACLE7 {
+
+
+}

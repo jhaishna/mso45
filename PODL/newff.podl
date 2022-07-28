@@ -1,0 +1,3491 @@
+
+#=======================================
+#  Field MSO_FLD_ABSOLUTE_TIME
+#=======================================
+
+STRING MSO_FLD_ABSOLUTE_TIME {
+
+	ID = 42146;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ACCESS_INFO
+#=======================================
+
+ARRAY MSO_FLD_ACCESS_INFO {
+
+	ID = 41133;
+	DESCR = "Array to store access level info";
+}
+
+
+#=======================================
+#  Field MSO_FLD_ACCOUNT_DETAIL
+#=======================================
+
+ARRAY MSO_FLD_ACCOUNT_DETAIL {
+
+	ID = 42175;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ACTIVATE_BB_SERVICE
+#=======================================
+
+ARRAY MSO_FLD_ACTIVATE_BB_SERVICE {
+
+	ID = 41157;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ACTIVATE_CATV_SERVICE
+#=======================================
+
+ARRAY MSO_FLD_ACTIVATE_CATV_SERVICE {
+
+	ID = 41151;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADDRESS_NODE
+#=======================================
+
+STRING MSO_FLD_ADDRESS_NODE {
+
+	ID = 41174;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADD_EXTRA_USAGE
+#=======================================
+
+ARRAY MSO_FLD_ADD_EXTRA_USAGE {
+
+	ID = 41210;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADD_IP
+#=======================================
+
+ARRAY MSO_FLD_ADD_IP {
+
+	ID = 41221;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADD_PLAN
+#=======================================
+
+ARRAY MSO_FLD_ADD_PLAN {
+
+	ID = 41163;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADHOC_DISC
+#=======================================
+
+INT MSO_FLD_ADHOC_DISC {
+
+	ID = 43410;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADJUSTMENT
+#=======================================
+
+ARRAY MSO_FLD_ADJUSTMENT {
+
+	ID = 43073;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADJ_CURRENT_VALUE
+#=======================================
+
+DECIMAL MSO_FLD_ADJ_CURRENT_VALUE {
+
+	ID = 43065;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ADJ_LIMIT
+#=======================================
+
+DECIMAL MSO_FLD_ADJ_LIMIT {
+
+	ID = 43063;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ALLOCATE_BB_HARDWARE
+#=======================================
+
+ARRAY MSO_FLD_ALLOCATE_BB_HARDWARE {
+
+	ID = 41155;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AMPLIFIER_ID
+#=======================================
+
+STRING MSO_FLD_AMPLIFIER_ID {
+
+	ID = 42236;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AMPLIFIER_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_AMPLIFIER_IP_ADDRESS {
+
+	ID = 42237;
+}
+
+
+#=======================================
+#  Field MSO_FLD_APPLY_LATE_FEES
+#=======================================
+
+ARRAY MSO_FLD_APPLY_LATE_FEES {
+
+	ID = 41223;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AREA_NAME
+#=======================================
+
+STRING MSO_FLD_AREA_NAME {
+
+	ID = 41116;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AR_INFO
+#=======================================
+
+ARRAY MSO_FLD_AR_INFO {
+
+	ID = 41124;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AUTO_RENEW_PLAN
+#=======================================
+
+ARRAY MSO_FLD_AUTO_RENEW_PLAN {
+
+	ID = 41170;
+}
+
+
+#=======================================
+#  Field MSO_FLD_AVP
+#=======================================
+
+ARRAY MSO_FLD_AVP {
+
+	ID = 42213;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BB_INFO
+#=======================================
+
+SUBSTRUCT MSO_FLD_BB_INFO {
+
+	ID = 41104;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BB_USAGE_DATE
+#=======================================
+
+STRING MSO_FLD_BB_USAGE_DATE {
+
+	ID = 46007;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BILLTIME_TOTAL
+#=======================================
+
+DECIMAL MSO_FLD_BILLTIME_TOTAL {
+
+	ID = 43422;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BILL_TYPE
+#=======================================
+
+STRING MSO_FLD_BILL_TYPE {
+
+	ID = 43401;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BUILDING_ID
+#=======================================
+
+STRING MSO_FLD_BUILDING_ID {
+
+	ID = 43206;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BUILDING_NAME
+#=======================================
+
+STRING MSO_FLD_BUILDING_NAME {
+
+	ID = 41119;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BUSINESS_ENTITY
+#=======================================
+
+STRING MSO_FLD_BUSINESS_ENTITY {
+
+	ID = 42165;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BYTES_DOWNLINK_AFT_FUP
+#=======================================
+
+DECIMAL MSO_FLD_BYTES_DOWNLINK_AFT_FUP {
+
+	ID = 46019;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BYTES_DOWNLINK_BEF_FUP
+#=======================================
+
+DECIMAL MSO_FLD_BYTES_DOWNLINK_BEF_FUP {
+
+	ID = 46016;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BYTES_UPLINK_AFT_FUP
+#=======================================
+
+DECIMAL MSO_FLD_BYTES_UPLINK_AFT_FUP {
+
+	ID = 46018;
+}
+
+
+#=======================================
+#  Field MSO_FLD_BYTES_UPLINK_BEF_FUP
+#=======================================
+
+DECIMAL MSO_FLD_BYTES_UPLINK_BEF_FUP {
+
+	ID = 46015;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CABLE_MODEM
+#=======================================
+
+ARRAY MSO_FLD_CABLE_MODEM {
+
+	ID = 42144;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CATV_ACCOUNT_OBJ
+#=======================================
+
+POID MSO_FLD_CATV_ACCOUNT_OBJ {
+
+	ID = 41131;
+	DESCR = "Reference of CATV account Object";
+}
+
+
+#=======================================
+#  Field MSO_FLD_CC_MAPPING
+#=======================================
+
+ARRAY MSO_FLD_CC_MAPPING {
+
+	ID = 41122;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_ACCESS
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_ACCESS {
+
+	ID = 41204;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_AR_LIMIT
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_AR_LIMIT {
+
+	ID = 41202;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_BB_LOGIN
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_BB_LOGIN {
+
+	ID = 41206;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_BB_PASSWORD
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_BB_PASSWORD {
+
+	ID = 41207;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_IP
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_IP {
+
+	ID = 41200;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_PASSWORD
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_PASSWORD {
+
+	ID = 41201;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_PLAN
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_PLAN {
+
+	ID = 41164;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_PROFILE
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_PROFILE {
+
+	ID = 41205;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHANGE_ROLES
+#=======================================
+
+ARRAY MSO_FLD_CHANGE_ROLES {
+
+	ID = 41203;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_CODE_ID
+#=======================================
+
+STRING MSO_FLD_CHARGE_CODE_ID {
+
+	ID = 43418;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_DESCR
+#=======================================
+
+STRING MSO_FLD_CHARGE_DESCR {
+
+	ID = 43419;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_HEAD
+#=======================================
+
+STRING MSO_FLD_CHARGE_HEAD {
+
+	ID = 43301;
+	DESCR = "Charge Head. For example, /item/cycle_forward, /item/mso_cycle_forward_monthly, etc ";
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_HEAD_INFO
+#=======================================
+
+SUBSTRUCT MSO_FLD_CHARGE_HEAD_INFO {
+
+	ID = 43324;
+	DESCR = "Charge Head Based Commission";
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_HEAD_TOTAL
+#=======================================
+
+DECIMAL MSO_FLD_CHARGE_HEAD_TOTAL {
+
+	ID = 43342;
+	DESCR = "Charge Head Total";
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_ID
+#=======================================
+
+INT MSO_FLD_CHARGE_ID {
+
+	ID = 43403;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CHARGE_TYPE
+#=======================================
+
+STRING MSO_FLD_CHARGE_TYPE {
+
+	ID = 43402;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CIN
+#=======================================
+
+STRING MSO_FLD_CIN {
+
+	ID = 42635;
+	DESCR = "CIN Number";
+}
+
+
+#=======================================
+#  Field MSO_FLD_CITIES
+#=======================================
+
+ARRAY MSO_FLD_CITIES {
+
+	ID = 46021;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLASS_CM
+#=======================================
+
+STRING MSO_FLD_CLASS_CM {
+
+	ID = 42227;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLASS_CR
+#=======================================
+
+STRING MSO_FLD_CLASS_CR {
+
+	ID = 42228;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLIENT_CLASSES
+#=======================================
+
+ARRAY MSO_FLD_CLIENT_CLASSES {
+
+	ID = 42136;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLIENT_CLASS_DESCR
+#=======================================
+
+STRING MSO_FLD_CLIENT_CLASS_DESCR {
+
+	ID = 42188;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLIENT_CLASS_ID
+#=======================================
+
+INT MSO_FLD_CLIENT_CLASS_ID {
+
+	ID = 42115;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLIENT_CLASS_NAME
+#=======================================
+
+STRING MSO_FLD_CLIENT_CLASS_NAME {
+
+	ID = 42113;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CLIENT_CLASS_VALUE
+#=======================================
+
+STRING MSO_FLD_CLIENT_CLASS_VALUE {
+
+	ID = 41123;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CMTS_ID
+#=======================================
+
+STRING MSO_FLD_CMTS_ID {
+
+	ID = 42221;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CMTS_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_CMTS_IP_ADDRESS {
+
+	ID = 42222;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CMTS_OBJ
+#=======================================
+
+POID MSO_FLD_CMTS_OBJ {
+
+	ID = 42232;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CODE
+#=======================================
+
+STRING MSO_FLD_CODE {
+
+	ID = 42212;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COLLECTION_AMT
+#=======================================
+
+DECIMAL MSO_FLD_COLLECTION_AMT {
+
+	ID = 43343;
+	DESCR = "Collection Amount";
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMENTS
+#=======================================
+
+STRING MSO_FLD_COMMENTS {
+
+	ID = 42166;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISION_MODEL
+#=======================================
+
+ENUM MSO_FLD_COMMISION_MODEL {
+
+	ID = 41135;
+	DESCR = "Commission Model";
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISION_SERVICE
+#=======================================
+
+ENUM MSO_FLD_COMMISION_SERVICE {
+
+	ID = 41136;
+	DESCR = "Commission Service";
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISSION_CHARGE
+#=======================================
+
+DECIMAL MSO_FLD_COMMISSION_CHARGE {
+
+	ID = 43327;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISSION_FOR
+#=======================================
+
+ENUM MSO_FLD_COMMISSION_FOR {
+
+	ID = 43344;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISSION_MODEL
+#=======================================
+
+ENUM MSO_FLD_COMMISSION_MODEL {
+
+	ID = 43320;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMMISSION_RULE
+#=======================================
+
+ENUM MSO_FLD_COMMISSION_RULE {
+
+	ID = 43326;
+}
+
+
+#=======================================
+#  Field MSO_FLD_COMM_CRITERIA_ID
+#=======================================
+
+INT MSO_FLD_COMM_CRITERIA_ID {
+
+	ID = 40626;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CONTACT_LIST
+#=======================================
+
+ARRAY MSO_FLD_CONTACT_LIST {
+
+	ID = 41101;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CONTACT_TYPE
+#=======================================
+
+ENUM MSO_FLD_CONTACT_TYPE {
+
+	ID = 41102;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CONTACT_VALUE
+#=======================================
+
+STRING MSO_FLD_CONTACT_VALUE {
+
+	ID = 41103;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CORPORATE_TYPE
+#=======================================
+
+ENUM MSO_FLD_CORPORATE_TYPE {
+
+	ID = 40029;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CRDR_NOTE
+#=======================================
+
+ARRAY MSO_FLD_CRDR_NOTE {
+
+	ID = 43074;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CREATEBALANCE
+#=======================================
+
+ARRAY MSO_FLD_CREATEBALANCE {
+
+	ID = 42145;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CREATE_BB_SERVICE
+#=======================================
+
+ARRAY MSO_FLD_CREATE_BB_SERVICE {
+
+	ID = 41154;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CREDENTIALS
+#=======================================
+
+ARRAY MSO_FLD_CREDENTIALS {
+
+	ID = 42215;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CREDIT_PROFILE
+#=======================================
+
+ARRAY MSO_FLD_CREDIT_PROFILE {
+
+	ID = 46011;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CR_ADJ_AMOUNT
+#=======================================
+
+DECIMAL MSO_FLD_CR_ADJ_AMOUNT {
+
+	ID = 41127;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CR_ADJ_DATE
+#=======================================
+
+TIMESTAMP MSO_FLD_CR_ADJ_DATE {
+
+	ID = 41129;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CR_ADJ_LIMIT
+#=======================================
+
+DECIMAL MSO_FLD_CR_ADJ_LIMIT {
+
+	ID = 41125;
+}
+
+
+#=======================================
+#  Field MSO_FLD_CURRENT_MONTH
+#=======================================
+
+TIMESTAMP MSO_FLD_CURRENT_MONTH {
+
+	ID = 43066;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DAS_TYPE
+#=======================================
+
+STRING MSO_FLD_DAS_TYPE {
+
+	ID = 40090;
+	DESCR = "DAS Type";
+}
+
+
+#=======================================
+#  Field MSO_FLD_DATA_ACCESS_LEVEL
+#=======================================
+
+ENUM MSO_FLD_DATA_ACCESS_LEVEL {
+
+	ID = 41114;
+	DESCR = "0-Global, 1-State, 2-City, 3-Area, 4-Location";
+}
+
+
+#=======================================
+#  Field MSO_FLD_DATA_ACCESS_LIST
+#=======================================
+
+ARRAY MSO_FLD_DATA_ACCESS_LIST {
+
+	ID = 41115;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DEACTIVATE_ACCOUNT
+#=======================================
+
+ARRAY MSO_FLD_DEACTIVATE_ACCOUNT {
+
+	ID = 41208;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DEALLOCATE_HARDWARE
+#=======================================
+
+ARRAY MSO_FLD_DEALLOCATE_HARDWARE {
+
+	ID = 41209;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DEPOSIT
+#=======================================
+
+ARRAY MSO_FLD_DEPOSIT {
+
+	ID = 43069;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DESCRIPTION
+#=======================================
+
+STRING MSO_FLD_DESCRIPTION {
+
+	ID = 42157;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DEVICE_SWAP
+#=======================================
+
+ARRAY MSO_FLD_DEVICE_SWAP {
+
+	ID = 41197;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISCONNECT_FLAG
+#=======================================
+
+STRING MSO_FLD_DISCONNECT_FLAG {
+
+	ID = 46025;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISCOUNT_RATE
+#=======================================
+
+DECIMAL MSO_FLD_DISCOUNT_RATE {
+
+	ID = 43417;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISCOUNT_TYPE
+#=======================================
+
+STRING MSO_FLD_DISCOUNT_TYPE {
+
+	ID = 43416;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISC_AMOUNT
+#=======================================
+
+DECIMAL MSO_FLD_DISC_AMOUNT {
+
+	ID = 41138;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISC_CODE
+#=======================================
+
+INT MSO_FLD_DISC_CODE {
+
+	ID = 43405;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISC_PERCENT
+#=======================================
+
+DECIMAL MSO_FLD_DISC_PERCENT {
+
+	ID = 41137;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISC_TYPE
+#=======================================
+
+ENUM MSO_FLD_DISC_TYPE {
+
+	ID = 43406;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DISPUTE
+#=======================================
+
+ARRAY MSO_FLD_DISPUTE {
+
+	ID = 43070;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_DL_SPEED {
+
+	ID = 42098;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DOB
+#=======================================
+
+TIMESTAMP MSO_FLD_DOB {
+
+	ID = 42641;
+	DESCR = "Date of Birth";
+}
+
+
+#=======================================
+#  Field MSO_FLD_DR_ADJ_AMOUNT
+#=======================================
+
+DECIMAL MSO_FLD_DR_ADJ_AMOUNT {
+
+	ID = 41128;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DR_ADJ_DATE
+#=======================================
+
+TIMESTAMP MSO_FLD_DR_ADJ_DATE {
+
+	ID = 41130;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DR_ADJ_LIMIT
+#=======================================
+
+DECIMAL MSO_FLD_DR_ADJ_LIMIT {
+
+	ID = 41126;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DSA_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_DSA_SERV_OBJ {
+
+	ID = 43350;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTRINFO
+#=======================================
+
+ARRAY MSO_FLD_DTRINFO {
+
+	ID = 43357;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTR_BAL_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_DTR_BAL_BUCKET_OBJ {
+
+	ID = 43346;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTR_BAL_GRP_OBJ
+#=======================================
+
+POID MSO_FLD_DTR_BAL_GRP_OBJ {
+
+	ID = 43345;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTR_COMM_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_DTR_COMM_BUCKET_OBJ {
+
+	ID = 43347;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTR_INCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_DTR_INCOLLECT_SERV_OBJ {
+
+	ID = 43348;
+}
+
+
+#=======================================
+#  Field MSO_FLD_DTR_OUTCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_DTR_OUTCOLLECT_SERV_OBJ {
+
+	ID = 43349;
+}
+
+
+#=======================================
+#  Field MSO_FLD_END_STEP
+#=======================================
+
+ENUM MSO_FLD_END_STEP {
+
+	ID = 43068;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ENTITYID
+#=======================================
+
+STRING MSO_FLD_ENTITYID {
+
+	ID = 42131;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXPIRATIONDATE
+#=======================================
+
+STRING MSO_FLD_EXPIRATIONDATE {
+
+	ID = 42139;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXPIRED_QUOTA
+#=======================================
+
+ARRAY MSO_FLD_EXPIRED_QUOTA {
+
+	ID = 41196;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXPIRED_VALIDITY
+#=======================================
+
+ARRAY MSO_FLD_EXPIRED_VALIDITY {
+
+	ID = 41195;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXPIRYDATE
+#=======================================
+
+STRING MSO_FLD_EXPIRYDATE {
+
+	ID = 42170;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXTEND_PLAN_VALIDITY
+#=======================================
+
+ARRAY MSO_FLD_EXTEND_PLAN_VALIDITY {
+
+	ID = 41178;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXTERNAL_ID
+#=======================================
+
+STRING MSO_FLD_EXTERNAL_ID {
+
+	ID = 42161;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXTERNAL_REF_NO
+#=======================================
+
+STRING MSO_FLD_EXTERNAL_REF_NO {
+
+	ID = 42173;
+}
+
+
+#=======================================
+#  Field MSO_FLD_EXT_VAL_DAYS
+#=======================================
+
+INT MSO_FLD_EXT_VAL_DAYS {
+
+	ID = 42631;
+	DESCR = "Validity Extention Days Counter";
+}
+
+
+#=======================================
+#  Field MSO_FLD_FAILED_COUNT
+#=======================================
+
+INT MSO_FLD_FAILED_COUNT {
+
+	ID = 41121;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FDP_RENEW
+#=======================================
+
+ARRAY MSO_FLD_FDP_RENEW {
+
+	ID = 41172;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FLOOR
+#=======================================
+
+DECIMAL MSO_FLD_FLOOR {
+
+	ID = 41181;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FQDN
+#=======================================
+
+STRING MSO_FLD_FQDN {
+
+	ID = 42133;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FRAMED_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_FRAMED_IP_ADDRESS {
+
+	ID = 46001;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FROM_DATE
+#=======================================
+
+TIMESTAMP MSO_FLD_FROM_DATE {
+
+	ID = 43408;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FUP_DL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_FUP_DL_SPEED {
+
+	ID = 42240;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FUP_DOWNGRADE
+#=======================================
+
+ARRAY MSO_FLD_FUP_DOWNGRADE {
+
+	ID = 41224;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FUP_STATUS
+#=======================================
+
+INT MSO_FLD_FUP_STATUS {
+
+	ID = 46012;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FUP_TOPUP
+#=======================================
+
+ARRAY MSO_FLD_FUP_TOPUP {
+
+	ID = 41171;
+}
+
+
+#=======================================
+#  Field MSO_FLD_FUP_UL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_FUP_UL_SPEED {
+
+	ID = 42241;
+}
+
+
+#=======================================
+#  Field MSO_FLD_GROUP
+#=======================================
+
+STRING MSO_FLD_GROUP {
+
+	ID = 42168;
+}
+
+
+#=======================================
+#  Field MSO_FLD_GROUP_DETAIL
+#=======================================
+
+ARRAY MSO_FLD_GROUP_DETAIL {
+
+	ID = 42177;
+}
+
+
+#=======================================
+#  Field MSO_FLD_GRV_OBJ
+#=======================================
+
+POID MSO_FLD_GRV_OBJ {
+
+	ID = 41219;
+}
+
+
+#=======================================
+#  Field MSO_FLD_GRV_UPLOAD
+#=======================================
+
+ARRAY MSO_FLD_GRV_UPLOAD {
+
+	ID = 41218;
+}
+
+
+#=======================================
+#  Field MSO_FLD_GSTIN
+#=======================================
+
+STRING MSO_FLD_GSTIN {
+
+	ID = 42645;
+	DESCR = "GSTIN Number";
+}
+
+
+#=======================================
+#  Field MSO_FLD_GST_INFO
+#=======================================
+
+ARRAY MSO_FLD_GST_INFO {
+
+	ID = 42632;
+	DESCR = "GST information";
+}
+
+
+#=======================================
+#  Field MSO_FLD_HARDWARE_PLANS
+#=======================================
+
+SUBSTRUCT MSO_FLD_HARDWARE_PLANS {
+
+	ID = 41141;
+}
+
+
+#=======================================
+#  Field MSO_FLD_HARD_DELETE
+#=======================================
+
+STRING MSO_FLD_HARD_DELETE {
+
+	ID = 42158;
+}
+
+
+#=======================================
+#  Field MSO_FLD_HW_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_HW_PLAN_OBJ {
+
+	ID = 41220;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IC_AGR_T
+#=======================================
+
+TIMESTAMP MSO_FLD_IC_AGR_T {
+
+	ID = 42638;
+	DESCR = "MSO LCO Interconnect Agreement Date";
+}
+
+
+#=======================================
+#  Field MSO_FLD_ID
+#=======================================
+
+STRING MSO_FLD_ID {
+
+	ID = 42160;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IDLE_TIMEOUT
+#=======================================
+
+INT MSO_FLD_IDLE_TIMEOUT {
+
+	ID = 41145;
+}
+
+
+#=======================================
+#  Field MSO_FLD_INITIALAMOUNT
+#=======================================
+
+STRING MSO_FLD_INITIALAMOUNT {
+
+	ID = 42141;
+}
+
+
+#=======================================
+#  Field MSO_FLD_INITIAL_AMOUNT
+#=======================================
+
+DECIMAL MSO_FLD_INITIAL_AMOUNT {
+
+	ID = 42123;
+}
+
+
+#=======================================
+#  Field MSO_FLD_INPUT_GIGA_WORDS
+#=======================================
+
+DECIMAL MSO_FLD_INPUT_GIGA_WORDS {
+
+	ID = 46013;
+}
+
+
+#=======================================
+#  Field MSO_FLD_INPUT_PACKETS
+#=======================================
+
+INT MSO_FLD_INPUT_PACKETS {
+
+	ID = 46003;
+}
+
+
+#=======================================
+#  Field MSO_FLD_INSTALLATION_PLANS
+#=======================================
+
+SUBSTRUCT MSO_FLD_INSTALLATION_PLANS {
+
+	ID = 41143;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IPADDRESSES
+#=======================================
+
+STRING MSO_FLD_IPADDRESSES {
+
+	ID = 42137;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_ADDRS
+#=======================================
+
+STRING MSO_FLD_IP_ADDRS {
+
+	ID = 42204;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_DATA
+#=======================================
+
+ARRAY MSO_FLD_IP_DATA {
+
+	ID = 42203;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_END_RANGE
+#=======================================
+
+STRING MSO_FLD_IP_END_RANGE {
+
+	ID = 42210;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_MASK_VALUE
+#=======================================
+
+STRING MSO_FLD_IP_MASK_VALUE {
+
+	ID = 42207;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_POOL_NAME
+#=======================================
+
+STRING MSO_FLD_IP_POOL_NAME {
+
+	ID = 42206;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_START_RANGE
+#=======================================
+
+STRING MSO_FLD_IP_START_RANGE {
+
+	ID = 42209;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IP_VERSION
+#=======================================
+
+STRING MSO_FLD_IP_VERSION {
+
+	ID = 42205;
+}
+
+
+#=======================================
+#  Field MSO_FLD_IS1CLICK_FLAG
+#=======================================
+
+ENUM MSO_FLD_IS1CLICK_FLAG {
+
+	ID = 41110;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ISQUOTA_FLAG
+#=======================================
+
+ENUM MSO_FLD_ISQUOTA_FLAG {
+
+	ID = 42100;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ISTAL_FLAG
+#=======================================
+
+ENUM MSO_FLD_ISTAL_FLAG {
+
+	ID = 41109;
+}
+
+
+#=======================================
+#  Field MSO_FLD_KBBANK
+#=======================================
+
+STRING MSO_FLD_KBBANK {
+
+	ID = 42169;
+}
+
+
+#=======================================
+#  Field MSO_FLD_KEYS
+#=======================================
+
+ARRAY MSO_FLD_KEYS {
+
+	ID = 42156;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LANDMARK
+#=======================================
+
+STRING MSO_FLD_LANDMARK {
+
+	ID = 41120;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LANDMARK_NAME
+#=======================================
+
+STRING MSO_FLD_LANDMARK_NAME {
+
+	ID = 41139;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_ACCT_NO
+#=======================================
+
+STRING MSO_FLD_LCO_ACCT_NO {
+
+	ID = 42626;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_BAL_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_LCO_BAL_BUCKET_OBJ {
+
+	ID = 43325;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_BAL_GRP_OBJ
+#=======================================
+
+POID MSO_FLD_LCO_BAL_GRP_OBJ {
+
+	ID = 43329;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_COMM_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_LCO_COMM_BUCKET_OBJ {
+
+	ID = 43328;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_IC_AGR_NO
+#=======================================
+
+STRING MSO_FLD_LCO_IC_AGR_NO {
+
+	ID = 42637;
+	DESCR = "MSO LCO Interconnect Agreement";
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_INCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_LCO_INCOLLECT_SERV_OBJ {
+
+	ID = 43340;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LCO_OUTCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_LCO_OUTCOLLECT_SERV_OBJ {
+
+	ID = 43341;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LICENSE_NO
+#=======================================
+
+STRING MSO_FLD_LICENSE_NO {
+
+	ID = 42636;
+	DESCR = "MSO License Number";
+}
+
+
+#=======================================
+#  Field MSO_FLD_LOCATION_NAME
+#=======================================
+
+STRING MSO_FLD_LOCATION_NAME {
+
+	ID = 41117;
+}
+
+
+#=======================================
+#  Field MSO_FLD_LOG_TIMESTAMP
+#=======================================
+
+STRING MSO_FLD_LOG_TIMESTAMP {
+
+	ID = 46006;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MAC_ADDRESS
+#=======================================
+
+STRING MSO_FLD_MAC_ADDRESS {
+
+	ID = 42132;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MAC_ID
+#=======================================
+
+STRING MSO_FLD_MAC_ID {
+
+	ID = 42167;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MAKE
+#=======================================
+
+STRING MSO_FLD_MAKE {
+
+	ID = 42201;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MAX_CPE
+#=======================================
+
+STRING MSO_FLD_MAX_CPE {
+
+	ID = 42134;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MAX_SESSION
+#=======================================
+
+STRING MSO_FLD_MAX_SESSION {
+
+	ID = 42171;
+}
+
+
+#=======================================
+#  Field MSO_FLD_METERING_OVERRIDE
+#=======================================
+
+STRING MSO_FLD_METERING_OVERRIDE {
+
+	ID = 42183;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MOBILE
+#=======================================
+
+STRING MSO_FLD_MOBILE {
+
+	ID = 42164;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_ACTIVATION_PLAN
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_ACTIVATION_PLAN {
+
+	ID = 41156;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_AUTHENTICATION
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_AUTHENTICATION {
+
+	ID = 41185;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_BILLINFO
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_BILLINFO {
+
+	ID = 41193;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_BOUQUET
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_BOUQUET {
+
+	ID = 41187;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_BUSYNESS_TYPE
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_BUSYNESS_TYPE {
+
+	ID = 41192;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_CAF_STATUS
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_CAF_STATUS {
+
+	ID = 41188;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_CAS_ID
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_CAS_ID {
+
+	ID = 41189;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_CMTS
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_CMTS {
+
+	ID = 41182;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_CREDIT_LIMIT
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_CREDIT_LIMIT {
+
+	ID = 41180;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_ORG
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_ORG {
+
+	ID = 41191;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_PAYINFO
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_PAYINFO {
+
+	ID = 41194;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_PERSONAL_BIT
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_PERSONAL_BIT {
+
+	ID = 41190;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MODIFY_REGIONKEY
+#=======================================
+
+ARRAY MSO_FLD_MODIFY_REGIONKEY {
+
+	ID = 41186;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MOD_AVP
+#=======================================
+
+ARRAY MSO_FLD_MOD_AVP {
+
+	ID = 42155;
+}
+
+
+#=======================================
+#  Field MSO_FLD_MONTHLY_ADJ_LIMIT
+#=======================================
+
+DECIMAL MSO_FLD_MONTHLY_ADJ_LIMIT {
+
+	ID = 43064;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NAS_PORT_TYPE
+#=======================================
+
+INT MSO_FLD_NAS_PORT_TYPE {
+
+	ID = 46002;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEID_BCC
+#=======================================
+
+STRING MSO_FLD_NEID_BCC {
+
+	ID = 42143;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NETWORKID
+#=======================================
+
+STRING MSO_FLD_NETWORKID {
+
+	ID = 42147;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NETWORK_AMPLIFIER
+#=======================================
+
+STRING MSO_FLD_NETWORK_AMPLIFIER {
+
+	ID = 41108;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NETWORK_ELEMENT
+#=======================================
+
+STRING MSO_FLD_NETWORK_ELEMENT {
+
+	ID = 41106;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NETWORK_ID_ROUTE
+#=======================================
+
+STRING MSO_FLD_NETWORK_ID_ROUTE {
+
+	ID = 42148;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NETWORK_IP
+#=======================================
+
+STRING MSO_FLD_NETWORK_IP {
+
+	ID = 41107;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEWGROUP
+#=======================================
+
+STRING MSO_FLD_NEWGROUP {
+
+	ID = 42182;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_DEVICE_OBJ
+#=======================================
+
+POID MSO_FLD_NEW_DEVICE_OBJ {
+
+	ID = 41199;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_PASSWORD
+#=======================================
+
+STRING MSO_FLD_NEW_PASSWORD {
+
+	ID = 42187;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_NEW_PLAN_OBJ {
+
+	ID = 41166;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_PURCHASED_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_NEW_PURCHASED_PLAN_OBJ {
+
+	ID = 42625;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_USER_NAME
+#=======================================
+
+STRING MSO_FLD_NEW_USER_NAME {
+
+	ID = 42185;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NEW_VALUE
+#=======================================
+
+INT MSO_FLD_NEW_VALUE {
+
+	ID = 41184;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NE_ID
+#=======================================
+
+STRING MSO_FLD_NE_ID {
+
+	ID = 42223;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NE_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_NE_IP_ADDRESS {
+
+	ID = 42224;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NODE_ID
+#=======================================
+
+STRING MSO_FLD_NODE_ID {
+
+	ID = 42233;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NODE_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_NODE_IP_ADDRESS {
+
+	ID = 42234;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NODE_OBJ
+#=======================================
+
+POID MSO_FLD_NODE_OBJ {
+
+	ID = 42235;
+}
+
+
+#=======================================
+#  Field MSO_FLD_NTF_STATUS
+#=======================================
+
+INT MSO_FLD_NTF_STATUS {
+
+	ID = 42630;
+	DESCR = "Threshold notification status";
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLDGROUP
+#=======================================
+
+STRING MSO_FLD_OLDGROUP {
+
+	ID = 42180;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_BALANCECODE
+#=======================================
+
+STRING MSO_FLD_OLD_BALANCECODE {
+
+	ID = 42152;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_DEVICE_OBJ
+#=======================================
+
+POID MSO_FLD_OLD_DEVICE_OBJ {
+
+	ID = 41198;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_NETWORKID
+#=======================================
+
+STRING MSO_FLD_OLD_NETWORKID {
+
+	ID = 42159;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_PASSWORD
+#=======================================
+
+STRING MSO_FLD_OLD_PASSWORD {
+
+	ID = 42186;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_OLD_PLAN_OBJ {
+
+	ID = 41165;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_PURCHASED_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_OLD_PURCHASED_PLAN_OBJ {
+
+	ID = 42624;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_SERVICECODE
+#=======================================
+
+STRING MSO_FLD_OLD_SERVICECODE {
+
+	ID = 42149;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_USER_NAME
+#=======================================
+
+STRING MSO_FLD_OLD_USER_NAME {
+
+	ID = 42184;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_VALIDITY_END_T
+#=======================================
+
+TIMESTAMP MSO_FLD_OLD_VALIDITY_END_T {
+
+	ID = 41179;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OLD_VALUE
+#=======================================
+
+INT MSO_FLD_OLD_VALUE {
+
+	ID = 41183;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OPERATION_TASK
+#=======================================
+
+ENUM MSO_FLD_OPERATION_TASK {
+
+	ID = 43322;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OPS_CREATE_CONFIG
+#=======================================
+
+ARRAY MSO_FLD_OPS_CREATE_CONFIG {
+
+	ID = 41215;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OPS_DELETE_CONFIG
+#=======================================
+
+ARRAY MSO_FLD_OPS_DELETE_CONFIG {
+
+	ID = 41217;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OPS_MODIFY_CONFIG
+#=======================================
+
+ARRAY MSO_FLD_OPS_MODIFY_CONFIG {
+
+	ID = 41216;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ORG_ACCESS_LEVEL
+#=======================================
+
+ENUM MSO_FLD_ORG_ACCESS_LEVEL {
+
+	ID = 41111;
+	DESCR = "0-All, 1-SP/JV, 2-DT, 3-STD, 4-LCO";
+}
+
+
+#=======================================
+#  Field MSO_FLD_ORG_ACCESS_LIST
+#=======================================
+
+ARRAY MSO_FLD_ORG_ACCESS_LIST {
+
+	ID = 41112;
+}
+
+
+#=======================================
+#  Field MSO_FLD_ORG_OBJ
+#=======================================
+
+POID MSO_FLD_ORG_OBJ {
+
+	ID = 41113;
+	DESCR = "JV/DT/SDT/LCO Object poid";
+}
+
+
+#=======================================
+#  Field MSO_FLD_OTHER_NE_ID
+#=======================================
+
+STRING MSO_FLD_OTHER_NE_ID {
+
+	ID = 42225;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OTHER_NE_IP_ADDRESS
+#=======================================
+
+STRING MSO_FLD_OTHER_NE_IP_ADDRESS {
+
+	ID = 42226;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OUTPUT_GIGA_WORDS
+#=======================================
+
+DECIMAL MSO_FLD_OUTPUT_GIGA_WORDS {
+
+	ID = 46014;
+}
+
+
+#=======================================
+#  Field MSO_FLD_OUTPUT_PACKETS
+#=======================================
+
+INT MSO_FLD_OUTPUT_PACKETS {
+
+	ID = 46004;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PACKAGE_CODE
+#=======================================
+
+STRING MSO_FLD_PACKAGE_CODE {
+
+	ID = 43420;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PACKAGE_TYPE
+#=======================================
+
+STRING MSO_FLD_PACKAGE_TYPE {
+
+	ID = 43421;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PASSWORD
+#=======================================
+
+STRING MSO_FLD_PASSWORD {
+
+	ID = 41146;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PAYMENT
+#=======================================
+
+ARRAY MSO_FLD_PAYMENT {
+
+	ID = 43077;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PAYMENT_REVERSALS
+#=======================================
+
+ARRAY MSO_FLD_PAYMENT_REVERSALS {
+
+	ID = 41211;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PAYMENT_TYPE
+#=======================================
+
+ENUM MSO_FLD_PAYMENT_TYPE {
+
+	ID = 46010;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PEER_DL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_PEER_DL_SPEED {
+
+	ID = 42242;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PEER_UL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_PEER_UL_SPEED {
+
+	ID = 42243;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PERSONAL_DETAIL
+#=======================================
+
+ARRAY MSO_FLD_PERSONAL_DETAIL {
+
+	ID = 42176;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PHONE_NO
+#=======================================
+
+STRING MSO_FLD_PHONE_NO {
+
+	ID = 42162;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PLAN_CATEGORY
+#=======================================
+
+ENUM MSO_FLD_PLAN_CATEGORY {
+
+	ID = 43300;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PLAN_INFO
+#=======================================
+
+SUBSTRUCT MSO_FLD_PLAN_INFO {
+
+	ID = 43323;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PLAN_POID
+#=======================================
+
+INT MSO_FLD_PLAN_POID {
+
+	ID = 43319;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PLAN_SUB_CATEGORY
+#=======================================
+
+STRING MSO_FLD_PLAN_SUB_CATEGORY {
+
+	ID = 43306;
+}
+
+
+#=======================================
+#  Field MSO_FLD_POSTAL_REG_NO
+#=======================================
+
+STRING MSO_FLD_POSTAL_REG_NO {
+
+	ID = 40091;
+	DESCR = "Postal Regn No.";
+}
+
+
+#=======================================
+#  Field MSO_FLD_POST_EXP_T
+#=======================================
+
+TIMESTAMP MSO_FLD_POST_EXP_T {
+
+	ID = 42640;
+	DESCR = "Postal Registration Expiry date";
+}
+
+
+#=======================================
+#  Field MSO_FLD_POST_REG_T
+#=======================================
+
+TIMESTAMP MSO_FLD_POST_REG_T {
+
+	ID = 42639;
+	DESCR = "Postal Registration Date";
+}
+
+
+#=======================================
+#  Field MSO_FLD_PROVISIONABLE_FLAG
+#=======================================
+
+ENUM MSO_FLD_PROVISIONABLE_FLAG {
+
+	ID = 42202;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PROV_ORDER_OBJ
+#=======================================
+
+POID MSO_FLD_PROV_ORDER_OBJ {
+
+	ID = 41212;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PURCHASED_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_PURCHASED_PLAN_OBJ {
+
+	ID = 42163;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PURCHASED_PRODUCT_OBJ
+#=======================================
+
+POID MSO_FLD_PURCHASED_PRODUCT_OBJ {
+
+	ID = 41144;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PYMT_AFTER_DUE_T
+#=======================================
+
+DECIMAL MSO_FLD_PYMT_AFTER_DUE_T {
+
+	ID = 43414;
+}
+
+
+#=======================================
+#  Field MSO_FLD_QUOTACODE
+#=======================================
+
+STRING MSO_FLD_QUOTACODE {
+
+	ID = 42138;
+}
+
+
+#=======================================
+#  Field MSO_FLD_QUOTA_CODE
+#=======================================
+
+STRING MSO_FLD_QUOTA_CODE {
+
+	ID = 42122;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RECORD_DESCRIPTION
+#=======================================
+
+STRING MSO_FLD_RECORD_DESCRIPTION {
+
+	ID = 42130;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RECORD_NAME
+#=======================================
+
+STRING MSO_FLD_RECORD_NAME {
+
+	ID = 42129;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REFREV
+#=======================================
+
+ARRAY MSO_FLD_REFREV {
+
+	ID = 43072;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REFUND
+#=======================================
+
+ARRAY MSO_FLD_REFUND {
+
+	ID = 43071;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REFUND_REV_EVENT_OBJ
+#=======================================
+
+POID MSO_FLD_REFUND_REV_EVENT_OBJ {
+
+	ID = 42627;
+	DESCR = "To store Refund Reversal Event Poid";
+}
+
+
+#=======================================
+#  Field MSO_FLD_REFUND_REV_ITEM_OBJ
+#=======================================
+
+POID MSO_FLD_REFUND_REV_ITEM_OBJ {
+
+	ID = 42628;
+	DESCR = "To store Refund Reversal Item Poid";
+}
+
+
+#=======================================
+#  Field MSO_FLD_REF_NO
+#=======================================
+
+STRING MSO_FLD_REF_NO {
+
+	ID = 42208;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REGISTER_BUNIT
+#=======================================
+
+ARRAY MSO_FLD_REGISTER_BUNIT {
+
+	ID = 41150;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REGISTER_BUSER
+#=======================================
+
+ARRAY MSO_FLD_REGISTER_BUSER {
+
+	ID = 41149;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REGISTER_CUSTOMER
+#=======================================
+
+ARRAY MSO_FLD_REGISTER_CUSTOMER {
+
+	ID = 41148;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RELATIVE_TIME
+#=======================================
+
+STRING MSO_FLD_RELATIVE_TIME {
+
+	ID = 42142;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REMARK
+#=======================================
+
+STRING MSO_FLD_REMARK {
+
+	ID = 43404;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REMOTE_ID
+#=======================================
+
+STRING MSO_FLD_REMOTE_ID {
+
+	ID = 46005;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REMOVE_IP
+#=======================================
+
+ARRAY MSO_FLD_REMOVE_IP {
+
+	ID = 41222;
+}
+
+
+#=======================================
+#  Field MSO_FLD_REMOVE_PLAN
+#=======================================
+
+ARRAY MSO_FLD_REMOVE_PLAN {
+
+	ID = 41167;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RENEW_PLAN
+#=======================================
+
+ARRAY MSO_FLD_RENEW_PLAN {
+
+	ID = 41169;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RENEW_T
+#=======================================
+
+TIMESTAMP MSO_FLD_RENEW_T {
+
+	ID = 42633;
+	DESCR = "Updating the activation,renew,change_plan dates";
+}
+
+
+#=======================================
+#  Field MSO_FLD_RESUBMIT_SUSP_USAGE
+#=======================================
+
+ARRAY MSO_FLD_RESUBMIT_SUSP_USAGE {
+
+	ID = 41214;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RULE_ID
+#=======================================
+
+INT MSO_FLD_RULE_ID {
+
+	ID = 46022;
+}
+
+
+#=======================================
+#  Field MSO_FLD_RVERSAL
+#=======================================
+
+ARRAY MSO_FLD_RVERSAL {
+
+	ID = 43075;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SALES_ACCT
+#=======================================
+
+STRING MSO_FLD_SALES_ACCT {
+
+	ID = 43411;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SALES_CLOSE_TYPE
+#=======================================
+
+ENUM MSO_FLD_SALES_CLOSE_TYPE {
+
+	ID = 41132;
+	DESCR = "0-Inbound,1-Outbound";
+}
+
+
+#=======================================
+#  Field MSO_FLD_SCHEDULE_MODIFY
+#=======================================
+
+ARRAY MSO_FLD_SCHEDULE_MODIFY {
+
+	ID = 41213;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SCP_CM
+#=======================================
+
+STRING MSO_FLD_SCP_CM {
+
+	ID = 42229;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SCP_CR
+#=======================================
+
+STRING MSO_FLD_SCP_CR {
+
+	ID = 42230;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDTINFO
+#=======================================
+
+ARRAY MSO_FLD_SDTINFO {
+
+	ID = 43356;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDT_BAL_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_SDT_BAL_BUCKET_OBJ {
+
+	ID = 43352;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDT_BAL_GRP_OBJ
+#=======================================
+
+POID MSO_FLD_SDT_BAL_GRP_OBJ {
+
+	ID = 43351;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDT_COMM_BUCKET_OBJ
+#=======================================
+
+POID MSO_FLD_SDT_COMM_BUCKET_OBJ {
+
+	ID = 43353;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDT_INCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_SDT_INCOLLECT_SERV_OBJ {
+
+	ID = 43354;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SDT_OUTCOLLECT_SERV_OBJ
+#=======================================
+
+POID MSO_FLD_SDT_OUTCOLLECT_SERV_OBJ {
+
+	ID = 43355;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_CODE
+#=======================================
+
+STRING MSO_FLD_SERVICE_CODE {
+
+	ID = 42150;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_ENABLED
+#=======================================
+
+STRING MSO_FLD_SERVICE_ENABLED {
+
+	ID = 42151;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_HOLD
+#=======================================
+
+ARRAY MSO_FLD_SERVICE_HOLD {
+
+	ID = 41161;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_REACTIVATE
+#=======================================
+
+ARRAY MSO_FLD_SERVICE_REACTIVATE {
+
+	ID = 41159;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_TERMINATE
+#=======================================
+
+ARRAY MSO_FLD_SERVICE_TERMINATE {
+
+	ID = 41160;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SERVICE_UNHOLD
+#=======================================
+
+ARRAY MSO_FLD_SERVICE_UNHOLD {
+
+	ID = 41162;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SETTLEMENT
+#=======================================
+
+ARRAY MSO_FLD_SETTLEMENT {
+
+	ID = 43076;
+}
+
+
+#=======================================
+#  Field MSO_FLD_STARTDATE
+#=======================================
+
+STRING MSO_FLD_STARTDATE {
+
+	ID = 42140;
+}
+
+
+#=======================================
+#  Field MSO_FLD_START_DATE
+#=======================================
+
+STRING MSO_FLD_START_DATE {
+
+	ID = 42214;
+}
+
+
+#=======================================
+#  Field MSO_FLD_START_STEP
+#=======================================
+
+ENUM MSO_FLD_START_STEP {
+
+	ID = 43067;
+}
+
+
+#=======================================
+#  Field MSO_FLD_STATUS
+#=======================================
+
+STRING MSO_FLD_STATUS {
+
+	ID = 42179;
+}
+
+
+#=======================================
+#  Field MSO_FLD_STPK_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_STPK_PLAN_OBJ {
+
+	ID = 41153;
+}
+
+
+#=======================================
+#  Field MSO_FLD_STREET_ID
+#=======================================
+
+STRING MSO_FLD_STREET_ID {
+
+	ID = 43205;
+}
+
+
+#=======================================
+#  Field MSO_FLD_STREET_NAME
+#=======================================
+
+STRING MSO_FLD_STREET_NAME {
+
+	ID = 41118;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBNET_MASK
+#=======================================
+
+STRING MSO_FLD_SUBNET_MASK {
+
+	ID = 42174;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBSCRIBED_STATICADDRESS_COUNT
+#=======================================
+
+STRING MSO_FLD_SUBSCRIBED_STATICADDRESS_COUNT {
+
+	ID = 42135;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBSCRIBER
+#=======================================
+
+ARRAY MSO_FLD_SUBSCRIBER {
+
+	ID = 42216;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBSCRIPTION_CHARGE
+#=======================================
+
+DECIMAL MSO_FLD_SUBSCRIPTION_CHARGE {
+
+	ID = 43413;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBSCRIPTION_PLANS
+#=======================================
+
+SUBSTRUCT MSO_FLD_SUBSCRIPTION_PLANS {
+
+	ID = 41142;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUBSCRIPTION_PLAN_OBJ
+#=======================================
+
+POID MSO_FLD_SUBSCRIPTION_PLAN_OBJ {
+
+	ID = 41152;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUB_AVP
+#=======================================
+
+ARRAY MSO_FLD_SUB_AVP {
+
+	ID = 42154;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUSPEND_POLICY
+#=======================================
+
+STRING MSO_FLD_SUSPEND_POLICY {
+
+	ID = 42231;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SUSPEND_SERVICE
+#=======================================
+
+ARRAY MSO_FLD_SUSPEND_SERVICE {
+
+	ID = 41158;
+}
+
+
+#=======================================
+#  Field MSO_FLD_SWAP_TAGGING
+#=======================================
+
+ARRAY MSO_FLD_SWAP_TAGGING {
+
+	ID = 43359;
+	DESCR = "This is for parent and child STB swap tagging life cycle event";
+}
+
+
+#=======================================
+#  Field MSO_FLD_TAN
+#=======================================
+
+STRING MSO_FLD_TAN {
+
+	ID = 42634;
+	DESCR = "TAN Number";
+}
+
+
+#=======================================
+#  Field MSO_FLD_TAX_EXEMPT
+#=======================================
+
+STRING MSO_FLD_TAX_EXEMPT {
+
+	ID = 46024;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TDS_RECV
+#=======================================
+
+ENUM MSO_FLD_TDS_RECV {
+
+	ID = 41147;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TECHNOLOGY
+#=======================================
+
+ENUM MSO_FLD_TECHNOLOGY {
+
+	ID = 41105;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TECHNOLOGY_TYPE
+#=======================================
+
+ENUM MSO_FLD_TECHNOLOGY_TYPE {
+
+	ID = 43305;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TOPUP_PLAN
+#=======================================
+
+ARRAY MSO_FLD_TOPUP_PLAN {
+
+	ID = 41168;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TOTAL_AFT_FUP
+#=======================================
+
+DECIMAL MSO_FLD_TOTAL_AFT_FUP {
+
+	ID = 46020;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TOTAL_BEF_FUP
+#=======================================
+
+DECIMAL MSO_FLD_TOTAL_BEF_FUP {
+
+	ID = 46017;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TOTAL_CHARGE
+#=======================================
+
+DECIMAL MSO_FLD_TOTAL_CHARGE {
+
+	ID = 43415;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TOTAL_DATA
+#=======================================
+
+DECIMAL MSO_FLD_TOTAL_DATA {
+
+	ID = 46008;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TO_DATE
+#=======================================
+
+TIMESTAMP MSO_FLD_TO_DATE {
+
+	ID = 43409;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TRANSFER_SUBSCR
+#=======================================
+
+ARRAY MSO_FLD_TRANSFER_SUBSCR {
+
+	ID = 43358;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TRIAL_BILL_TYPE
+#=======================================
+
+ENUM MSO_FLD_TRIAL_BILL_TYPE {
+
+	ID = 43400;
+}
+
+
+#=======================================
+#  Field MSO_FLD_TYPE
+#=======================================
+
+ENUM MSO_FLD_TYPE {
+
+	ID = 42244;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UL_SPEED
+#=======================================
+
+DECIMAL MSO_FLD_UL_SPEED {
+
+	ID = 42099;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UNIT
+#=======================================
+
+STRING MSO_FLD_UNIT {
+
+	ID = 42623;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UPDATE_ADDRESS
+#=======================================
+
+ARRAY MSO_FLD_UPDATE_ADDRESS {
+
+	ID = 41173;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UPDATE_BILL_SUPPRESSION
+#=======================================
+
+ARRAY MSO_FLD_UPDATE_BILL_SUPPRESSION {
+
+	ID = 41177;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UPDATE_CONTACT
+#=======================================
+
+ARRAY MSO_FLD_UPDATE_CONTACT {
+
+	ID = 41175;
+}
+
+
+#=======================================
+#  Field MSO_FLD_UPDATE_TAX_EXEMPTION
+#=======================================
+
+ARRAY MSO_FLD_UPDATE_TAX_EXEMPTION {
+
+	ID = 41176;
+}
+
+
+#=======================================
+#  Field MSO_FLD_USER_ATTRIBUTES
+#=======================================
+
+ARRAY MSO_FLD_USER_ATTRIBUTES {
+
+	ID = 42178;
+}
+
+
+#=======================================
+#  Field MSO_FLD_USER_IP
+#=======================================
+
+STRING MSO_FLD_USER_IP {
+
+	ID = 42172;
+}
+
+
+#=======================================
+#  Field MSO_FLD_USER_PASS_DESCR
+#=======================================
+
+STRING MSO_FLD_USER_PASS_DESCR {
+
+	ID = 42217;
+}
+
+
+#=======================================
+#  Field MSO_FLD_VALUE
+#=======================================
+
+STRING MSO_FLD_VALUE {
+
+	ID = 42211;
+}
+
+
+#=======================================
+#  Field MSO_FLD_VENDOR_WARRANTY_END
+#=======================================
+
+TIMESTAMP MSO_FLD_VENDOR_WARRANTY_END {
+
+	ID = 42189;
+}
+
+
+#=======================================
+#  Field MSO_FLD_WELCOME_CALL_STATUS
+#=======================================
+
+ENUM MSO_FLD_WELCOME_CALL_STATUS {
+
+	ID = 41140;
+	DESCR = "0:Pending, 1:Completed";
+}
+

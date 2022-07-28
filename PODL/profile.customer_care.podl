@@ -1,0 +1,233 @@
+
+#=======================================
+#  Storable Class /profile/customer_care
+#=======================================
+
+STORABLE CLASS /profile/customer_care {
+
+	READ_ACCESS = "BrandLineage";
+	WRITE_ACCESS = "BrandLineage";
+	DESCR = "Objects of this class are used by the Customer Center components. A /profile/customer_care object is created, if necessary, when registering new users or modifying existing users in Infranet through Customer Center.";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	SUBSTRUCT PIN_FLD_CUSTOMER_CARE_INFO {
+
+		DESCR = "Substruct with details on the user's customer center profile.";
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID MSO_FLD_CATV_ACCOUNT_OBJ {
+
+			DESCR = "Reference of CATV account Object";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_DT_OBJ {
+
+			DESCR = "Distributor Object";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_JV_OBJ {
+
+			DESCR = "JV Account Poid";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_LCO_OBJ {
+
+			DESCR = "LCO account Object";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_PP_TYPE {
+
+			DESCR = "0-Hathway Primary LCO\n1-NON Hathway Secondary LCO";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_SALESMAN_OBJ {
+
+			DESCR = "Sales man account poid to be stored in system for reference";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_SALES_CLOSE_TYPE {
+
+			DESCR = "0-Inbound,1-Outbound";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID MSO_FLD_SDT_OBJ {
+
+			DESCR = "Sub- Distributor Object";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM MSO_FLD_WELCOME_CALL_STATUS {
+
+			DESCR = "0:Pending, 1:Completed";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		ENUM PIN_FLD_CUSTOMER_TYPE {
+
+			DESCR = "CATV or BB Subscriber type derived from PIN_FLD_BUSINESS_TYPE";
+			ORDER = 0;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		POID PIN_FLD_PARENT {
+
+			DESCR = "Immediate Parent";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+	}
+
+}
+
+
+#=======================================
+#  Storable Class /profile/customer_care
+#=======================================
+
+STORABLE CLASS /profile/customer_care IMPLEMENTATION ORACLE7 {
+
+
+	#===================
+	#  Fields 
+	#===================
+
+	SUBSTRUCT PIN_FLD_CUSTOMER_CARE_INFO {
+
+		SQL_TABLE = "profile_customer_care_t";
+		SQL_STORAGE = "tablespace pin00 storage (initial 500k next 500k maxextents unlimited pctincrease 0 ) ";
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID MSO_FLD_CATV_ACCOUNT_OBJ {
+
+			SQL_COLUMN = "catv_account_obj";
+		}
+
+		POID MSO_FLD_DT_OBJ {
+
+			SQL_COLUMN = "dt_obj";
+		}
+
+		POID MSO_FLD_JV_OBJ {
+
+			SQL_COLUMN = "jv_obj";
+		}
+
+		POID MSO_FLD_LCO_OBJ {
+
+			SQL_COLUMN = "lco_obj";
+		}
+
+		ENUM MSO_FLD_PP_TYPE {
+
+			SQL_COLUMN = "pp_type";
+		}
+
+		POID MSO_FLD_SALESMAN_OBJ {
+
+			SQL_COLUMN = "salesman_obj";
+		}
+
+		ENUM MSO_FLD_SALES_CLOSE_TYPE {
+
+			SQL_COLUMN = "sales_close_type";
+		}
+
+		POID MSO_FLD_SDT_OBJ {
+
+			SQL_COLUMN = "sdt_obj";
+		}
+
+		ENUM MSO_FLD_WELCOME_CALL_STATUS {
+
+			SQL_COLUMN = "welcome_call_status";
+		}
+
+		ENUM PIN_FLD_CUSTOMER_TYPE {
+
+			SQL_COLUMN = "customer_type";
+		}
+
+		POID PIN_FLD_PARENT {
+
+			SQL_COLUMN = "parent";
+		}
+
+	}
+
+}
+

@@ -1,0 +1,4 @@
+for i in `cat s1`
+do
+	echo "pin_deploy class -smncp $i";
+done

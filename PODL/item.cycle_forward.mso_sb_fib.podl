@@ -1,0 +1,23 @@
+
+#=======================================
+#  Storable Class /item/cycle_forward/mso_sb_fib
+#=======================================
+
+STORABLE CLASS /item/cycle_forward/mso_sb_fib {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Prepaid subscription items for FIBER.";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /item/cycle_forward/mso_sb_fib
+#=======================================
+
+STORABLE CLASS /item/cycle_forward/mso_sb_fib IMPLEMENTATION ORACLE7 {
+
+}
+

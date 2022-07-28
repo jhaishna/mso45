@@ -1,0 +1,185 @@
+
+#=======================================
+#  Field MSO_FLD_GROUP_DETAIL
+#=======================================
+
+ARRAY MSO_FLD_GROUP_DETAIL {
+
+	ID = 42177;
+}
+
+#=======================================
+#  Field MSO_FLD_PARENT_ACCT_NO
+#=======================================
+
+STRING MSO_FLD_PARENT_ACCT_NO {
+
+	ID = 40025;
+}
+
+#=======================================
+#  Field PIN_FLD_ACCOUNT_NO
+#=======================================
+
+STRING PIN_FLD_ACCOUNT_NO {
+
+	ID = 106;
+}
+
+#=======================================
+#  Field PIN_FLD_BUSINESS_TYPE
+#=======================================
+
+ENUM PIN_FLD_BUSINESS_TYPE {
+
+	ID = 282;
+}
+
+#=======================================
+#  Field PIN_FLD_CODE_STR
+#=======================================
+
+STRING PIN_FLD_CODE_STR {
+
+	ID = 978;
+}
+
+#=======================================
+#  Field PIN_FLD_DESCR
+#=======================================
+
+STRING PIN_FLD_DESCR {
+
+	ID = 54;
+}
+
+#=======================================
+#  Storable Class /event/activity/mso_lifecycle/create_bill_group
+#=======================================
+
+STORABLE CLASS /event/activity/mso_lifecycle/create_bill_group {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Historic";
+
+	#===================
+	#  Fields 
+	#===================
+
+	ARRAY MSO_FLD_GROUP_DETAIL {
+
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		STRING MSO_FLD_PARENT_ACCT_NO {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING PIN_FLD_ACCOUNT_NO {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+		
+		ENUM PIN_FLD_BUSINESS_TYPE {
+
+			ORDER = 0;
+			LENGTH = 60;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+		
+		STRING PIN_FLD_CODE_STR {
+
+			ORDER = 0;
+			LENGTH = 100;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING PIN_FLD_DESCR {
+
+			ORDER = 0;
+			LENGTH = 100;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+	}
+}
+
+
+#===================================================================================
+#  Storable Class /event/activity/mso_lifecycle/create_bill_group
+#===================================================================================
+
+STORABLE CLASS /event/activity/mso_lifecycle/create_bill_group IMPLEMENTATION ORACLE7 {
+
+	#===================
+	#  Fields 
+	#===================
+
+	ARRAY MSO_FLD_GROUP_DETAIL {
+
+		SQL_TABLE = "mso_evt_lc_billgrp_tagging";
+		SQL_STORAGE = " partition by range (obj_id0) (partition partition_historic values less than (35184372088832), partition partition_last values less than (MAXVALUE))";
+
+		#===================
+		#  Fields 
+		#===================
+
+		STRING MSO_FLD_PARENT_ACCT_NO {
+
+			SQL_COLUMN = "parent_account_no";
+		}
+		
+		STRING PIN_FLD_ACCOUNT_NO {
+
+			SQL_COLUMN = "child_account_no";
+		}
+
+		ENUM PIN_FLD_BUSINESS_TYPE {
+
+			SQL_COLUMN = "business_type";
+		}
+		
+		STRING PIN_FLD_CODE_STR {
+
+			SQL_COLUMN = "action";
+		}
+		
+		STRING PIN_FLD_DESCR {
+
+			SQL_COLUMN = "description";
+		}
+	}
+}
+

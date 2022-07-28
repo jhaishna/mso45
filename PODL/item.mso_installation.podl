@@ -1,0 +1,23 @@
+
+#=======================================
+#  Storable Class /item/mso_installation
+#=======================================
+
+STORABLE CLASS /item/mso_installation {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Installation Item";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /item/mso_installation
+#=======================================
+
+STORABLE CLASS /item/mso_installation IMPLEMENTATION ORACLE7 {
+
+}
+

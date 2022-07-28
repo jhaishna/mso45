@@ -1,0 +1,484 @@
+
+#=======================================
+#  Storable Class /active_session
+#=======================================
+
+STORABLE CLASS /active_session {
+
+	SEQ_START = "1";
+	READ_ACCESS = "BrandLineage";
+	WRITE_ACCESS = "BrandLineage";
+	DESCR = " Records data about an active prepaid session. These objects can be stored in the TIMOS DM  memory or the Portal database";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		DESCR = "Link to the account object which is responsible for creating this active session.";
+		ORDER = 0;
+		CREATE = Required;
+		MODIFY = Not_Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_ACTIVE_SESSION_ID {
+
+		DESCR = "Active session Id to uniquely identify the active session.";
+		ORDER = 0;
+		LENGTH = 255;
+		CREATE = Required;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	DECIMAL PIN_FLD_AMOUNT {
+
+		DESCR = "Amount being used by the session. Even as reservation holds the amount of authorization/reauthorization tillnow, this amount stores the amount already used because of usage";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	INT PIN_FLD_CALL_TYPE {
+
+		DESCR = "Flag to specify if the call is the Continuation call.Possible values are : PIN_TCF_NORMAL_CALL(0)PIN_TCF_CONTINUATION_CALL(1)";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_DROPPED_CALL_ASO_POID {
+
+		DESCR = "Holds the Dropped Call ASO POID reference once the current call is identified as the Continuation Call.";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	DECIMAL PIN_FLD_DROPPED_CALL_QUANTITY {
+
+		DESCR = "Holds Dropped Call Quantity to be Discounted.";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_END_T {
+
+		DESCR = "The time when active session ended. A value of 0 for active session implies a currently opened session.";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_POID {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_PROGRAM_NAME {
+
+		DESCR = "The name of the program that generated the active session. ";
+		ORDER = 0;
+		LENGTH = 60;
+		CREATE = Required;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	ARRAY PIN_FLD_RESERVATION_LIST {
+
+		DESCR = "Array containing reservation objects associated with active session. ";
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID PIN_FLD_RESERVATION_OBJ {
+
+			DESCR = "Portal object id of a reservation object. ";
+			ORDER = 0;
+			CREATE = Optional;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+	}
+
+	POID PIN_FLD_SERVICE_OBJ {
+
+		DESCR = "Link to the service object for which the active session is being logged.";
+		ORDER = 0;
+		CREATE = Required;
+		MODIFY = Not_Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	INT PIN_FLD_SESSION_ID {
+
+		DESCR = "Session Id of this active session.";
+		ORDER = 5;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_SESSION_OBJ {
+
+		DESCR = "Holds the event POID reference once the ASO is closed and event is created";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	ENUM PIN_FLD_SESSION_TYPE {
+
+		DESCR = "Indicates session type. Possible values are : 0 - Normal session. 1 - Master session. 2 - Sub-session.";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_START_T {
+
+		DESCR = "The time when the active session started.";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	ENUM PIN_FLD_STATUS {
+
+		DESCR = "Status of the active session object. This status will be helpful if we need to recycle the active session object. Possible values are : 1 - Available,2 - Created,3 - Started,4 - Updated,5 - Closed,6 - Cancelled,7 - Rated";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	ARRAY PIN_FLD_THRESHOLDS {
+
+		DESCR = "Holds the list of all thresholds breached during the current session,used for piggybacked notification";
+		ORDER = 0;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+
+		#===================
+		#  Fields 
+		#===================
+
+		INT PIN_FLD_CREDIT_THRESHOLDS {
+
+			DESCR = "Holds current value for credit thresholds";
+			ORDER = 1;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING PIN_FLD_CREDIT_THRESHOLDS_FIXED {
+
+			DESCR = "Holds the fixed value for credit thresholds";
+			ORDER = 2;
+			LENGTH = 64;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_RESOURCE_ID {
+
+			DESCR = "Holds the resource ID for thresholds check";
+			ORDER = 0;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+	}
+
+	STRING PIN_FLD_TIMEZONE_ID {
+
+		DESCR = "TimeZone ID of the start time as String.";
+		ORDER = 0;
+		LENGTH = 64;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_USAGE_TYPE {
+
+		DESCR = "Type describes the specific customer related call scenario.  E.g. Customer-to-customer call, birthdate call, closed-user-group calls, friends & family, etc.";
+		ORDER = 0;
+		LENGTH = 30;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+}
+
+
+#=======================================
+#  Storable Class /active_session
+#=======================================
+
+STORABLE CLASS /active_session IMPLEMENTATION ORACLE7 {
+
+	SQL_TABLE = "active_session_t";
+
+	#===================
+	#  Fields 
+	#===================
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		SQL_COLUMN = "account_obj";
+	}
+
+	STRING PIN_FLD_ACTIVE_SESSION_ID {
+
+		SQL_COLUMN = "active_session_id";
+	}
+
+	DECIMAL PIN_FLD_AMOUNT {
+
+		SQL_COLUMN = "amount";
+	}
+
+	INT PIN_FLD_CALL_TYPE {
+
+		SQL_COLUMN = "call_type";
+	}
+
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		SQL_COLUMN = "created_t";
+	}
+
+	POID PIN_FLD_DROPPED_CALL_ASO_POID {
+
+		SQL_COLUMN = "dropped_call_aso_poid";
+	}
+
+	DECIMAL PIN_FLD_DROPPED_CALL_QUANTITY {
+
+		SQL_COLUMN = "dropped_call_quantity";
+	}
+
+	TIMESTAMP PIN_FLD_END_T {
+
+		SQL_COLUMN = "end_t";
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		SQL_COLUMN = "mod_t";
+	}
+
+	POID PIN_FLD_POID {
+
+		SQL_COLUMN = "poid";
+	}
+
+	STRING PIN_FLD_PROGRAM_NAME {
+
+		SQL_COLUMN = "program_name";
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		SQL_COLUMN = "read_access";
+	}
+
+	ARRAY PIN_FLD_RESERVATION_LIST {
+
+		SQL_TABLE = "active_session_resv_list_t";
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID PIN_FLD_RESERVATION_OBJ {
+
+			SQL_COLUMN = "reservation_obj";
+		}
+
+	}
+
+	POID PIN_FLD_SERVICE_OBJ {
+
+		SQL_COLUMN = "service_obj";
+	}
+
+	INT PIN_FLD_SESSION_ID {
+
+		SQL_COLUMN = "session_id";
+	}
+
+	POID PIN_FLD_SESSION_OBJ {
+
+		SQL_COLUMN = "session_obj";
+	}
+
+	ENUM PIN_FLD_SESSION_TYPE {
+
+		SQL_COLUMN = "session_type";
+	}
+
+	TIMESTAMP PIN_FLD_START_T {
+
+		SQL_COLUMN = "start_t";
+	}
+
+	ENUM PIN_FLD_STATUS {
+
+		SQL_COLUMN = "status";
+	}
+
+	ARRAY PIN_FLD_THRESHOLDS {
+
+		SQL_TABLE = "active_session_thresholds_t";
+
+		#===================
+		#  Fields 
+		#===================
+
+		INT PIN_FLD_CREDIT_THRESHOLDS {
+
+			SQL_COLUMN = "credit_thresholds_curr_val";
+		}
+
+		STRING PIN_FLD_CREDIT_THRESHOLDS_FIXED {
+
+			SQL_COLUMN = "credit_thresholds_fixed_val";
+		}
+
+		INT PIN_FLD_RESOURCE_ID {
+
+			SQL_COLUMN = "resource_id";
+		}
+
+	}
+
+	STRING PIN_FLD_TIMEZONE_ID {
+
+		SQL_COLUMN = "timezone_id";
+	}
+
+	STRING PIN_FLD_USAGE_TYPE {
+
+		SQL_COLUMN = "usage_type";
+	}
+
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		SQL_COLUMN = "write_access";
+	}
+
+}
+

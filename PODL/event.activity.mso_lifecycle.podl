@@ -1,0 +1,23 @@
+
+#=======================================
+#  Storable Class /event/activity/mso_lifecycle
+#=======================================
+
+STORABLE CLASS /event/activity/mso_lifecycle {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Lifecycle Events Class";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /event/activity/mso_lifecycle
+#=======================================
+
+STORABLE CLASS /event/activity/mso_lifecycle IMPLEMENTATION ORACLE7 {
+
+}
+

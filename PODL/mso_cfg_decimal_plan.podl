@@ -1,0 +1,170 @@
+
+#=======================================
+#  Storable Class mso_cfg_decimal_plan
+#=======================================
+
+STORABLE CLASS /mso_cfg_decimal_plan {
+
+	READ_ACCESS = "BrandLineage";
+	WRITE_ACCESS = "BrandLineage";
+	DESCR = "Contains actual price of the plan which is defined in decimal form in pricing center";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+		POID PIN_FLD_POID {
+
+			ORDER = 0;
+			CREATE = System;
+			MODIFY = System;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+        	}
+
+		STRING PIN_FLD_READ_ACCESS {
+
+			ORDER = 0;
+			LENGTH = 1;
+			CREATE = System;
+			MODIFY = System;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+        	}
+
+		STRING PIN_FLD_WRITE_ACCESS {
+
+			ORDER = 0;
+			LENGTH = 1;
+			CREATE = System;
+			MODIFY = System;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		STRING MSO_FLD_PLAN_NAME {
+
+			DESCR = "Plan name is stored";
+			ORDER = 0;
+			LENGTH = 255;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		DECIMAL PIN_FLD_AMOUNT_ORIG {
+
+			DESCR = "original amount based on bill_when";
+			ORDER = 1;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+		}
+
+		INT PIN_FLD_BILL_WHEN {
+			DESCR = "Customers payterm is defined ";
+                        ORDER = 1;
+                        CREATE = Required;
+                        MODIFY = Writeable;
+                        AUDITABLE = 0;
+                        ENCRYPTABLE = 0;
+                        SERIALIZABLE = 0;
+		}
+	
+		POID PIN_FLD_PRODUCT_OBJ {
+			ORDER = 0;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+        	}
+		
+		STRING PIN_FLD_CITY {
+
+                        ORDER = 0;
+                        LENGTH = 60;
+                        CREATE = Required;
+                        MODIFY = Writeable;
+                        AUDITABLE = 0;
+                        ENCRYPTABLE = 0;
+                        SERIALIZABLE = 0;
+                }
+		
+		POID PIN_FLD_ACCOUNT_OBJ {
+
+			ORDER = 0;
+			CREATE = Required;
+			MODIFY = Writeable;
+			AUDITABLE = 0;
+			ENCRYPTABLE = 0;
+			SERIALIZABLE = 0;
+        	}
+
+}
+
+
+#=======================================
+#  Storable Class /mso_cfg_decimal_plan
+#=======================================
+
+STORABLE CLASS /mso_cfg_decimal_plan IMPLEMENTATION ORACLE7 {
+		
+		SQL_TABLE = "mso_cfg_decimal_plan_t";
+
+		#===================
+		#  Fields 
+		#===================
+
+		POID PIN_FLD_POID {
+		
+			SQL_COLUMN = "poid_id0";
+		}
+		
+		STRING MSO_FLD_PLAN_NAME {
+
+			SQL_COLUMN = "plan_name";
+		}
+
+		DECIMAL PIN_FLD_AMOUNT_ORIG {
+
+			SQL_COLUMN = "orig_amount";
+		}
+		
+		INT PIN_FLD_BILL_WHEN {
+			
+			SQL_COLUMN = "bill_when";
+		}
+		
+		POID PIN_FLD_PRODUCT_OBJ {
+			
+			SQL_COLUMN = "product_obj_id0";	
+		}
+		
+		STRING PIN_FLD_CITY {
+			
+			SQL_COLUMN = "city";
+		}
+
+		STRING PIN_FLD_READ_ACCESS {
+
+                	SQL_COLUMN = "read_access";
+        	}
+
+        	STRING PIN_FLD_WRITE_ACCESS {
+
+                	SQL_COLUMN = "write_access";
+        	}
+		
+		POID PIN_FLD_ACCOUNT_OBJ {
+
+                	SQL_COLUMN = "account_obj";
+        	}
+}		

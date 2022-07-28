@@ -1,0 +1,206 @@
+
+#=======================================
+#  Field MSO_FLD_PACKAGE_NAME_LIST
+#=======================================
+
+ARRAY MSO_FLD_PACKAGE_NAME_LIST {
+
+	ID = 42064;
+}
+
+
+#=======================================
+#  Field MSO_FLD_PKG_TYPE
+#=======================================
+
+ENUM MSO_FLD_PKG_TYPE {
+
+	ID = 42020;
+	DESCR = "0 - Package Offer, 1 –Ala-carte offer, 2 - Add-on offer";
+}
+
+
+#=======================================
+#  Field MSO_FLD_PLAN_NAME
+#=======================================
+
+STRING MSO_FLD_PLAN_NAME {
+
+	ID = 43005;
+	DESCR = "Hardware Plan Name";
+}
+
+
+#=======================================
+#  Storable Class /mso_cfg_catv_package_mapping
+#=======================================
+
+STORABLE CLASS /mso_cfg_catv_package_mapping {
+
+	SEQ_START = "1";
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "This object holds the MAIN and ADDITIONAL connections package mapping to mirror the PARENT package for ADDITIONAL connection.";
+	IS_PARTITIONED = "0";
+
+	#===================
+	#  Fields 
+	#===================
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		ORDER = 0;
+		CREATE = Required;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	POID PIN_FLD_POID {
+
+		ORDER = 0;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		ORDER = 0;
+		LENGTH = 1;
+		CREATE = System;
+		MODIFY = System;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	ENUM MSO_FLD_PKG_TYPE {
+
+		DESCR = "0 - Package Offer, 1 –Ala-carte offer, 2 - Add-on offer";
+		ORDER = 0;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING MSO_FLD_PLAN_NAME {
+
+		DESCR = "Holds the PLAN_NAME of ADDITIONAL CONNECTION";
+		ORDER = 0;
+		LENGTH = 60;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+
+	STRING PIN_FLD_NAME {
+
+		DESCR = "This holds the plan name of MAIN CONNECTION";
+		ORDER = 0;
+		LENGTH = 60;
+		CREATE = Optional;
+		MODIFY = Writeable;
+		AUDITABLE = 0;
+		ENCRYPTABLE = 0;
+		SERIALIZABLE = 0;
+	}
+}
+
+#=======================================
+#  Storable Class /mso_cfg_catv_package_mapping
+#=======================================
+
+STORABLE CLASS /mso_cfg_catv_package_mapping IMPLEMENTATION ORACLE7 {
+
+	SQL_TABLE = "mso_cfg_catv_package_mapping_t";
+
+	#===================
+	#  Fields 
+	#===================
+
+	POID PIN_FLD_ACCOUNT_OBJ {
+
+		SQL_COLUMN = "account_obj";
+	}
+
+	TIMESTAMP PIN_FLD_CREATED_T {
+
+		SQL_COLUMN = "created_t";
+	}
+
+	TIMESTAMP PIN_FLD_MOD_T {
+
+		SQL_COLUMN = "mod_t";
+	}
+
+	POID PIN_FLD_POID {
+
+		SQL_COLUMN = "poid";
+	}
+
+	STRING PIN_FLD_READ_ACCESS {
+
+		SQL_COLUMN = "read_access";
+	}
+
+	STRING PIN_FLD_WRITE_ACCESS {
+
+		SQL_COLUMN = "write_access";
+	}
+	
+	ENUM MSO_FLD_PKG_TYPE {
+
+		SQL_COLUMN = "pkg_type";
+	}
+
+	STRING MSO_FLD_PLAN_NAME {
+
+		SQL_COLUMN = "ADDITIONAL_PLAN";
+	}
+
+	STRING PIN_FLD_NAME {
+
+		SQL_COLUMN = "MAIN_PLAN";
+	}
+
+}
+

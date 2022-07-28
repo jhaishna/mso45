@@ -1,0 +1,23 @@
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/outcollect
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/outcollect {
+
+	READ_ACCESS = "Self";
+	WRITE_ACCESS = "Self";
+	DESCR = "Event for Wholesale Settlement Outcollect Service";
+	IS_PARTITIONED = "1";
+	PARTITION_MODE = "Finite";
+}
+
+
+#=======================================
+#  Storable Class /event/billing/settlement/ws/outcollect
+#=======================================
+
+STORABLE CLASS /event/billing/settlement/ws/outcollect IMPLEMENTATION ORACLE7 {
+
+}
+

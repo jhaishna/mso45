@@ -1,0 +1,62 @@
+#! /bin/bash
+## Modfified on 18-MAY-2015 to remove PID check, now lock file mechanism is used
+
+account_adj()
+{
+         echo "runnng" > mta_job_act_adj.txt
+	 mso_mta_job_processor -object_type /mso_mta_job/bulk_act_adj
+
+#         pid=$(cat mta_job_act_adj.txt)
+#         wait $pid
+         rm mta_job_act_adj.txt;
+}
+
+bill_adj()
+{
+         echo "runnng" > mta_job_bill_adj.txt
+	 mso_mta_job_processor -object_type /mso_mta_job/bulk_bill_adj
+
+#         pid=$(cat mta_job_bill_adj.txt)
+#         wait $pid
+         rm mta_job_bill_adj.txt;
+}
+
+cd $PIN_HOME/mso/apps/mso_bulk_AR
+echo "current working directory is `pwd`"
+
+if [ -e mta_job_act_adj.txt ]
+then
+       #echo "file is available";
+#       pid1=$(cat mta_job_act_adj.txt)
+#
+#       if ps -p $pid1 > /dev/null
+#       then
+#               echo " process is already running "
+#       else
+#               echo " process is not running "
+#                account_adj
+#       fi
+       echo "process is already running "
+else
+       echo "Executing the process account_adj"
+       account_adj
+fi
+
+if [ -e mta_job_bill_adj.txt ]
+then
+       #echo "file is available";
+#       pid1=$(cat mta_job_bill_adj.txt)
+#
+#       if ps -p $pid1 > /dev/null
+#       then
+#		 echo " process is already running "
+#       else
+#               echo " process is not running "
+#                bill_adj
+#       fi
+       echo "process is already running "
+else
+       echo "Executing the process bill_adj"
+        bill_adj
+fi
+

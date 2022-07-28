@@ -1,0 +1,75 @@
+
+Session altered.
+
+Elapsed: 00:00:00.00
+
+STARTDT
+-------------------
+06-08-2020 16:08.52
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.32
+
+Table created.
+
+Elapsed: 00:05:07.84
+DROP INDEX tmp_ind_ser2
+           *
+ERROR at line 1:
+ORA-01418: specified index does not exist
+
+
+Elapsed: 00:00:00.00
+
+Index created.
+
+Elapsed: 00:00:30.94
+
+Table dropped.
+
+Elapsed: 00:00:00.34
+
+Table created.
+
+Elapsed: 00:01:30.24
+
+Table dropped.
+
+Elapsed: 00:00:00.44
+
+Table created.
+
+Elapsed: 00:02:09.90
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table created.
+
+Elapsed: 00:01:05.01
+
+Table dropped.
+
+Elapsed: 00:00:00.03
+
+Table created.
+
+Elapsed: 00:01:28.83
+
+4609504 rows created.
+
+Elapsed: 00:04:50.13
+
+Commit complete.
+
+Elapsed: 00:00:00.04
+
+STARTDT1
+-------------------
+06-08-2020 16:25.36
+
+Elapsed: 00:00:00.01

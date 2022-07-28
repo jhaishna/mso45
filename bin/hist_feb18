@@ -1,0 +1,210 @@
+    1  cd /data/bip/CATV_invoice_temp1
+    2  ls | wc -l
+    3  psme |grep cmmp
+    4  stop_cmmp
+    5* 
+    6  psme |grep cmmp
+    7  psme |grep cmmp
+    8  psme |grep cmmp
+    9  psme |grep cmmp
+   10  psme |grep cmmp
+   11  psme |grep cmmp
+   12  psme |grep cmmp
+   13  psme |grep cmmp
+   14  psme |grep cmmp
+   15  psme |grep cmmp
+   16  clear
+   17  clear
+   18  psme |grep cmmp
+   19  psme |grep cmmp
+   20  psme |grep cmmp
+   21  psme |grep cmmp
+   22  psme |grep cm_weblogic
+   23  psme |grep cm_weblogic|wc -l
+   24  psme |grep cm_weblogic|wc -l
+   25  psme |grep cm_weblogic|wc -l
+   26  psme |grep cm_weblogic|wc -l
+   27  psme |grep cm_weblogic|wc -l
+   28  psme |grep cm_weblogic|wc -l
+   29  psme |grep cm_weblogic|wc -l
+   30  psme |grep cm_weblogic|wc -l
+   31  psme|grep cm_weblogic |wc -l
+   32  psme |grep cmmp
+   33  psme |grep cmmp_weblogic
+   34  psme |grep cmmp_weblogic
+   35  psme |grep cmmp_weblogic
+   36  psme |grep cmmp_weblogic
+   37  psme |grep cmmp_weblogic
+   38  psme |grep cmmp_weblogic
+   39  psme |grep cmmp_weblogic
+   40  psme |grep cmmp_weblogic
+   41  psme |grep cmmp_weblogic
+   42  psme |grep cmmp_weblogic
+   43  psme |grep cmmp_weblogic
+   44  psme |grep cmmp_weblogic
+   45  psme |grep cmmp_weblogic
+   46  psme |grep cmmp_weblogic
+   47  psme |grep cmmp_weblogic
+   48  psme |grep cmmp_weblogic
+   49  psme |grep cmmp_weblogic
+   50  psme |grep cmmp_weblogic
+   51  psme |grep cmmp_weblogic
+   52  psme |grep cmmp_weblogic
+   53  psme |grep cmmp_weblogic
+   54  psme |grep cmmp_weblogic
+   55  psme |grep cmmp_weblogic
+   56  psme |grep cmmp_weblogic
+   57  psme |grep cmmp_weblogic
+   58  psme |grep cmmp_weblogic
+   59  psme |grep cmmp_weblogic
+   60  psme |grep cmmp_weblogic
+   61  psme |grep cmmp_weblogic
+   62  psme |grep cmmp_weblogic
+   63  psme |grep cmmp_weblogic
+   64  psme |grep cmmp_weblogic
+   65  psme |grep cmmp_weblogic
+   66  psme |grep cmmp_weblogic
+   67  psme |grep cmmp_weblogic
+   68  psme |grep cmmp_weblogic
+   69  psme |grep cmmp_weblogic
+   70  psme |grep cmmp_weblogic
+   71  psme |grep cmmp_weblogic
+   72  psme |grep cmmp_weblogic
+   73  psme |grep cmmp_weblogic
+   74  psme |grep cmmp_weblogic
+   75  psme |grep cmmp_weblogic
+   76  psme |grep cmmp_weblogic
+   77  psme |grep cmmp_weblogic
+   78  psme |grep cmmp_weblogic
+   79  psme |grep cmmp_weblogic
+   80  psme |grep cmmp_weblogic
+   81  psme |grep cmmp_weblogic
+   82  psme |grep cmmp_weblogic
+   83  psme |grep cmmp_weblogic
+   84  psme |grep cmmp_weblogic
+   85  psme |grep cmmp_weblogic
+   86  psme |grep cmmp_weblogic
+   87  psme |grep cmmp_weblogic
+   88  psme |grep cmmp_weblogic
+   89  psme |grep cmmp_weblogic
+   90  psme |grep cmmp_weblogic
+   91  psme |grep cmmp_weblogic
+   92  psme |grep cmmp_weblogic
+   93  psme |grep cmmp_weblogic
+   94  psme |grep cmmp_weblogic
+   95  psme |grep cmmp_weblogic
+   96  psme |grep cmmp_weblogic
+   97  psme |grep cmmp_weblogic
+   98  psme |grep cmmp_weblogic
+   99  psme |grep cmmp_weblogic
+  100  psme |grep cmmp_weblogic
+  101  psme |grep cmmp_weblogic
+  102  psme |grep cmmp_weblogic
+  103  psme |grep cmmp_weblogic
+  104  psme |grep cmmp_weblogic
+  105  psme |grep cmmp_weblogic
+  106  psme 
+  107  psme |grep cmmp_weblogic ; psme|gre cm-webloic
+  108  psme | grep cmmp_weblogic
+  109  psme | grep cmmp_weblogic
+  110  psme | grep cmmp_weblogic
+  111  psme | grep cmmp_weblogic
+  112  psme | grep cmmp_weblogic
+  113  psme | grep cmmp_weblogic
+  114  psme | grep cmmp_weblogic
+  115  psme | grep cmmp_weblogic
+  116  psme | grep cmmp_weblogic
+  117  psme | grep cmmp_weblogic
+  118  psme | grep cmmp_weblogic
+  119  psme | grep cmmp_weblogic
+  120  psme | grep cmmp_weblogic
+  121  psme | grep cmmp_weblogic
+  122  kill -9 13684
+  123  netstat -a |grep 45959
+  124  netstat tulpn |grep 4595
+  125  netstat -a tulpn |grep 4595
+  126  netstat -a tulpn
+  127  netstat -a tulpn |grep 45959
+  128  netstat -a |grep 45959
+  129  netstat -a |grep 45958
+  130  netstat -help
+  131  netstat -tulpn
+  132  netstat -tulpn |grep 45959
+  133* 
+  134  netstat -tulpn |grep 45958
+  135  netstat -tulpn |grep 45959
+  136  netsta -a |grep 55501
+  137  netstat -a |grep 55501
+  138  netstat -tulpn |grep 45959
+  139  ot
+  140  opt
+  141  cd mso
+  142  cd sys
+  143  cd cmmp_weblogic/
+  144  ls -lrt
+  145  vi pin.conf
+  146  netsstat -a |grep 41959
+  147  netstat -a |grep 41959
+  148  netstat -a |grep 41959
+  149  netstat -tulpn |grep 41959
+  150  psme |grep cmmp_weblogic
+  151  ps -ef |grep cm_weblogic
+  152  ps -ef |grep cm_weblogic |wc -l
+  153  opt
+  154  find . -name |grep 41959
+  155  find . |grep 41959 
+  156  find . -name pin.conf -print
+  157  find . -name pin.conf -print |grep 41959
+  158  psme |grep cmmp
+  159  psme |grep cmmp_weblogi
+  160  psme |grep cmmp_weblogi|wc -l
+  161  psme |grep cmmp_weblogic |wc -l
+  162  psme |grep cmmp_weblogic |wc -l
+  163  psme |grep cmmp_weblogic |wc -l
+  164  psme |grep cmmp_weblogic |wc -l
+  165  psme |grep cmmp_weblogic |wc -l
+  166  psme |grep cmmp_weblogic |wc -l
+  167  psme |grep cmmp_weblogic |wc -l
+  168  psme |grep cmmp_weblogic |wc -l
+  169  psme |grep cmmp_weblogic |wc -l
+  170  psme |grep cmmp_weblogic |wc -l
+  171  pwd
+  172  vi 1.sh
+  173  psme
+  174  chmod +x 1.sh
+  175  ./a,sh
+  176  ./1.sh
+  177  vi 1.sh
+  178  ./1.sh
+  179  psme
+  180  vi 1.sh
+  181  ./.sh
+  182  pwd
+  183  psme
+  184  sto_dm_oracle_rating0
+  185  psme
+  186  stop_dm_oracle_rating0
+  187  stop_dm_oracle_batch
+  188  stop_dm_oracle_weblogic
+  189  psme
+  190  pkill dm_oracle_rating0
+  191  psme
+  192  stop_cm_batch
+  193  psme
+  194  stop_dm_oracle_rating0
+  195  psme
+  196  pkill dm_oracle_rating0
+  197  psme
+  198  stop_dm_oracle_rating0
+  199  opt
+  200  d bi
+  201  cd bin
+  202  ls -l dm*
+  203  opt
+  204  cd mso
+  205  cd bin
+  206  l -l dm*
+  207  stop_dm_oracle_rating0
+  208  stop_dm_oracle_rating0
+  209  psme
+  210  history > hist_feb18

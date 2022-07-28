@@ -1,0 +1,17 @@
+#!/bin/sh
+
+now=`date +%s`
+log_file_name=`pwd`/pin_cycle_fees_regular_fees_$now.log
+echo "This program is to run the pin_cycle_fees application for regular applying cycle fees" >> $log_file_name
+echo "Program started at `date`" >> $log_file_name
+
+echo " Application's console log " >> $log_file_name
+echo "====================================================" >> $log_file_name
+	pin_cycle_fees -segment 100 -regular_cycle_fees >> $log_file_name
+echo "====================================================" >> $log_file_name
+echo " Application's console log ends" >> $log_file_name
+
+
+echo "Program ended at `date`" >> $log_file_name
+
+exit 0

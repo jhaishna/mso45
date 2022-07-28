@@ -1,0 +1,15 @@
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pin_conf.c(39):535 1:<machine>:<program>:0:0:0:0:0
+	(10087): no pin.conf file in . or /etc 2
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pin_conf.c(39):535 1:<machine>:<program>:0:0:0:0:0
+	(10087): no pin.conf file in . or /etc 2
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pin_deploy_pcm.c:302 1:<machine>:<program>:0:0:0:0:0
+	Unable to read userid from pin.conf
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pcm.c(58):434 1:<machine>:<program>:0:0:0:0:0
+	Bad context in pcm_op
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pin_deploy_pcm.c:101 1:<machine>:<program>:0:0:0:0:0
+	PCM error
+	<location=PIN_ERRLOC_PCM:1 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_BAD_ARG:4>
+	<field num=0:0,0 recid=0 reserved=0 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Jun  4 03:16:45 2021  pre-prod2.hathway.com  <no name>:10087  pin_deploy_export.c:218 1:<machine>:<program>:0:0:0:0:0
+	ERROR attempting to read fields from DD

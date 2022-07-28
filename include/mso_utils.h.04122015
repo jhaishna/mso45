@@ -1,0 +1,72 @@
+
+
+#define MSO_FLAG_SRCH_BY_ID 1
+#define MSO_FLAG_SRCH_BY_PIN 2
+#define MSO_FLAG_SRCH_BY_ACCOUNT 3
+#define MSO_FLAG_SRCH_BY_JV 4
+#define MSO_FLAG_SRCH_BY_DT 5
+#define MSO_FLAG_SRCH_BY_SDT 6
+#define MSO_FLAG_SRCH_BY_LCO 7
+#define MSO_FLAG_SRCH_LCO_OF_SUBSCRIBER 8
+#define MSO_FLAG_SRCH_BY_SELF_ACCOUNT 9
+#define MSO_FLAG_SRCH_BY_SERVICE 10
+
+#define WHOLESALE "/profile/wholesale"
+#define CUSTOMER_CARE "/profile/customer_care"
+
+#define HDW_PROD_PRI_START  0
+#define HDW_PROD_PRI_END    60
+#define SUBS_PROD_PRI_START 90   //90 is for price zero plan, actual subscription plan priority to be considered from 100
+#define SUBS_PROD_PRI_END   170
+#define OTC_PROD_PRI_START  200
+#define OTC_PROD_PRI_END    210
+
+#define DEPOSIT_PRODUCT 20
+
+#define PLAN_TYPE_ALL  0
+#define PLAN_TYPE_HDW  1
+#define PLAN_TYPE_SUBS 2
+#define PLAN_TYPE_OTC  3
+#define PLAN_TYPE_INST 4
+#define PLAN_TYPE_MISC 5
+
+#define ALL         0
+#define CATV        1
+#define BB          2
+
+#define BILLINFOID_CATV "CATV"
+#define BILLINFOID_BB "BB"
+#define BILLINFOID_WS "WS_SETTLEMENT"
+
+
+
+#define CORPORATE_PARENT 1
+#define CORPORATE_CHILD 2
+
+#define MAX_PP_COUNT 3000 //Maximum possible purchased_product
+
+#define LOCAL_TRANS_OPEN_SUCCESS 0
+#define LOCAL_TRANS_OPEN_FAIL 1
+
+#define REGISTER_CUSTOMER "Customer Registration"
+#define MODIFY_CUSTOMER "Modification of Customer information"
+#define SUSPEND_SERVICE "Service Suspension due to non payment"
+#define SERVICE_RECONNECT "Service Reconnect as customer  clears due amount"
+#define HOLD_SERVICE "Customer requested Suspension"
+#define UNHOLD_SERVICE "Customer requested Reactivation"
+#define TERMINATE_SERVICE "Terminate Service Request"
+
+#define DATA_CONSUMED_MB      1000103
+#define FUP_DATA_CONSUMED_MB  1000104
+#define FREE_MB               1100010
+#define CURRENCY              356
+
+#define EVENT_MSO_REFUND_CREDIT "/event/billing/mso_refund_credit"
+#define EVENT_MSO_REFUND_DEBIT "/event/billing/mso_refund_debit"
+#define CHK_BOUNCE_EVENT "/event/billing/mso_penalty"
+
+#define MSO_ACTIVE_STATUS    10100
+#define MSO_PREPAID           2
+#define MSO_POSTPAID          1
+#define MSO_ACCT_ONLY        (-1)
+

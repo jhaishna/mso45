@@ -1,0 +1,72 @@
+#! /bin/bash
+
+actions()
+{
+	 mso_fdp_set_graceperiod -verbose & >/dev/null
+         echo $! > mso_fdp_set_graceperiod.txt
+         pid=$(cat mso_fdp_set_graceperiod.txt)
+         wait $pid
+         rm mso_fdp_set_graceperiod.txt;
+}
+
+
+actions_cycle_fees()
+{
+	echo "starting  pin_cycle_fees for defer_cancel@" `date`
+	pin_cycle_fees -verbose -defer_cancel
+	 echo $! > pin_cycle_fees_catv.txt
+        pid=$(cat pin_cycle_fees_catv.txt)
+        wait $pid
+        rm pin_cycle_fees_catv.txt ;
+	echo "finished  pin_cycle_fees for defer_cancel@" `date`
+
+	echo "starting  pin_cycle_fees for cancel@" `date`
+	pin_cycle_fees -verbose -cancel
+	echo $! > pin_cycle_fees_catv.txt
+         pid=$(cat pin_cycle_fees_catv.txt)
+	wait $pid
+	rm pin_cycle_fees_catv.txt ;
+	echo "finished  pin_cycle_fees for cancel@" `date`
+}
+
+cd $PIN_HOME/apps/pin_billd
+echo "current working directory is `pwd`"
+
+if [ -e mso_fdp_set_graceperiod.txt ]
+then
+       echo "file is available";
+       pid1=$(cat mso_fdp_set_graceperiod.txt)
+
+       if ps -p $pid1 > /dev/null
+       then
+               echo " process is already running "
+       else
+               echo " process is not running "
+		actions
+       fi
+
+else
+	echo "Starting to run mso_fdp_set_graceperiod job ";
+	echo `date`
+	actions
+	echo "End of mso_fdp_set_graceperiod job ";
+	echo `date`
+fi
+
+
+if [ -e pin_cycle_fees_catv.txt]
+then
+       echo "file is available";
+       pid1=$(cat pin_cycle_fees_catv.txt)
+
+       if ps -p $pid1 > /dev/null
+       then
+               echo " process is already running ";
+       else
+               echo " process is not running ";
+                actions_cycle_fees
+       fi
+
+else
+        actions_cycle_fees
+fi

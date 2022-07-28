@@ -1,0 +1,168 @@
+W Wed Nov 28 17:30:12 2018  pre-prod2.hathway.com  testnap:26351  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:26351:-141306144:0:1543406412:0
+	connect to host=172.20.20.45, port=51959 FAILED, err=111
+W Wed Nov 28 17:30:12 2018  pre-prod2.hathway.com  testnap:26351  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:26351:-141306144:0:1543406412:0
+	connect to host=172.20.20.45, port=51959 FAILED,  returned ebufp->pin_err=27
+E Wed Nov 28 17:30:12 2018  pre-prod2.hathway.com  testnap:26351  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:26351:-141306144:0:1543406412:0
+	(26351): pcp_connect(), connecting - failed
+E Wed Nov 28 17:30:12 2018  pre-prod2.hathway.com  testnap:26351  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:26351:-141306144:0:1543406412:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Nov 28 17:30:12 2018  pre-prod2.hathway.com  testnap:26351  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:26351:-141306144:0:1543406412:0
+	pcm_connect: bad pcm_context_open, err 27
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):4612 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	Server connection(ip 172.20.20.45 51959) pending failover when transaction ends
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):3403 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	received PIN_ERR_STREAM_IO, closing socket
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):1795 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	(21632): pcp_connect(), reconnecting. ncap_headp=0x0x8a63f60
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):1808 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	(21632): pcp_connect(), reconnecting. transport_info=(addr=172.20.20.45, port=51961), cfg_str="ip 172.20.20.45 51959"
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):1867 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	(21632): pcp_connect(), reconnecting - found current connect - ncap=0x0x8a63f60, cfg_str="ip 172.20.20.45 51959"
+W Sun Feb  3 10:38:15 2019  pre-prod2.hathway.com  testnap:21632  pcpst.c(86):3480 1:pre-prod2.hathway.com:testnap:21632:-141412640:3:1543496515:2
+	pcp_send: retrying PCM_OP_READ_OBJ, flags 0x0 - retries=0 of 3
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):4612 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	Server connection(ip 172.20.20.45 51959) pending failover when transaction ends
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3403 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	received PIN_ERR_STREAM_IO, closing socket
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1795 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	(22497): pcp_connect(), reconnecting. ncap_headp=0x0x9e982b0
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1808 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	(22497): pcp_connect(), reconnecting. transport_info=(addr=172.20.20.45, port=51961), cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1867 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	(22497): pcp_connect(), reconnecting - found current connect - ncap=0x0x9e982b0, cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:34:12 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3480 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566284:1
+	pcp_send: retrying MSO_OP_SEARCH, flags 0x0 - retries=0 of 3
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):4612 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	Server connection(ip 172.20.20.45 51959) pending failover when transaction ends
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3403 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	received PIN_ERR_STREAM_IO, closing socket
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1795 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	(22497): pcp_connect(), reconnecting. ncap_headp=0x0x9e97fb8
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1808 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	(22497): pcp_connect(), reconnecting. transport_info=(addr=172.20.20.45, port=51961), cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1867 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	(22497): pcp_connect(), reconnecting - found current connect - ncap=0x0x9e97fb8, cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:36:18 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3480 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566410:2
+	pcp_send: retrying MSO_OP_SEARCH, flags 0x0 - retries=0 of 3
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):4612 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	Server connection(ip 172.20.20.45 51959) pending failover when transaction ends
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3403 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	received PIN_ERR_STREAM_IO, closing socket
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1795 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	(22497): pcp_connect(), reconnecting. ncap_headp=0x0x9e97fd8
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1808 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	(22497): pcp_connect(), reconnecting. transport_info=(addr=172.20.20.45, port=51961), cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):1867 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	(22497): pcp_connect(), reconnecting - found current connect - ncap=0x0x9e97fd8, cfg_str="ip 172.20.20.45 51959"
+W Sun Sep 29 13:37:42 2019  pre-prod2.hathway.com  testnap:22497  pcpst.c(86):3480 1:pre-prod2.hathway.com:testnap:22497:-141093152:11018:1543566494:3
+	pcp_send: retrying MSO_OP_SEARCH, flags 0x0 - retries=0 of 3
+W Fri Mar  8 11:05:17 2019  pre-prod2.hathway.com  testnap:29175  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:29175:-141457696:0:1552023317:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:05:17 2019  pre-prod2.hathway.com  testnap:29175  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:29175:-141457696:0:1552023317:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:05:17 2019  pre-prod2.hathway.com  testnap:29175  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:29175:-141457696:0:1552023317:0
+	(29175): pcp_connect(), connecting - failed
+E Fri Mar  8 11:05:17 2019  pre-prod2.hathway.com  testnap:29175  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:29175:-141457696:0:1552023317:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:05:17 2019  pre-prod2.hathway.com  testnap:29175  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:29175:-141457696:0:1552023317:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:05:25 2019  pre-prod2.hathway.com  testnap:29259  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:29259:-141134112:0:1552023325:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:05:25 2019  pre-prod2.hathway.com  testnap:29259  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:29259:-141134112:0:1552023325:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:05:25 2019  pre-prod2.hathway.com  testnap:29259  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:29259:-141134112:0:1552023325:0
+	(29259): pcp_connect(), connecting - failed
+E Fri Mar  8 11:05:25 2019  pre-prod2.hathway.com  testnap:29259  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:29259:-141134112:0:1552023325:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:05:25 2019  pre-prod2.hathway.com  testnap:29259  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:29259:-141134112:0:1552023325:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:05:29 2019  pre-prod2.hathway.com  testnap:29303  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:29303:-141117728:0:1552023329:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:05:29 2019  pre-prod2.hathway.com  testnap:29303  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:29303:-141117728:0:1552023329:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:05:29 2019  pre-prod2.hathway.com  testnap:29303  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:29303:-141117728:0:1552023329:0
+	(29303): pcp_connect(), connecting - failed
+E Fri Mar  8 11:05:29 2019  pre-prod2.hathway.com  testnap:29303  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:29303:-141117728:0:1552023329:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:05:29 2019  pre-prod2.hathway.com  testnap:29303  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:29303:-141117728:0:1552023329:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:11:39 2019  pre-prod2.hathway.com  testnap:31951  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:31951:-141805856:0:1552023699:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:11:39 2019  pre-prod2.hathway.com  testnap:31951  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:31951:-141805856:0:1552023699:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:11:39 2019  pre-prod2.hathway.com  testnap:31951  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:31951:-141805856:0:1552023699:0
+	(31951): pcp_connect(), connecting - failed
+E Fri Mar  8 11:11:39 2019  pre-prod2.hathway.com  testnap:31951  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:31951:-141805856:0:1552023699:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:11:39 2019  pre-prod2.hathway.com  testnap:31951  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:31951:-141805856:0:1552023699:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:11:42 2019  pre-prod2.hathway.com  testnap:32035  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:32035:-141056288:0:1552023702:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:11:42 2019  pre-prod2.hathway.com  testnap:32035  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:32035:-141056288:0:1552023702:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:11:42 2019  pre-prod2.hathway.com  testnap:32035  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:32035:-141056288:0:1552023702:0
+	(32035): pcp_connect(), connecting - failed
+E Fri Mar  8 11:11:42 2019  pre-prod2.hathway.com  testnap:32035  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:32035:-141056288:0:1552023702:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:11:42 2019  pre-prod2.hathway.com  testnap:32035  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:32035:-141056288:0:1552023702:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:11:43 2019  pre-prod2.hathway.com  testnap:32079  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:32079:-141576480:0:1552023703:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:11:43 2019  pre-prod2.hathway.com  testnap:32079  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:32079:-141576480:0:1552023703:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:11:43 2019  pre-prod2.hathway.com  testnap:32079  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:32079:-141576480:0:1552023703:0
+	(32079): pcp_connect(), connecting - failed
+E Fri Mar  8 11:11:43 2019  pre-prod2.hathway.com  testnap:32079  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:32079:-141576480:0:1552023703:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:11:43 2019  pre-prod2.hathway.com  testnap:32079  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:32079:-141576480:0:1552023703:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:11:46 2019  pre-prod2.hathway.com  testnap:32162  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:32162:-140773664:0:1552023706:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:11:46 2019  pre-prod2.hathway.com  testnap:32162  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:32162:-140773664:0:1552023706:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Fri Mar  8 11:11:46 2019  pre-prod2.hathway.com  testnap:32162  pcpst.c(86):2050 1:pre-prod2.hathway.com:testnap:32162:-140773664:0:1552023706:0
+	(32162): pcp_connect(), connecting - failed
+E Fri Mar  8 11:11:46 2019  pre-prod2.hathway.com  testnap:32162  pcm.c(58):192 1:pre-prod2.hathway.com:testnap:32162:-140773664:0:1552023706:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Fri Mar  8 11:11:46 2019  pre-prod2.hathway.com  testnap:32162  pcm_conn.c(6):282 1:pre-prod2.hathway.com:testnap:32162:-140773664:0:1552023706:0
+	pcm_connect: bad pcm_context_open, err 27
+W Fri Mar  8 11:15:08 2019  pre-prod2.hathway.com  testnap:425  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:425:-141248800:0:1552023908:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:15:08 2019  pre-prod2.hathway.com  testnap:425  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:425:-141248800:0:1552023908:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+W Fri Mar  8 11:15:17 2019  pre-prod2.hathway.com  testnap:521  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:521:-141367584:0:1552023917:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:15:17 2019  pre-prod2.hathway.com  testnap:521  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:521:-141367584:0:1552023917:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+W Fri Mar  8 11:22:41 2019  pre-prod2.hathway.com  testnap:1597  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:1597:-141498656:0:1552024361:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:22:41 2019  pre-prod2.hathway.com  testnap:1597  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:1597:-141498656:0:1552024361:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+W Fri Mar  8 11:55:21 2019  pre-prod2.hathway.com  testnap:5419  pcpst.c(86):393 1:pre-prod2.hathway.com:testnap:5419:-140982560:0:1552026321:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Fri Mar  8 11:55:21 2019  pre-prod2.hathway.com  testnap:5419  pcpst.c(86):2010 1:pre-prod2.hathway.com:testnap:5419:-140982560:0:1552026321:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27

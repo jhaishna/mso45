@@ -1,0 +1,48 @@
+Usage:
+        FOR CREATING_ORDER:
+        -----------------
+        mso_bulk_entity_change.sh -input <input file name>
+        Ex: mso_bulk_entity_change.pl -input stb_input_file
+
+
+        TO GET_FAILED_ORDER_DETAILS:
+        --------------------------
+        mso_bulk_entity_change.sh -output <order_id>
+        Ex: mso_bulk_entity_change.pl -output BEC-20141229012319
+
+Usage:
+        FOR CREATING_ORDER:
+        -----------------
+        mso_bulk_entity_change.sh -input <input file name>
+        Ex: mso_bulk_entity_change.pl -input stb_input_file
+
+
+        TO GET_FAILED_ORDER_DETAILS:
+        --------------------------
+        mso_bulk_entity_change.sh -output <order_id>
+        Ex: mso_bulk_entity_change.pl -output BEC-20141229012319
+
+Usage:
+        FOR CREATING_ORDER:
+        -----------------
+        mso_bulk_entity_change.sh -input <input file name>
+        Ex: mso_bulk_entity_change.pl -input stb_input_file
+
+
+        TO GET_FAILED_ORDER_DETAILS:
+        --------------------------
+        mso_bulk_entity_change.sh -output <order_id>
+        Ex: mso_bulk_entity_change.pl -output BEC-20141229012319
+
+
+Usage: 
+	FOR CREATING_ORDER:
+	-----------------
+	mso_bulk_entity_change.pl -input <input file name> 
+	Ex: mso_bulk_entity_change.pl -input stb_input_file 
+
+
+	TO GET_FAILED_ORDER_DETAILS:
+	--------------------------
+	mso_bulk_entity_change.pl -output <order_id> 
+	Ex: mso_bulk_entity_change.pl -output BEC-20141229012319 

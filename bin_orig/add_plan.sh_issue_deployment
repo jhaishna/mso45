@@ -1,0 +1,32 @@
+#! /bin/bash
+## Modfified on 15-MAY-2015 to remive PID check, now lock file mechanism is used
+add_plan()
+{
+         echo "runnng" > mta_job_add_plan.txt
+	 mso_mta_job_processor -object_type /mso_mta_job/bulk_add_plan
+
+#         pid=$(cat mta_job_add_plan.txt)
+#         wait $pid
+         rm mta_job_add_plan.txt;
+}
+
+cd $PIN_HOME/mso/apps/mso_bulk_plan
+echo "current working directory is `pwd`"
+
+if [ -e mta_job_add_plan.txt ]
+then
+              echo " process is already running "
+#       pid1=$(cat mta_job_add_plan.txt)
+#
+#       if ps -p $pid1 > /dev/null
+#       then
+#               echo " process is already running "
+#       else
+#               echo " process is not running "
+#		add_plan
+#       fi
+
+else
+       echo "Executing add_plan"
+	add_plan
+fi

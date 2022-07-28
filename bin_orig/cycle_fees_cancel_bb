@@ -1,0 +1,23 @@
+#!/bin/sh
+
+PINDIR=/home/pin/opt/portal/7.5
+LOGDIR=/home/pin/opt/portal/7.5/var/pin_billd
+
+CNFDIR=${PINDIR}/apps/pin_billd
+INVDIR=${PINDIR}/apps/pin_inv
+SUBSDIR=${PINDIR}/apps/pin_subscription
+
+PATH=/usr/bin:/bin:${PINDIR}/bin
+
+cd ${CNFDIR}
+
+echo "starting  pin_cycle_fees for defer_cancel@" `date`
+pin_cycle_fees -verbose -defer_cancel -segment 101
+wait
+echo "finished  pin_cycle_fees for defer_cancel@" `date`
+
+echo "starting  pin_cycle_fees for cancel@" `date`
+pin_cycle_fees -verbose -cancel -segment 101
+echo "finished  pin_cycle_fees for cancel@" `date`
+
+exit 0

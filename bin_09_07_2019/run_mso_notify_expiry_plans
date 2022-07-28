@@ -1,0 +1,17 @@
+#!/bin/sh
+num_of_days=$1
+now=`date +%s`
+log_file_name=`pwd`/run_mso_notify_expiry_plans_$now.log
+echo "This program is to run the mta application for sending notification to prepaid plans expireing in next 7 days" >> $log_file_name
+echo "Program started at `date`" >> $log_file_name
+
+echo " Application's console log " >> $log_file_name
+echo "====================================================" >> $log_file_name
+#cd  $PIN_HOME/mso/source/apps/mso_notify_expiry_plans
+mso_notify_expiry_plans -number_of_days $num_of_days
+echo "====================================================" >> $log_file_name
+echo " Application's console log ends" >> $log_file_name
+
+echo "Program ended at `date`" >> $log_file_name
+
+exit 0

@@ -1,0 +1,88 @@
+#!/bin/sh
+#
+#       @(#) $Id: stop_all.sh /cgbubrm_7.5.0.rwsmod/2 2012/06/14 02:25:14 ssajjans Exp $
+#
+# Copyright (c) 1996, 2012, Oracle and/or its affiliates. All rights reserved. 
+#      
+#       This material is the confidential property of Oracle Corporation or its
+#       licensors and may be used, reproduced, stored or transmitted only in
+#       accordance with a valid Oracle license or sublicense agreement.
+#
+
+VERSION=7.5
+PATH=/usr/bin:/bin
+
+PINDIR=/home/pin/opt/portal/7.5/mso
+
+cd ${PINDIR}/bin ;
+#  if [ -f "./stop_cm_weblogic" ]; then ./stop_cm_weblogic;fi
+  if [ -f "./stop_cm_batch" ]; then ./stop_cm_batch;fi
+  if [ -f "./stop_cm_work_flow" ]; then ./stop_cm_work_flow;fi
+wait_time=0
+tot=0
+#Wait for cms to stop
+  while true
+  do
+#	cm_web_c=`ps -aef | grep "^$USER " | grep cm_weblogic | grep -v grep |wc -l`
+	cm_wkf_c=`ps -aef | grep "^$USER " | grep cm_batch | grep -v grep |wc -l`
+	cm_bat_c=`ps -aef | grep "^$USER " | grep cm_work_flow | grep -v grep |wc -l`
+	tot=$((cm_web_c + cm_wkf_c + cm_bat_c))
+	if [ $tot -gt 0 ] && [ $wait_time -lt 120 ]; then
+		sleep 30
+		wait_time=$((wait_time+30))
+	elif [ $tot -gt 0 ] ; then
+#		pkill cm_weblogic
+		pkill cm_batch
+		pkill cm_work_flow
+	else
+		echo "CM processes Stopped"
+		break
+	fi
+  done
+#  if [ -f "./stop_dm_oracle_weblogic" ]; then ./stop_dm_oracle_weblogic;fi
+#  if [ -f "./stop_dm_oracle_batch" ]; then ./stop_dm_oracle_batch;fi
+  if [ -f "./stop_dm_oracle_work_flow" ]; then ./stop_dm_oracle_work_flow;fi
+  while true
+  do
+#	dm_web_c=`ps -aef | grep "^$USER " | grep dm_oracle_weblogic | grep -v grep |wc -l`
+#	dm_bat_c=`ps -aef | grep "^$USER " | grep dm_oracle_batch | grep -v grep |wc -l`
+	dm_wkf_c=`ps -aef | grep "^$USER " | grep dm_oracle_work_flow | grep -v grep |wc -l`
+	tot_d=$((dm_web_c+ dm_wkf_c + dm_bat_c))
+	if [ $tot_d -gt 0 ] && [ $wait_time -lt 120 ] ; then
+		sleep 30
+		wait_time=$((wait_time+30))
+	elif [ $tot_d -gt 0 ] ; then
+		#pkill dm_oracle_weblogic
+		#pkill dm_oracle_batch
+		pkill dm_oracle_work_flow
+	else
+		echo "DM processes Stopped"
+		break
+	fi
+  done
+#  if [ -f "./stop_cmmp_weblogic" ]; then ./stop_cmmp_weblogic;fi
+  if [ -f "./stop_cmmp_batch" ]; then ./stop_cmmp_batch;fi
+  if [ -f "./stop_cmmp_work_flow" ]; then ./stop_cmmp_work_flow;fi
+  while true
+  do
+#	dm_web_c=`ps -aef | grep "^$USER " | grep cmmp_weblogic | grep -v grep |wc -l`
+	dm_bat_c=`ps -aef | grep "^$USER " | grep cmmp_batch | grep -v grep |wc -l`
+	dm_wkf_c=`ps -aef | grep "^$USER " | grep cmmp_work_flow | grep -v grep |wc -l`
+	tot_d=$((dm_web_c + dm_wkf_c + dm_bat_c))
+	if [ $tot_d -gt 0 ] && [ $wait_time -lt 120 ] ; then
+		sleep 30
+		wait_time=$((wait_time+30))
+	elif [ $tot_d -gt 0 ] ; then
+#		pkill cmmp_weblogic
+		pkill cmmp_batch
+		pkill cmmp_work_flow
+	else
+		echo "CMMP processes Stopped"
+		break
+	fi
+  done
+
+sleep 100
+echo "All processes Stopped"
+# get rc from cm stopup
+exit $?

@@ -1,0 +1,123 @@
+00 06 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/bin/pin_daily_action_cancel_exp_product>>/home/pin/opt/portal/7.5/sys/test/nohup.out
+########################
+# Collections Register tested PROD
+########################
+00 08 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_COLLECTION_REG.sh pin pin123 PRODBRM /home/pin/opt/portal/7.5/mso/reports/output>>/home/pin/opt/portal/7.5/sys/test/collections_report_12pm.log
+55 11 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_COLLECTION_REG.sh pin pin123 PRODBRM /home/pin/opt/portal/7.5/mso/reports/output>>/home/pin/opt/portal/7.5/sys/test/collections_report_12pm.log
+25 14 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_COLLECTION_REG.sh pin pin123 PRODBRM /home/pin/opt/portal/7.5/mso/reports/output>>/home/pin/opt/portal/7.5/sys/test/collections_report_12pm.log
+55 19 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_COLLECTION_REG.sh pin pin123 PRODBRM /home/pin/opt/portal/7.5/mso/reports/output>>/home/pin/opt/portal/7.5/sys/test/collections_report_12pm.log
+#########################
+# Device Loading script
+#########################
+#0,30 * * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/device_load.sh>/home/pin/opt/portal/7.5/sys/test/device_load.log
+
+#########################
+#service suspension 
+#########################
+#10 12,16,20 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/suspension.sh>/home/pin/opt/portal/7.5/sys/test/suspension.log
+
+#########################
+# service reconnection 
+#########################
+#00 10,12,14,16,18,20,22 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/reconnection.sh>/home/pin/opt/portal/7.5/sys/test/reconnection.log
+
+#########################
+#service termination 
+#########################
+#10 13,19 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/termination.sh>/home/pin/opt/portal/7.5/sys/test/termination.log
+
+#########################
+# Add Plan 
+#########################
+#30 10,12,14,16,18,20,22 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/add_plan.sh>/home/pin/opt/portal/7.5/sys/test/add_plan.log
+
+#########################
+# Change Plan 
+#########################
+#20 10,12,14,16,18,20,22 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/change_plan.sh>/home/pin/opt/portal/7.5/sys/test/change_plan.log
+
+#########################
+# Remove Plan 
+#########################
+#50 11,15,19 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/cancel_plan.sh>/home/pin/opt/portal/7.5/sys/test/cancel_plan.log
+
+#########################
+# catv preactivation 
+#########################
+#50 13,17,21 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/preactivate.sh>/home/pin/opt/portal/7.5/sys/test/preactivate.log
+
+#########################
+# Retrack 
+#########################
+#45 10,12,14,16,18,20,22 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/retrack.sh>/home/pin/opt/portal/7.5/sys/test/retrack.log
+
+#########################
+# Set personnel bit 
+#########################
+#20 11,23 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/set_bit.sh>/home/pin/opt/portal/7.5/sys/test/set_bit.log
+
+#########################
+# adjustments 
+#########################
+#0 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/adjustment.sh>/home/pin/opt/portal/7.5/sys/test/adjustment.log
+
+#########################
+#  change bouquet id 
+#########################
+#20 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/bouquet_id.sh>/home/pin/opt/portal/7.5/sys/test/bouquet_id.log
+
+#########################
+#  Bulk Prov repush 
+#########################
+#10 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/repush.sh>/home/pin/opt/portal/7.5/sys/test/repush.log
+
+#########################
+# OSD PK 
+#########################
+#30 13,17,21 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/osd.sh>/home/pin/opt/portal/7.5/sys/test/osd.log
+
+#########################
+# OSD PK 
+#########################
+#40 13,17,21 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/bmail.sh>/home/pin/opt/portal/7.5/sys/test/bmail.log
+
+#########################
+# Daily Reports - Finance
+#########################
+#Customer Master Dump
+00 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_CUST_MASTER_DUMP.sh pin pin123 PRODBRM &
+#LCO Master Dump
+30 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_LCO_MASTER_PROC.sh pin pin123 PRODBRM &
+#BU Master Dump
+40 00 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_BU_MASTER_PROC.sh pin pin123 PRODBRM &
+#TDS Report
+00 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_TDS_PROC.sh pin pin123 PRODBRM &
+#Debit Note Report
+10 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_DEBIT_NOTE_PROC.sh pin pin123 PRODBRM &
+#Credit Note Report
+25 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_CREDIT_NOTE_PROC.sh pin pin123 PRODBRM &
+#Outstanding Report
+40 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_OS_PROC_V1.sh pin pin123 PRODBRM &
+#NC Report
+45 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_STB_ACT.sh pin pin123 PRODBRM &
+#RC Report
+50 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_RC.sh pin pin123 PRODBRM &
+#DC Report
+55 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_DC.sh pin pin123 PRODBRM &
+#TC Report
+00 04 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/MSO_FIN_TC.sh pin pin123 PRODBRM &
+
+########################
+# Deferred actions
+#########################
+30 01 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/Deferred_actions.sh>/home/pin/opt/portal/7.5/sys/test/deferred_actions.log
+
+
+#20 01,02,03,04,05,06,07,08,09,10,11,12,13 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush.sh pin pin123 PRODBRM &
+
+30 00,04,07,09 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush_KOLKATA.sh pin pin123 PRODBRM &
+30 02,06 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush_THANE.sh pin pin123 PRODBRM &
+30 03 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush_PUNE.sh pin pin123 PRODBRM &
+30 01,05,08 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush_24_PARAGANA.sh pin pin123 PRODBRM &
+
+00 01,02,03,04,05,06,07,08,09,10 * * * source /home/pin/.bash_profile;/home/pin/opt/portal/7.5/mso/bin/order_repush_MUMBAI.sh pin pin123 PRODBRM &

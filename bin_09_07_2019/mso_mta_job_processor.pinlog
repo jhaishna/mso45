@@ -1,0 +1,182 @@
+D Thu Mar  7 16:43:24 2019  <no machine>  mso_bill_correction:6148  pin_mta_conf.c:668 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:1
+	pin_mta_convert_cmdline_options_to_flist parameters flist
+# number of field entries allocated 20, used 0
+D Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcpst.c(86):2359 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	(6148): SSL disabled
+W Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcpst.c(86):393 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcpst.c(86):2010 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcpst.c(86):2050 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	(6148): pcp_connect(), connecting - failed
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcm.c(58):192 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pcm_conn.c(6):282 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	pcm_connect: bad pcm_context_open, err 27
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pin_mta.c:1907 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	pcm_connect error
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+D Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pin_mta.c:3144 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	List of call back API functions: 
+	pin_mta_config                  0x804bc64
+	pin_mta_post_config             0
+	pin_mta_usage                   0x804c88a
+	pin_mta_post_usage              0x804caa6
+	pin_mta_init_app                0
+	pin_mta_post_init_app           0
+	pin_mta_init_search             0x804cca5
+	pin_mta_post_init_search        0
+	pin_mta_tune                    0
+	pin_mta_post_tune               0
+	pin_mta_job_done                0
+	pin_mta_post_job_done           0
+	pin_mta_exit                    0
+	pin_mta_post_exit               0
+	pin_mta_worker_init             0
+	pin_mta_post_worker_init        0
+	pin_mta_worker_job              0x804d3fe
+	pin_mta_post_worker_job         0
+	pin_mta_worker_opcode           0x804d5d1
+	pin_mta_worker_job_done         0
+	pin_mta_post_worker_job_done    0
+	pin_mta_worker_exit             0
+	pin_mta_post_worker_exit        0
+	pin_mta_init_job                0
+	pin_mta_init_hotlist            0
+	pin_mta_exec_work_unit          0
+	pin_mta_cleanup_job             0
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pin_mta.c:2120 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	system error
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Thu Mar  7 16:43:24 2019  pre-prod2.hathway.com  mso_bill_correction:6148  pin_mta.c:2146 1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0
+	Application global flist at exit
+# number of field entries allocated 20, used 6
+0 PIN_FLD_CONFIG_OBJ   SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_APPLICATION_INFO SUBSTRUCT [0] allocated 20, used 15
+1     PIN_FLD_NAME            STR [0] "mso_bill_correction"
+1     PIN_FLD_CHILDREN        INT [0] 50
+1     PIN_FLD_STEP_SIZE       INT [0] 10000
+1     PIN_FLD_BATCH_SIZE      INT [0] 500
+1     PIN_FLD_FETCH_SIZE      INT [0] 50000
+1     PIN_FLD_SLEEP_INTERVAL    INT [0] 60
+1     PIN_FLD_NUM_RETRIES     INT [0] 0
+1     PIN_FLD_FLAGS           INT [0] 0
+1     PIN_FLD_MAX_ERROR       INT [0] 5000
+1     PIN_FLD_MAX_TIME        INT [0] 0
+1     PIN_FLD_HOTLIST_FILENAME    STR [0] "hotlist"
+1     PIN_FLD_MONITOR_FILENAME    STR [0] "monitor"
+1     PIN_FLD_OBJ_TYPE        STR [0] "/config/mta"
+1     PIN_FLD_LOGFILE         STR [0] "/home/pin/opt/portal/7.5/mso/bin/mso_mta_job_processor.pinlog"
+1     PIN_FLD_LOGLEVEL        INT [0] 3
+0 PIN_FLD_SEARCH_FLIST SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_SEARCH_RESULTS SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_EXTENDED_INFO SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_OPERATION_INFO SUBSTRUCT [0] allocated 20, used 5
+1     PIN_FLD_PID             INT [0] 6148
+1     PIN_FLD_HOSTNAME        STR [0] "pre-prod2.hathway.com"
+1     PIN_FLD_START_T      TSTAMP [0] (1551957204) Thu Mar  7 16:43:24 2019
+1     PIN_FLD_END_T        TSTAMP [0] (1551957204) Thu Mar  7 16:43:24 2019
+1     PIN_FLD_ERROR_INFO    ARRAY [0] allocated 20, used 5
+2         PIN_FLD_ERROR_NUM       INT [0] 0
+2         PIN_FLD_SYS_ERROR_NUM    INT [0] 1
+2         PIN_FLD_ERROR_CODE      STR [0] "PIN_ERR_NAP_CONNECT_FAILED"
+2         PIN_FLD_ERROR_DESCR     STR [0] "\t            <location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>\n\t            <field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>\n\t            <facility=0 msg_id=0 version=0>\n"
+2         PIN_FLD_TRACKING_ID     STR [0] "1:pre-prod2.hathway.com:mso_bill_correction:6148:-140962080:0:1551957204:0"
+D Thu Mar  7 16:43:30 2019  <no machine>  mso_bill_correction:6189  pin_mta_conf.c:668 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:1
+	pin_mta_convert_cmdline_options_to_flist parameters flist
+# number of field entries allocated 20, used 0
+D Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcpst.c(86):2359 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	(6189): SSL disabled
+W Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcpst.c(86):393 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	connect to host=172.20.20.45, port=41969 FAILED, err=111
+W Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcpst.c(86):2010 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	connect to host=172.20.20.45, port=41969 FAILED,  returned ebufp->pin_err=27
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcpst.c(86):2050 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	(6189): pcp_connect(), connecting - failed
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcm.c(58):192 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pcm_conn.c(6):282 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	pcm_connect: bad pcm_context_open, err 27
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pin_mta.c:1907 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	pcm_connect error
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+D Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pin_mta.c:3144 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	List of call back API functions: 
+	pin_mta_config                  0x804bc64
+	pin_mta_post_config             0
+	pin_mta_usage                   0x804c88a
+	pin_mta_post_usage              0x804caa6
+	pin_mta_init_app                0
+	pin_mta_post_init_app           0
+	pin_mta_init_search             0x804cca5
+	pin_mta_post_init_search        0
+	pin_mta_tune                    0
+	pin_mta_post_tune               0
+	pin_mta_job_done                0
+	pin_mta_post_job_done           0
+	pin_mta_exit                    0
+	pin_mta_post_exit               0
+	pin_mta_worker_init             0
+	pin_mta_post_worker_init        0
+	pin_mta_worker_job              0x804d3fe
+	pin_mta_post_worker_job         0
+	pin_mta_worker_opcode           0x804d5d1
+	pin_mta_worker_job_done         0
+	pin_mta_post_worker_job_done    0
+	pin_mta_worker_exit             0
+	pin_mta_post_worker_exit        0
+	pin_mta_init_job                0
+	pin_mta_init_hotlist            0
+	pin_mta_exec_work_unit          0
+	pin_mta_cleanup_job             0
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pin_mta.c:2120 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	system error
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Thu Mar  7 16:43:30 2019  pre-prod2.hathway.com  mso_bill_correction:6189  pin_mta.c:2146 1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0
+	Application global flist at exit
+# number of field entries allocated 20, used 6
+0 PIN_FLD_CONFIG_OBJ   SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_APPLICATION_INFO SUBSTRUCT [0] allocated 20, used 15
+1     PIN_FLD_NAME            STR [0] "mso_bill_correction"
+1     PIN_FLD_CHILDREN        INT [0] 50
+1     PIN_FLD_STEP_SIZE       INT [0] 10000
+1     PIN_FLD_BATCH_SIZE      INT [0] 500
+1     PIN_FLD_FETCH_SIZE      INT [0] 50000
+1     PIN_FLD_SLEEP_INTERVAL    INT [0] 60
+1     PIN_FLD_NUM_RETRIES     INT [0] 0
+1     PIN_FLD_FLAGS           INT [0] 0
+1     PIN_FLD_MAX_ERROR       INT [0] 5000
+1     PIN_FLD_MAX_TIME        INT [0] 0
+1     PIN_FLD_HOTLIST_FILENAME    STR [0] "hotlist"
+1     PIN_FLD_MONITOR_FILENAME    STR [0] "monitor"
+1     PIN_FLD_OBJ_TYPE        STR [0] "/config/mta"
+1     PIN_FLD_LOGFILE         STR [0] "/home/pin/opt/portal/7.5/mso/bin/mso_mta_job_processor.pinlog"
+1     PIN_FLD_LOGLEVEL        INT [0] 3
+0 PIN_FLD_SEARCH_FLIST SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_SEARCH_RESULTS SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_EXTENDED_INFO SUBSTRUCT [0] allocated 20, used 0
+0 PIN_FLD_OPERATION_INFO SUBSTRUCT [0] allocated 20, used 5
+1     PIN_FLD_PID             INT [0] 6189
+1     PIN_FLD_HOSTNAME        STR [0] "pre-prod2.hathway.com"
+1     PIN_FLD_START_T      TSTAMP [0] (1551957210) Thu Mar  7 16:43:30 2019
+1     PIN_FLD_END_T        TSTAMP [0] (1551957210) Thu Mar  7 16:43:30 2019
+1     PIN_FLD_ERROR_INFO    ARRAY [0] allocated 20, used 5
+2         PIN_FLD_ERROR_NUM       INT [0] 0
+2         PIN_FLD_SYS_ERROR_NUM    INT [0] 1
+2         PIN_FLD_ERROR_CODE      STR [0] "PIN_ERR_NAP_CONNECT_FAILED"
+2         PIN_FLD_ERROR_DESCR     STR [0] "\t            <location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>\n\t            <field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>\n\t            <facility=0 msg_id=0 version=0>\n"
+2         PIN_FLD_TRACKING_ID     STR [0] "1:pre-prod2.hathway.com:mso_bill_correction:6189:-141609248:0:1551957210:0"

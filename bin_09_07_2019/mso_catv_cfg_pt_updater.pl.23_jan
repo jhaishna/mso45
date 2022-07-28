@@ -1,0 +1,566 @@
+#!/home/pin/opt/portal/7.5/ThirdParty/perl/5.8.0/bin/perl
+
+use pcmif;
+use Sys::Hostname;
+use File::Copy;
+use File::Basename;
+use File::Path;
+
+$SEVERE = 0;
+$ERROR = 1;
+$INFO = 2;
+$DEBUG = 3;
+
+$args = $#ARGV + 1;
+#foreach (@ARGV) {
+#        print "$_\n";
+#}
+
+
+#======================================================
+# Input parameter validation
+#======================================================
+if($#ARGV != 1)
+{
+#        print "\nInvalid input parameter";
+        print "\nUsage: mso_catv_cfg_pt_loader.pl -input <input file name> ";
+        exit 1;
+}
+
+if ( $ARGV[0] ne '-input' )
+{
+#        print "Input parameter validation error\n";
+        print "\nUsage: mso_catv_cfg_pt_loader.pl -input <input file name> ";
+        exit 1;
+}
+
+my $input_file_name	=  $ARGV[1];
+
+#======================================================
+# Read the configuration file and
+# get the loglevel and  opcode number
+#======================================================
+$conf_file = "./pin.conf";
+open (CONF, $conf_file) || ( print "\nSEVERE: Configuration file does not exist.. Exiting\n" and  exit 1 );
+while (<CONF>) {
+    $conf = $_ ;
+    if ($conf  =~ /mso_catv_cfg_pt_updater/ ) {
+
+        #if ($conf  =~ /$ARGV[1] opcode/) {
+        if ($conf  =~ /@object_values[3] opcode/) {
+            @conf_values = split(/ /,$conf);
+            $opcode =  @conf_values[4];
+                        #printf( " conf values \n  $opcode");
+        }
+        elsif ($conf  =~ /loglevel/ ) {
+            @conf_values = split(/ /,$conf);
+            $LOGLEVEL =  @conf_values[3];
+        }
+    }
+}
+
+#======================================================
+# Set path for template file, flist file, input file
+# log file, reject file and error file 
+#======================================================
+$input_file    = "./data/input/" .$ARGV[1];
+$log_file      =  "./log/" . $input_file_name . ".log";
+$error_file    = "./data/error/" . $input_file_name . ".error";   # specific record which failed during processing
+
+open( INP, $input_file)     || ( print "\nSEVERE: Input file does not exist.. Exiting\n" and  exit 1 );
+
+#===========================================================
+# Insanity check if the input file is already processed.
+# Check log file, reject file or error file already exist
+#==========================================================
+if (-e $error_file ) {
+    print "\nSEVERE: Error file $error_file already exist. Please change the input Input file name or backup the error file.. Exiting\n" ;  
+    exit 1 
+}
+if (-e $log_file ) {
+    print "\nSEVERE: Log file $log_file already exist. Please change the input Input file name or backup the log file.. Exiting\n" ;
+    exit 1
+}
+
+open ( LOG, ">$log_file")   || ( print "\nSEVERE: Can't open log file '$log_file' for writting.. Exiting\n" and  exit 1);
+
+open ( ERROR , ">$error_file")|| ( print "\nSEVERE: Can't open error file for writting.. Exiting\n" and  exit 1);
+
+#======================================================
+# For information purpose
+#======================================================
+print "\nProcessing Input file = $input_file";
+
+#
+# Get an ebuf for error reporting.
+#
+$ebufp = pcmif::pcm_perl_new_ebuf();
+my $db_no = 1;
+
+# Do a pcm_connect(), $db_no is a return.
+  
+$pcm_ctxp = pcmif::pcm_perl_connect($db_no, $ebufp);
+  
+  
+# Convert an ebuf to a &log $DEBUG,able string.
+$ebp1 = pcmif::pcm_perl_ebuf_to_str($ebufp);
+  
+# Check for errors. Always do this.
+if (pcmif::pcm_perl_is_err($ebufp)) 
+{
+    pcmif::pcm_perl_print_ebuf($ebufp);
+    exit(1);
+} 
+else 
+{
+    #&log $DEBUG, "back from pcm_connect()\n";
+}
+
+
+#=====================================================
+# Variables used to report processing summary
+#=====================================================
+$total_no_of_records = 0;       # total number of detail record
+$parse_error  = 0;              # detail records failed in parsing, record level validation
+$field_validation_error = 0;    # detail records failed in fields level validation
+$opcode_error = 0;              # error in create obj execution
+$success_count = 0;              # Successfully processed record
+$no_update_count = 0;              # Successfully processed record
+
+
+#======================================================
+# Read the input file line by line
+#======================================================
+$line = <INP>;
+while ($line) 
+{
+	
+    $flg_existing            = 0;
+    $flg_update_ca           = 0;
+    $flg_update_node         = 0;
+    $flg_update_ca_and_node  = 0;
+
+    if ( $line =~ m/^Header/ )
+    {
+        #======================================================
+        # Ignore the header except of devices            
+        #         DO NOTHING      
+        #======================================================
+        
+    }
+    elsif (  $line =~ m/^[#,\n]/ )
+    {
+        #======================================================
+        # Ignore Empty line and lines starting with hash (#)
+        #         DO NOTHING
+        #======================================================
+    }
+    else 
+    {
+        #======================================================
+        # Process Detail record
+        #======================================================
+        $total_no_of_records = $total_no_of_records + 1;
+
+        my @values = split(/,/, $line);
+
+        #======================================================
+        # Record level validation
+        #======================================================
+        if ( @values != 3)
+        {
+            $parse_error = $parse_error + 1;
+            $line =~ s/\n//;
+            $line = $line . ",Incorrect number of field for the record\n";
+            print ERROR "$line";
+            goto NEXT_RECORD;
+        }
+
+
+        $order_type = "0.0.0.1 /mso_cfg_catv_pt" . " -1";
+        ($PROV_TAG,$CA_ID,$NODE) = split(/,/, $line);
+
+        $PROV_TAG = trim($PROV_TAG);
+        $CA_ID = trim($CA_ID);
+        $NODE = trim($NODE);
+
+        if (  !(length $PROV_TAG > 0  and 
+                length $CA_ID > 0 and 
+                length $NODE > 0 ) ) 
+        {
+            $field_validation_error = $field_validation_error + 1;
+            $line =~ s/\n//;
+            $line = $line . ",One or more fields are null in the record\n";
+            print ERROR "$line";
+            goto NEXT_RECORD;
+        }
+
+	#================================================
+	# if the combination of PROV_TAG,CA_ID and NODE
+	#  	already exist then skip the record
+	#================================================
+        my $search_flist = << "END"
+0 PIN_FLD_POID              POID [0]  0.0.0.1 /search -1 
+0 PIN_FLD_FLAGS             INT [0] 256 
+0 PIN_FLD_TEMPLATE                  STR [0] "select X from /mso_cfg_catv_pt where F1 = V1 " 
+0 PIN_FLD_ARGS                    ARRAY [1] 
+1   PIN_FLD_PROVISIONING_TAG        STR [0] "$PROV_TAG"
+0 PIN_FLD_RESULTS           ARRAY [*] NULL
+END
+;
+
+#&log( $DEBUG, "search_flist:\n$search_flist");
+
+        # Convert the flist string into an actual FList
+        $search_flistp = pcmif::pin_perl_str_to_flist($search_flist, $db_no, $ebufp);
+        if (pcmif::pcm_perl_is_err($ebufp))
+        {
+                $parse_error = $parse_error + 1;
+                $line =~ s/\n//;
+                $line = $line . ",Search Provisioning tag failed for Detail record\n";
+                print ERROR "$line";
+                #==============================================
+                # Destroy and create a new error buffer
+                # Break and process next line
+                #==============================================
+                pcmif::pcm_perl_destroy_ebuf($ebufp);
+                $ebufp = pcmif::pcm_perl_new_ebuf();
+                goto NEXT_RECORD;
+        }
+
+       $search_out_flistp = pcmif::pcm_perl_op($pcm_ctxp, 7,
+                                                    0, $search_flistp, $ebufp);
+
+       if (pcmif::pcm_perl_is_err($ebufp))
+       {
+           #pcmif::pcm_perl_print_ebuf($ebufp);
+
+           $opcode_error = $opcode_error + 1;
+           $line =~ s/\n//;
+           $line = $line . ",opcode execution failed in search, Please check cm.pinlog for detail\n";
+           print ERROR "$line";
+           #==============================================
+           # Destroy and create a new error buffer
+           # Break and process next line
+           #==============================================
+           pcmif::pin_flist_destroy($search_flistp);
+           pcmif::pcm_perl_destroy_ebuf($ebufp);
+           $ebufp = pcmif::pcm_perl_new_ebuf();
+           goto NEXT_RECORD;
+       }
+
+       $out_flist = pcmif::pin_perl_flist_to_str($search_out_flistp, $ebufp);
+	   #&log ($DEBUG, "0002\n $out_flist");
+
+       #======================================================
+       # Get the result of search
+       #======================================================
+       #@prov_tag_out = split(/\[0\]/, $out_flist);
+       pcmif::pin_flist_destroy($search_flistp);
+       pcmif::pin_flist_destroy($search_out_flistp);
+       # Provisioning tag search complete
+	@catv_pt_data_arr = split('ARRAY', $out_flist);
+	#&log ($DEBUG, "\nno. of elems= ".scalar( @catv_pt_data_arr));
+	$elem_id = -1;
+	$flg_update_ca_and_node = 1;
+	if ( scalar( @catv_pt_data_arr) >2 ) #only when MSO_FLD_CATV_PT_DATA presents
+	{
+		$i = 1;
+		%node_ca_id = ();
+		%node_elem_id = ();
+		foreach my $catv_pt_data (@catv_pt_data_arr) 
+		{
+			$node = "";
+			$ca_id = "";
+			#&log ($DEBUG, "ITERATION:i:".$i);
+			my @lines = split('\n', $catv_pt_data);
+			$j = 1;
+
+			if ($i == 1) {
+				goto CONTINUE;
+			}
+
+			if ($i == 1 ) {
+			}
+
+			if ( $i == 2 && $prov_tag_out ne "" ) {
+			#&log ($DEBUG, "I Continue...");
+				goto CONTINUE;
+			}
+
+			foreach my $line_result(@lines)
+			{
+				#&log ($DEBUG, "ITERATION:  j:".$j);
+				if ($line_result =~ m/^1.*PIN_FLD_POID/ ) 
+				{
+					$line_result =~ s/^\s+//;
+					my @arr = split(/\]/, $line_result);
+					$prov_tag_out = @arr[1];
+					#&log ($DEBUG, "J   Continue...");
+					goto CONTINUE;
+				}
+
+				if ( $line_result =~ m/allocated/ )
+				{
+						$line_result =~ s/^\s+//;
+						my @arr = split(/\[/, $line_result);
+						@arr = split(/\]/, @arr[1]);
+						$elem_id=@arr[0];
+				}
+
+				if ( $line_result =~ m/MSO_FLD_NETWORK_NODE/ )
+				{
+						#print "\nline=$line";
+						$line_result =~ s/^\s+//;
+						#print "\nline=$line";
+						@node_arr = split(' ',$line_result);
+						$node = @node_arr[4];
+						$node =~ s/^"//;
+						$node =~ s/"$//;
+				}
+
+				if ( $line_result =~ m/MSO_FLD_CA_ID/ )
+				{
+						#print "\nline=$line";
+						$line_result =~ s/^\s+//;
+						#print "\nline=$line";
+						@ca_id_arr = split(' ',$line_result);
+						$ca_id = @ca_id_arr[4];
+						$ca_id =~ s/^"//;
+						$ca_id =~ s/"$//;
+				}
+				#Populate hash
+				if($node ne "" && $ca_id ne "" )
+				{
+					$node_ca_id{$node} = $ca_id;
+					$node_elem_id{$node} =$elem_id;
+					#&log ($DEBUG, "J   node_ca_id_NDS=$node_ca_id{NDS}");
+					#&log ($DEBUG, "J   node_ca_id_CISCO=$node_ca_id{CISCO}");
+					#&log ($DEBUG, "J   node_ca_id_CISCO1=$node_ca_id{CISCO1}");
+				}
+			
+			$j = $j + 1;
+			}
+			#&log ($DEBUG, "I node_ca_id_NDS=$node_ca_id{NDS}");
+			#&log ($DEBUG, "I node_ca_id_CISCO=$node_ca_id{CISCO}");
+			#&log ($DEBUG, "I node_ca_id_CISCO1=$node_ca_id{CISCO1}");
+
+
+			#&log ($DEBUG, "\nelem_id=$elem_id");
+			#&log ($DEBUG, "\nca_id=$ca_id"); #From Searching object
+			#&log ($DEBUG, "\nCA_ID=$CA_ID"); #From INPUT File
+			#&log ($DEBUG, "\nnode=$node");
+			#&log ($DEBUG, "\nNODE=$NODE\n");
+	
+		CONTINUE:
+		$i = $i + 1;
+		}
+		#===================================
+		#Pop the hash and compare for update
+		#===================================
+		foreach my $key_of_node (keys %node_ca_id ) 
+		{
+			#&log ($DEBUG, "key_of_node=$key_of_node   NODE=$NODE");
+			if ($key_of_node eq $NODE && $node_ca_id{$key_of_node} eq $CA_ID ) 
+			{
+				$flg_existing = 1;
+				$flg_update_ca_and_node =0;
+			}
+			elsif( $key_of_node eq $NODE && $node_ca_id{$key_of_node} ne $CA_ID )
+			{
+				$flg_update_ca = 1;
+				$flg_update_ca_and_node =0;
+			}
+		}
+	}
+	else
+	{
+		$flg_update_ca_and_node = 1;
+		my @lines = split(/POID \[0\]/, $out_flist);
+		#&log ($DEBUG, "lines[0]=@lines[0]");
+		#&log ($DEBUG, "lines[1]=@lines[1]");
+		#&log ($DEBUG, "lines[2]=@lines[2]");
+		my @arr = split('\n', @lines[2]);
+		$prov_tag_out = @arr[0]; 
+		#&log ($DEBUG, "prov_tag_out=$prov_tag_out");
+	}
+
+	#&log ($DEBUG, "Debug 1");
+	#&log ($DEBUG, "flg_existing=$flg_existing");
+	#&log ($DEBUG, "flg_update_ca=$flg_update_ca");
+	#&log ($DEBUG, "flg_update_node=$flg_update_node");
+	#&log ($DEBUG, "flg_update_ca_and_node=$flg_update_ca_and_node\n");
+     
+       #======================================================
+       # if found then skip the record
+       #======================================================
+       if ($flg_existing == 1 ) 
+       {
+
+           pcmif::pcm_perl_destroy_ebuf($ebufp);
+           $ebufp = pcmif::pcm_perl_new_ebuf();
+           goto NEXT_RECORD;
+       }
+
+
+       #======================================================
+       # Modify if found else create a new one
+       #======================================================
+       #if (length @prov_tag_out[3] > 0 ) 
+       #{
+           #@LCO_out[3] =~ s/\n//;
+
+            #===================================================
+            # mso_mta_job object modify starts here 
+            #===================================================
+if ($flg_update_ca_and_node == 1) 
+{
+	$elem_id = scalar(keys %node_ca_id);
+
+       	$obj_modify_flist = << "END"
+0 PIN_FLD_POID                      POID [0]  $prov_tag_out
+0 PIN_FLD_PROGRAM_NAME               STR [0] "pt_loader"
+0 MSO_FLD_CATV_PT_DATA             ARRAY [$elem_id] allocated 2, used 2
+1     MSO_FLD_CA_ID                  STR [0] "$CA_ID"
+1     MSO_FLD_NETWORK_NODE           STR [0] "$NODE"
+END
+;
+}
+elsif ($flg_update_ca == 1)
+{
+        $obj_modify_flist = << "END"
+0 PIN_FLD_POID                      POID [0]  $prov_tag_out
+0 PIN_FLD_PROGRAM_NAME               STR [0] "pt_loader"
+0 MSO_FLD_CATV_PT_DATA             ARRAY [$node_elem_id{$NODE}] allocated 2, used 2
+1     MSO_FLD_CA_ID                  STR [0] "$CA_ID"
+1     MSO_FLD_NETWORK_NODE           STR [0] "$NODE"
+END
+;
+}
+
+
+#elsif ($flg_update_node == 1 && $alow_flag == 1)
+#{
+#        $obj_modify_flist = << "END"
+#0 PIN_FLD_POID                      POID [0]  $prov_tag_out
+#0 PIN_FLD_PROGRAM_NAME               STR [0] "pt_loader"
+#0 MSO_FLD_CATV_PT_DATA             ARRAY [$elem_id] allocated 2, used 2
+#1     MSO_FLD_CA_ID                  STR [0] "$ca_id"
+#1     MSO_FLD_NETWORK_NODE           STR [0] "$NODE"
+#END
+#;
+#}
+	#&log ($DEBUG, "obj_modify_flist\n$obj_modify_flist");
+
+	if ( $obj_modify_flist ne "" )
+	{
+	    #&log ($DEBUG, "inside IF");
+            # Convert the flist string into an actual FList
+            $obj_modify_flistp = pcmif::pin_perl_str_to_flist($obj_modify_flist, $db_no, $ebufp);
+            if (pcmif::pcm_perl_is_err($ebufp)) 
+            {
+                $parse_error = $parse_error + 1;
+                $line =~ s/\n//;
+                $line = $line . ",Flist conversion failed for Detail record\n";
+                print ERROR "$line";
+                #==============================================
+                # Destroy and create a new error buffer
+                # Break and process next line
+                #==============================================
+                pcmif::pcm_perl_destroy_ebuf($ebufp);
+                $ebufp = pcmif::pcm_perl_new_ebuf();
+                goto NEXT_RECORD;
+            }
+
+            $obj_modify_out_flistp = pcmif::pcm_perl_op($pcm_ctxp, 5,
+                                                     32, $obj_modify_flistp, $ebufp);
+
+            if (pcmif::pcm_perl_is_err($ebufp)) 
+            {
+                $opcode_error = $opcode_error + 1;
+                $line =~ s/\n//;
+                $line = $line . ",opcode execution failed in update, Please check cm.pinlog for detail\n";
+                print ERROR "$line";
+                #==============================================
+                # Destroy and create a new error buffer
+                # Break and process next line
+                #==============================================
+                pcmif::pin_flist_destroy($obj_modify_flistp);
+                pcmif::pcm_perl_destroy_ebuf($ebufp);
+                $ebufp = pcmif::pcm_perl_new_ebuf();
+                goto NEXT_RECORD;
+            }
+
+            $obj_modify_out_flist = pcmif::pin_perl_flist_to_str($obj_modify_out_flistp, $ebufp);
+            pcmif::pin_flist_destroy($obj_modify_flistp);
+            pcmif::pin_flist_destroy($obj_modify_out_flistp);
+     
+       	    $success_count = $success_count + 1;
+	}
+	else
+	{
+	        #&log ($DEBUG, "inside ELSE");
+       		$no_update_count = $no_update_count + 1;
+	}
+    }
+
+	NEXT_RECORD:
+        $line = <INP>;
+}
+
+
+
+CLEANUP:
+#        $success_count = $total_no_of_records - $parse_error - $field_validation_error - $opcode_error;
+    if (pcmif::pcm_perl_is_err($ebufp)) 
+    {
+        print "\n\t\t\t------------------------------------";
+        print "\n\t\t\tError: Procees completed with ERROR";
+        print "\n\t\t\tPlease check log file for detail ERROR";
+        print "\n\t\t\t------------------------------------";
+    }
+    else
+    {
+        print "\n\nProcessing Summary";
+        print "\n\t Total number of records = $total_no_of_records";
+        print "\n\t Records failed in parsing = $parse_error";
+        print "\n\t Records failed in field validation = $field_validation_error";
+        print "\n\t Records failed in opcode execution = $opcode_error";
+        print "\n\t Not updated record count = $no_update_count";
+        print "\n\t Successfully processed record count = $success_count \n";
+
+    }
+
+    close(INP) if (<FILE_IS_OPEN>);
+    close(ERROR) if (<FILE_IS_OPEN>);
+
+
+sub trim($)
+{
+   my $string = shift;
+   $string =~ s/^\s+//;
+   $string =~ s/\s+$//;
+   return $string;
+}
+
+sub ltrim($)
+{
+    my $string = shift;
+    $string =~ s/^\s+//;
+    return $string;
+}
+
+sub rtrim($)
+{
+    my $string = shift;
+    $string =~ s/\s+$//;
+    return $string;
+}
+
+sub log
+{
+    if ($LOGLEVEL >= $_[0] )
+    {
+        print LOG "\n$_[1]";
+    }
+}

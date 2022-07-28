@@ -1,0 +1,4 @@
+/usr/bin/valgrind
+--log-file=/tmp/cm_valgrind.vglog --trace-children=yes
+--demangle=yes --leak-check=full --show-reachable=yes --track-origins=yes
+--track-fds=yes --num-callers=48 ${PINDIR}/mso/bin/cm_weblogic_1

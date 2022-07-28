@@ -1,0 +1,165 @@
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Mon Jan 28 18:49:12 IST 2019
+terminate called after throwing an instance of 'PinDeterminateExc'
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Mon Jan 28 18:50:09 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Mon Jan 28 18:50:50 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Mon Jan 28 18:51:49 IST 2019
+ERROR, pin_str_to_flist(): line 54
+	bad parse for rec_id
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Mon Jan 28 23:34:40 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 01:06:09 IST 2019
+ERROR, pin_str_to_flist(): line 17
+	lvl 9, level 0, ""[]
+ERROR, pin_str_to_flist(): line 52
+	lvl 2, level 1, "MSO_FLD_CODE"[„ê3]
+ERROR, pin_str_to_flist(): line 17
+	bad scan for flist level - bufp=0x0xaae3e10, endp=0x0xaae3e12, *bufp=0xffffffa8
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 15:48:09 IST 2019
+ERROR, pin_str_to_flist(): line 18
+	bad scan for flist level - bufp=0x0xa885c17, endp=0x0xa885c1d, *bufp=0x4e
+CM(6283): dump_it(): op 9, opflags 0
+# number of field entries allocated 20, used 5
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /service/pcm_client 1 69954667
+0 PIN_FLD_TYPE           ENUM [0] 1
+0 PIN_FLD_RESULT         ENUM [0] 0
+0 PIN_FLD_REASON         ENUM [0] 0
+0 PIN_FLD_SESSION_OBJ    POID [0] 0.0.0.1 /event/session 315357542450120621 0
+CM(6275): dump_it(): op 9, opflags 0
+# number of field entries allocated 20, used 5
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /service/pcm_client 1 69954660
+0 PIN_FLD_TYPE           ENUM [0] 1
+0 PIN_FLD_RESULT         ENUM [0] 0
+0 PIN_FLD_REASON         ENUM [0] 0
+0 PIN_FLD_SESSION_OBJ    POID [0] 0.0.0.1 /event/session 315357542449336697 0
+CM(6291): dump_it(): op 9, opflags 0
+# number of field entries allocated 20, used 5
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /service/pcm_client 1 69954660
+0 PIN_FLD_TYPE           ENUM [0] 1
+0 PIN_FLD_RESULT         ENUM [0] 0
+0 PIN_FLD_REASON         ENUM [0] 0
+0 PIN_FLD_SESSION_OBJ    POID [0] 0.0.0.1 /event/session 315357542450381738 0
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:09:30 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:12:33 IST 2019
+CM(19602): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:15:20 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:15:53 IST 2019
+CM(27854): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:22:28 IST 2019
+CM(11094): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:23:23 IST 2019
+CM(13365): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:27:59 IST 2019
+CM(24929): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 17:30:19 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 19:23:14 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 20:28:00 IST 2019
+terminate called after throwing an instance of 'PinDeterminateExc'
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 20:30:43 IST 2019
+CM(392): bad bind(2)
+   errno: 98
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 20:40:45 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Wed Jan 30 23:49:18 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Thu Jan 31 00:11:50 IST 2019
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Thu Jan 31 02:50:25 IST 2019
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904684
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904684, now it is 1548904702
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548904702
+
+ERROR, pin_str_to_flist(): line 90
+	lvl 1, level 0, ""[]
+ERROR, pin_str_to_flist(): line 63
+	bad scan for flist level - bufp=0x0xa8a6da8, endp=0x0xa8a6daa, *bufp=0x78
+ERROR, pin_str_to_flist(): line 18
+	bad scan for flist level - bufp=0x0xae82e90, endp=0x0xae82e92, *bufp=0x18
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548849246, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+Re-reading the pin.conf file "./pin.conf" since it has changed. Previous file mod time was 1548904702, now it is 1548925860
+
+started /home/pin/opt/portal/7.5/mso/bin/cm_batch at...
+Thu Jan 31 14:43:01 IST 2019

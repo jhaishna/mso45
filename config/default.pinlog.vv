@@ -1,0 +1,97 @@
+W Thu Oct  1 00:00:01 2015  pre-brm.hathway.com  testnap:5824  pcpst.c(86):393 1:pre-brm.hathway.com:testnap:5824:-141449504:0:1445169475:0
+	connect to host=pre-brm.hathway.com, port=31961 FAILED, err=111
+W Thu Oct  1 00:00:01 2015  pre-brm.hathway.com  testnap:5824  pcpst.c(86):2010 1:pre-brm.hathway.com:testnap:5824:-141449504:0:1445169475:0
+	connect to host=pre-brm.hathway.com, port=31961 FAILED,  returned ebufp->pin_err=27
+E Thu Oct  1 00:00:01 2015  pre-brm.hathway.com  testnap:5824  pcpst.c(86):2050 1:pre-brm.hathway.com:testnap:5824:-141449504:0:1445169475:0
+	(5824): pcp_connect(), connecting - failed
+E Thu Oct  1 00:00:01 2015  pre-brm.hathway.com  testnap:5824  pcm.c(58):192 1:pre-brm.hathway.com:testnap:5824:-141449504:0:1445169475:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Thu Oct  1 00:00:01 2015  pre-brm.hathway.com  testnap:5824  pcm_conn.c(6):282 1:pre-brm.hathway.com:testnap:5824:-141449504:0:1445169475:0
+	pcm_connect: bad pcm_context_open, err 27
+Error 10/18/15 5:36:28:0275 PM ( 1445169988275 )  T:main JavaLog EBufException thrown 1:pre-brm:UnknownProgramName:0:main:0:1445169988:0
+	ERR_NAP_CONNECT_FAILED
+ERR_NAP_CONNECT_FAILED
+java.lang.String:0: ErrBuf Fields:
+Error=ERR_NAP_CONNECT_FAILED    Loc=PCP
+Field=UnknownField0    Rec=0    reserved=0
+Facility=0    MessageID=0    Time=5:36 PM    Version=0    Reserved2=0
+Args=<none>
+Nested Error:
+<none>
+
+	at com.portal.pcm.PCPConnection.connect(Unknown Source)
+	at com.portal.pcm.PCPConnection.reconnect(Unknown Source)
+	at com.portal.pcm.PCPContext.<init>(Unknown Source)
+	at com.portal.pcm.PortalContext.open(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.common.LoadPinConfig.processConfig(LoadPinConfig.java:63)
+	at com.portal.common.LoadDeviceState.processConfig(LoadDeviceState.java:32)
+	at com.portal.common.LoadDeviceState.main(LoadDeviceState.java:86)
+
+Error 10/18/15 5:36:28:0279 PM ( 1445169988279 )  T:main JavaLog LoadDeviceState 1:pre-brm:UnknownProgramName:0:main:0:1445169988:0
+	ERR_NAP_CONNECT_FAILED
+ERR_NAP_CONNECT_FAILED
+java.lang.String:0: ErrBuf Fields:
+Error=ERR_NAP_CONNECT_FAILED    Loc=PCP
+Field=UnknownField0    Rec=0    reserved=0
+Facility=0    MessageID=0    Time=5:36 PM    Version=0    Reserved2=0
+Args=<none>
+Nested Error:
+<none>
+
+	at com.portal.pcm.PCPConnection.connect(Unknown Source)
+	at com.portal.pcm.PCPConnection.reconnect(Unknown Source)
+	at com.portal.pcm.PCPContext.<init>(Unknown Source)
+	at com.portal.pcm.PortalContext.open(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.common.LoadPinConfig.processConfig(LoadPinConfig.java:63)
+	at com.portal.common.LoadDeviceState.processConfig(LoadDeviceState.java:32)
+	at com.portal.common.LoadDeviceState.main(LoadDeviceState.java:86)
+
+Error 10/18/15 5:37:11:0485 PM ( 1445170031486 )  T:main JavaLog EBufException thrown 1:pre-brm:UnknownProgramName:0:main:0:1445170031:0
+	ERR_NAP_CONNECT_FAILED
+ERR_NAP_CONNECT_FAILED
+java.lang.String:0: ErrBuf Fields:
+Error=ERR_NAP_CONNECT_FAILED    Loc=PCP
+Field=UnknownField0    Rec=0    reserved=0
+Facility=0    MessageID=0    Time=5:37 PM    Version=0    Reserved2=0
+Args=<none>
+Nested Error:
+<none>
+
+	at com.portal.pcm.PCPConnection.connect(Unknown Source)
+	at com.portal.pcm.PCPConnection.reconnect(Unknown Source)
+	at com.portal.pcm.PCPContext.<init>(Unknown Source)
+	at com.portal.pcm.PortalContext.open(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.common.LoadPinConfig.processConfig(LoadPinConfig.java:63)
+	at com.portal.common.LoadDeviceState.processConfig(LoadDeviceState.java:32)
+	at com.portal.common.LoadDeviceState.main(LoadDeviceState.java:86)
+
+Error 10/18/15 5:37:11:0488 PM ( 1445170031488 )  T:main JavaLog LoadDeviceState 1:pre-brm:UnknownProgramName:0:main:0:1445170031:0
+	ERR_NAP_CONNECT_FAILED
+ERR_NAP_CONNECT_FAILED
+java.lang.String:0: ErrBuf Fields:
+Error=ERR_NAP_CONNECT_FAILED    Loc=PCP
+Field=UnknownField0    Rec=0    reserved=0
+Facility=0    MessageID=0    Time=5:37 PM    Version=0    Reserved2=0
+Args=<none>
+Nested Error:
+<none>
+
+	at com.portal.pcm.PCPConnection.connect(Unknown Source)
+	at com.portal.pcm.PCPConnection.reconnect(Unknown Source)
+	at com.portal.pcm.PCPContext.<init>(Unknown Source)
+	at com.portal.pcm.PortalContext.open(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.pcm.PortalContext.connect(Unknown Source)
+	at com.portal.common.LoadPinConfig.processConfig(LoadPinConfig.java:63)
+	at com.portal.common.LoadDeviceState.processConfig(LoadDeviceState.java:32)
+	at com.portal.common.LoadDeviceState.main(LoadDeviceState.java:86)
+

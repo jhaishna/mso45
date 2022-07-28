@@ -1,0 +1,177 @@
+#
+#=======================================================================
+#
+# @(#)% % 
+# 
+# Copyright (c) 2001, 2009, Oracle and/or its affiliates. All rights reserved. 
+# 
+# This material is the confidential property of Oracle Corporation
+# or its licensors and may be used, reproduced, stored or transmitted
+# only in accordance with a valid Oracle license or sublicense agreement.
+#
+#
+#======================================================================
+
+#======================================================================
+# This is the input file that the load_pin_config_business_type
+# utility reads to load business types definitions into the Infranet database.
+#
+# Use this file to define all the business types you want on your system.
+#
+# The format is an integer value plus a quoated string.  The string may be 
+# placed on several lines by closing the quote before the carage return and
+# reopening it on the next line such as
+# 10 "this is the 10th"
+#    "Business type";
+# always end a business type def with a ';'.
+# the total string length must be less than 1024 characters.
+
+#======================================================================
+# Hathway Customisation:
+#    Considering from leftmost digit--
+#	First 2 digits:  Account Type  
+#	Next  2 digits:  Subscriber type
+#	Next  1 digits:  Account Model
+#	Next  3 digits:  Reserved 
+#
+#	Example Business Type Value 12181000 means
+#	"SUBSCRIBER|STATE BANK OF INDIA|Residential|Reserved"
+#       12 18 1 000
+#       Account Type=SUBSCRIBER=12
+#	Subscriber type=STATE BANK OF INDIA=18
+#	Account Model=Residential=1
+#	
+#======================================================================
+1    "Consumer";
+2    "Business";
+10000000	"OTHERS|Unknown|Unknown";
+11000000	"CSR_ADMIN|Unknown|Unknown";
+12000000	"CSR|Unknown|Unknown";
+12410000	"CSR|PAYMENT CLERK|Unknown";
+13000000	"LCO|Unknown|Unknown";
+14000000	"JV|Unknown|Unknown";
+15000000	"DISTRIBUTOR|Unknown|Unknown";
+16000000	"SUB_DISTRIBUTOR|Unknown|Unknown";
+17000000	"OPERATION|Unknown|Unknown";
+18000000	"FIELD_SERVICE|Unknown|Unknown";
+19000000	"LOGISTICS|Unknown|Unknown";
+20000000	"COLLECTION_AGENT|Unknown|Unknown";
+21000000	"SALES_PERSON|Unknown|Unknown";
+22000000	"SERVICE_PROVIDER|Unknown|Unknown";
+99011000	"SUBSCRIBER|24Online Leased Line Subscriber|Residential";
+99021000	"SUBSCRIBER|24Online Normal Subscriber|Residential";
+99031000	"SUBSCRIBER|CYBER CAFE|Residential";
+99041000	"SUBSCRIBER|OPERATOR|Residential";
+99051000	"SUBSCRIBER|HATHWAY OFF|Residential";
+99061000	"SUBSCRIBER|HATHWAY EMPLOYEE|Residential";
+99071000	"SUBSCRIBER|VIP RESIDENCE|Residential";
+99081000	"SUBSCRIBER|VIP CORPORATE|Residential";
+99091000	"SUBSCRIBER|NORMAL RESIDENCE|Residential";
+99101000	"SUBSCRIBER|NORMAL CORPORATE|Residential";
+99111000	"SUBSCRIBER|DEMO SUBSCRIBER|Residential";
+99121000	"SUBSCRIBER|MONEY BACK|Residential";
+99131000	"SUBSCRIBER|ARMY CUST|Residential";
+99141000	"SUBSCRIBER|GALLELO CUST|Residential";
+99151000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Residential";
+99161000	"SUBSCRIBER|MAKERS CHAMBER|Residential";
+99171000	"SUBSCRIBER|ACROPOLIS|Residential";
+99181000	"SUBSCRIBER|STATE BANK OF INDIA|Residential";
+99191000	"SUBSCRIBER|RENTAL RESIDENCY|Residential";
+99201000	"SUBSCRIBER|TOPPER LEARNING|Residential";
+99211000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Residential";
+99221000	"SUBSCRIBER|FIBER2 Point to Point connection|Residential";
+99231000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Residential";
+99241000	"SUBSCRIBER|SME Gold/Silver/SME customers|Residential";
+99251000	"SUBSCRIBER|COMBO HD|Residential";
+99261000	"SUBSCRIBER|COMBO STB|Residential";
+99271000	"SUBSCRIBER|RESIDENTIAL|Residential";
+99281000	"SUBSCRIBER|FREE|Residential";
+99291000	"SUBSCRIBER|VIP|Residential";
+99301000	"SUBSCRIBER|HOTEL|Residential";
+99311000	"SUBSCRIBER|SOCIETY|Residential";
+99321000	"SUBSCRIBER|COMMERCIAL|Residential";
+99331000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Residential";
+99341000	"SUBSCRIBER|DEMO|Residential";
+99351000	"SUBSCRIBER|HATHWAY EMPLOYEE|Residential";
+99361000	"SUBSCRIBER|HATHWAY OFFICE|Residential";
+99371000	"SUBSCRIBER|DAS|Residential";
+99381000	"SUBSCRIBER|FORMAT|Residential";
+99012000	"SUBSCRIBER|24Online Leased Line Subscriber|Commercial";
+99022000	"SUBSCRIBER|24Online Normal Subscriber|Commercial";
+99032000	"SUBSCRIBER|CYBER CAFE|Commercial";
+99042000	"SUBSCRIBER|OPERATOR|Commercial";
+99052000	"SUBSCRIBER|HATHWAY OFF|Commercial";
+99062000	"SUBSCRIBER|HATHWAY EMPLOYEE|Commercial";
+99072000	"SUBSCRIBER|VIP RESIDENCE|Commercial";
+99082000	"SUBSCRIBER|VIP CORPORATE|Commercial";
+99092000	"SUBSCRIBER|NORMAL RESIDENCE|Commercial";
+99102000	"SUBSCRIBER|NORMAL CORPORATE|Commercial";
+99112000	"SUBSCRIBER|DEMO SUBSCRIBER|Commercial";
+99122000	"SUBSCRIBER|MONEY BACK|Commercial";
+99132000	"SUBSCRIBER|ARMY CUST|Commercial";
+99142000	"SUBSCRIBER|GALLELO CUST|Commercial";
+99152000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Commercial";
+99162000	"SUBSCRIBER|MAKERS CHAMBER|Commercial";
+99172000	"SUBSCRIBER|ACROPOLIS|Commercial";
+99182000	"SUBSCRIBER|STATE BANK OF INDIA|Commercial";
+99192000	"SUBSCRIBER|RENTAL RESIDENCY|Commercial";
+99202000	"SUBSCRIBER|TOPPER LEARNING|Commercial";
+99212000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Commercial";
+99222000	"SUBSCRIBER|FIBER2 Point to Point connection|Commercial";
+99232000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Commercial";
+99242000	"SUBSCRIBER|SME Gold/Silver/SME customers|Commercial";
+99252000	"SUBSCRIBER|COMBO HD|Commercial";
+99262000	"SUBSCRIBER|COMBO STB|Commercial";
+99272000	"SUBSCRIBER|RESIDENTIAL|Commercial";
+99282000	"SUBSCRIBER|FREE|Commercial";
+99292000	"SUBSCRIBER|VIP|Commercial";
+99302000	"SUBSCRIBER|HOTEL|Commercial";
+99312000	"SUBSCRIBER|SOCIETY|Commercial";
+99322000	"SUBSCRIBER|COMMERCIAL|Commercial";
+99332000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Commercial";
+99342000	"SUBSCRIBER|DEMO|Commercial";
+99352000	"SUBSCRIBER|HATHWAY EMPLOYEE|Commercial";
+99362000	"SUBSCRIBER|HATHWAY OFFICE|Commercial";
+99372000	"SUBSCRIBER|DAS|Commercial";
+99382000	"SUBSCRIBER|FORMAT|Commercial";
+99392000	"SUBSCRIBER|CORPORATE PARENT|Commercial";
+99402000	"SUBSCRIBER|CORPORATE CHILD|Commercial";
+99412000	"SUBSCRIBER|PAYMENT CLERK|Commercial";
+99013000	"SUBSCRIBER|24Online Leased Line Subscriber|MDU";
+99023000	"SUBSCRIBER|24Online Normal Subscriber|MDU";
+99033000	"SUBSCRIBER|CYBER CAFE|MDU";
+99043000	"SUBSCRIBER|OPERATOR|MDU";
+99053000	"SUBSCRIBER|HATHWAY OFF|MDU";
+99063000	"SUBSCRIBER|HATHWAY EMPLOYEE|MDU";
+99073000	"SUBSCRIBER|VIP RESIDENCE|MDU";
+99083000	"SUBSCRIBER|VIP CORPORATE|MDU";
+99093000	"SUBSCRIBER|NORMAL RESIDENCE|MDU";
+99103000	"SUBSCRIBER|NORMAL CORPORATE|MDU";
+99113000	"SUBSCRIBER|DEMO SUBSCRIBER|MDU";
+99123000	"SUBSCRIBER|MONEY BACK|MDU";
+99133000	"SUBSCRIBER|ARMY CUST|MDU";
+99143000	"SUBSCRIBER|GALLELO CUST|MDU";
+99153000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|MDU";
+99163000	"SUBSCRIBER|MAKERS CHAMBER|MDU";
+99173000	"SUBSCRIBER|ACROPOLIS|MDU";
+99183000	"SUBSCRIBER|STATE BANK OF INDIA|MDU";
+99193000	"SUBSCRIBER|RENTAL RESIDENCY|MDU";
+99203000	"SUBSCRIBER|TOPPER LEARNING|MDU";
+99213000	"SUBSCRIBER|FIBER1 Direct fibre lease line|MDU";
+99223000	"SUBSCRIBER|FIBER2 Point to Point connection|MDU";
+99233000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|MDU";
+99243000	"SUBSCRIBER|SME Gold/Silver/SME customers|MDU";
+99253000	"SUBSCRIBER|COMBO HD|MDU";
+99263000	"SUBSCRIBER|COMBO STB|MDU";
+99273000	"SUBSCRIBER|RESIDENTIAL|MDU";
+99283000	"SUBSCRIBER|FREE|MDU";
+99293000	"SUBSCRIBER|VIP|MDU";
+99303000	"SUBSCRIBER|HOTEL|MDU";
+99313000	"SUBSCRIBER|SOCIETY|MDU";
+99323000	"SUBSCRIBER|COMMERCIAL|MDU";
+99333000	"SUBSCRIBER|RESIDENTIAL SOCIETY|MDU";
+99343000	"SUBSCRIBER|DEMO|MDU";
+99353000	"SUBSCRIBER|HATHWAY EMPLOYEE|MDU";
+99363000	"SUBSCRIBER|HATHWAY OFFICE|MDU";
+99373000	"SUBSCRIBER|DAS|MDU";
+99383000	"SUBSCRIBER|FORMAT|MDU";

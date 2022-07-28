@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><BusinessConfiguration xmlns="http://www.portal.com/schemas/BusinessConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig business_configuration.xsd">
+<BusParamConfiguration>
+<BusParamConfigurationList>
+<ParamClass name="billing" desc="Business logic parameters for Billing">
+<Param>
+<Name>billing_cycle_offset</Name>
+<Desc>
+			The offset from the start of the day for the billing cycle.  This value is in hours and the default is 0 (12 AM). Max 23.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>move_day_forward</Name>
+<Desc>
+			The direction to apply billing when a BDOM is not contained in the month.  The default is to use the first day of the next month.
+			</Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>remove_sponsoree</Name>
+<Desc>
+				Parameter to indicate whether sponsoree account must be removed from sponsor group upon closure of sponsoree account.
+			</Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>prod_end_offset_plan_transition</Name>
+<Desc>
+				The delay (in days) for cancellation of a 2g service when going to a 3g service or vice-versa during plan transition.
+			</Desc>
+<Type>INT</Type>
+<Value>10</Value>
+</Param>
+<Param>
+<Name>generate_journal_epsilon</Name>
+<Desc>
+				Parameter to indicate whether to generate epsilon journal and delta for item
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>apply_cycle_fees_for_bill_now</Name>
+<Desc>
+			Parameter to indicate whether to apply cycle fees during bill now.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>rerate_during_billing</Name>
+<Desc>
+			If delayed CDRs borrow against the free resources already consumed by the new cycle CDRs in the delay period, then the new cycle CDRs need to rerated. This parameter indicates whether during billing, the rerating criteria should be evaluated and rerating triggered. By default, this feature is disabled (0)	
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>auto_triggering_limit</Name>
+<Desc>
+			This parameter indicates a count of days before the next billing time when disabling of auto-triggering of billing is allowed. Value 0 indicates to enable auto-triggering.
+			</Desc>
+<Type>INT</Type>
+<Value>2</Value>
+</Param>
+<Param>
+<Name>validate_discount_dependency</Name>
+<Desc>
+				Parameter to enable exclusion validation for discounts. Default is 0 (disabled).
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>rollover_correction_during_billing</Name>
+<Desc>
+				If delayed CDRs consume free resources in the delay period, then the rollover that happened at the beginning of the delay period might need to be corrected. This parameter indicates whether during billing, the need for rollover correction should be evaluated and the correction recorded. By default, this feature is disabled (0).
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>enable_ara</Name>
+<Desc>
+                         To turn on ARA for out of cycle billing by setting parameter as 1
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>create_two_bill_now_bills_in_delay</Name>
+<Desc>
+                         To enable the creation of 2 Bill_Now bills in delay period set parameter as 1
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>sub_bal_validity</Name>
+<Desc>
+                                This parameter is to define the expiration of sub balance bucket for products during line transfer. The parameter values can be 0 (cut), 1 (maintain), 2 (align). Default is 0 (cut).
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>sequential_cycle_discounting</Name>
+<Desc>
+                         This parameter specifies whether sequential cycle discounting feature is enabled to apply the cycle fee discounts sequentially,possible values are disabled(0) or enabled(1)
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>cache_residency_distinction</Name>
+<Desc>
+                        Parameter to  enable/disable  Object Cache Residency Distinction feature. Default is 0 (disabled)
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>default_business_profile</Name>
+<Desc>
+				The default value of business profile is 0(Convergent) 
+                        </Desc>
+<Type>STR</Type>
+<Value>Convergent</Value>
+</Param>
+<Param>
+<Name>acct_cycle_delay_period</Name>
+<Desc>
+				The cut off period used by rel to determine the item to be used for rated amount assignment. Default is -1 (Undefined)
+                        </Desc>
+<Type>INT</Type>
+<Value>-1</Value>
+</Param>
+<Param>
+<Name>general_ledger_reporting</Name>
+<Desc>
+                                Enable/Disable General Ledger Reporting . The parameter values can be 0 (disabled), 1 (enabled).
+Default is 1 (enabled).
+                        </Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>backdating_past_gl_posted_date</Name>
+<Desc>
+                                Parameter to indicate whether backdating past GL posted date is allowed or not. The parameter values can be 0 (disabled) or 1 (enabled). Default is 0 (disabled).
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>custom_journal_update</Name>
+<Desc>
+                                Enable/disable customization of general ledger journal entries before they are updated in database. Value can be 0 (disabled) or 1 (enabled). Default is 0.
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>perf_advanced_tuning_settings</Name>
+<Desc>
+			This parameter is used to tune the behavior of BRM, especially with respect to performance. Bit fields of the integer value are used to specify the
+			configuration options. Currently, only bits 0 and 1 are used. Bit 0: Controls setting of item number during billing. 
+			Bit 1: Controls updating transfer events during billing.Default value is 0.
+			For more details, refer to BRM documentation.
+		</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>enable_corrective_invoices</Name>
+<Desc>
+			Parameter to indicate that the Corrective Invoicing feature is on. The parameter has two values: 0 - Corrective Invoicing feature is not used (Default), and 1 - Corrective Invoicing feature is used.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>allow_corrective_paid_bills</Name>
+<Desc>
+			Parameter to indicate whether Corrective Bills can be generated for paid bills. The parameter has two values: 0 - do not allow to generate Corrective Bills for paid bills (default), 1 - allow to generate Corrective Bills for paid bills.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>reject_payments_for_previous_bill</Name>
+<Desc>
+			Parameter to indicate whether to reject a payment if the passing bill_no does not coincide with the bill_no from the last bill. The parameter has two values: 0 - accept payment (default), 1 - reject payment.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>corrective_bill_threshold</Name>
+<Desc>
+			Parameter to indicate the minimum correction amount for which a Corrective bills is allowed. The parameter value is an integer number. Value 0 (default) means that validation for minimum correction amount is not provided.
+			</Desc>
+<Type>DECIMAL</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>generate_corrective_bill_no</Name>
+<Desc>
+			Parameter to indicate which pin_sequence to use in order to generate a bill number for a corrective bill. Values are 0 (use pin_sequence for the regular bill) or 1 (use pin_sequence for the corrective bill, this is default).
+			</Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>refresh_exchange_rate</Name>
+<Desc>
+                        This parameter indicates the refresh rate interval at which the exchange rates from the BRM database is refreshed during billing.
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>apply_ar_parent_cycle_fee_first</Name>
+<Desc>
+                                Enable/Disable the application of cycle fee for AR parent first, prior to applying for the subordinate. The parameter values can be disabled (0), 1 (enabled). Default is 0 (disabled).
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>generate_bill_for_child_billnow</Name>
+<Desc>
+                        This parameter is used to suppress or generate bill objects for non paying child accounts during bill now
+                </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>split_sponsor_item_by_member</Name>
+<Desc>
+				This parameter enables flexible sponsorship item creation. By default it is disabled(0) and only /item/sponsor will be created at account level.When enabled(3) subtype of /item/sponsor may be created and these items will point to member services. Additionally this parameter may only be switched on for onlyRealTime(1) or onlyBatch(2).
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>skip_check_for_subordinates_billed</Name>
+<Desc>
+			Parameter allows to enable/disable the check, whether billing parent should be billed or not provided Subordinate is billed successfully. If disabled(0) then parent billing will fail if subordinate billing has issues. If enabled(1) then skip the above check.
+                        </Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>staged_billing_fee_processing</Name>
+<Desc>
+			This parameter enables cycle fee processing in parallel by service. Valid values: 0 - Disabled (Default), 1 - Parallel by service, 2 - Parallel by service with enforcement of fee processing before billing, 3 - Parallel by service with fees aggregated to account level item, 4 - Parallel by service with enforcement of fee processing before billing and fees aggregated to account level item.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>noncurrency_resource_journaling</Name>
+<Desc>
+				Creation of journal for the event with non-currency resource id will be decided based on this parameter value. i.e All or None or +:XXX,YYY or -:XXX,YYY. where XXX and YYY are resource ids. The default value is 'All'.
+			</Desc>
+<Type>STR</Type>
+<Value>All</Value>
+</Param>
+<Param>
+<Name>apply_reactivation_fee</Name>
+<Desc>
+			This parameter is for applying the reactivation fee if the reactivation period is more than 90 days in a single year.
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+</ParamClass>
+</BusParamConfigurationList>
+</BusParamConfiguration>
+</BusinessConfiguration>

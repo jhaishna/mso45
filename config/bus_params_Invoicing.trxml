@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><BusinessConfiguration xmlns="http://www.portal.com/schemas/BusinessConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig business_configuration.xsd">
+<BusParamConfiguration>
+<BusParamConfigurationList>
+<ParamClass name="Invoicing" desc="Business logic parameters for Invoicing">
+<Param>
+<Name>ADST_Tax_Handle</Name>
+<Desc>
+				Enable/Disable ADST Tax handling Feature for Invoicing. 
+				Parameter values can be 0 (disable), 1 (enable). Default is 0 (disabled).
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>threshold_subords_summary</Name>
+<Desc>
+				Threshold for number of subordinates for summary invoices.
+				(0=default(no split invoices for hierarchy))
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>threshold_subords_detail</Name>
+<Desc>
+				Threshold for number of subordinates for detail invoice.
+				(0=default(no split invoices for hierarchy))
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>sub_ar_items_included</Name>
+<Desc>
+				Indicates whether Subordinate account invoice includes AR items or not.
+				(0- default , AR items not included and 1 - AR items included)
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>promotion_detail_display</Name>
+<Desc>
+                                Indicates whether promotion details should be shown on the invoice.
+                                (1- default , show promotion details and 0 - Do not show promotion details)
+                        </Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>enable_invoicing_integration</Name>
+<Desc>
+				Enable/Disable BRM-BIP integration for final invoice document generation.
+				Parameter values can be 0 (disable), 1 (enable). Default is 0 (disabled)	
+                        </Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>invoice_storage_type</Name>
+<Desc>
+                               	Format of invoice which needs to be stored in BRM database.
+				Parameter values can be 0 (flist), 1 (xml). Default is 0 (flist)	 
+                        </Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>in_operator_size</Name>
+<Desc>
+				IN operator size in sql statement limited by string length.
+				Parameter values can be based on database capacity. 
+				Default value is 500.The value can be less than 500 but cannot be greater than 500.
+                        </Desc>
+<Type>INT</Type>
+<Value>500</Value>
+</Param>
+</ParamClass>
+</BusParamConfigurationList>
+</BusParamConfiguration>
+</BusinessConfiguration>

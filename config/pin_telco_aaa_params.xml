@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!--
+================================================================
+Copyright (c) 2006 Oracle. All rights reserved.
+
+This material is the confidential property of Oracle Corporation or its 
+licensors and may be used, reproduced, stored or transmitted only in 
+accordance with a valid Oracle license or sublicense agreement.
+================================================================
+-->
+
+<TelcoAAAParamsConfiguration xmlns="http://www.portal.com/PortalXMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.portal.com/PortalXMLSchema /apps/pinpdc1/opt/portal/7.5/xsd/pin_telco_aaa_params.xsd">
+  <TelcoInfoList>
+    <ElemType>/config/aaa/broadband</ElemType>
+    <TelcoInfo>
+      <DeletedFlag>3</DeletedFlag>
+      <ExpirationInterval>0</ExpirationInterval>
+      <DuplicateCheckType>2</DuplicateCheckType>
+      <SubsessionMode>2</SubsessionMode>
+    </TelcoInfo>
+<!--
+    <TerminationCauseInfo>
+      <DroppedCallCause>4</DroppedCallCause>
+    </TerminationCauseInfo>
+    <TerminationCauseInfo>
+      <DroppedCallCause>5</DroppedCallCause>
+    </TerminationCauseInfo>
+-->
+  </TelcoInfoList>
+</TelcoAAAParamsConfiguration>

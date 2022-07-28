@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--==================================================================================
+	Copyright (c) 2003 - 2006 Oracle. All rights reserved.
+	This material is the confidential property of Oracle Corporation or its
+	licensors and may be used, reproduced, stored or transmitted only in
+	accordance with a valid Oracle license or sublicense agreement.
+	=================================================================================-->
+<BusinessConfiguration xmlns="http://www.portal.com/schemas/BusinessConfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig /home/pin/opt/portal/7.5/mso/config/business_configuration.xsd">
+<!-- Using the Billing Segment ID aligned per State base in sequence
+	e.g For MP BillingSegment ID starts from 1001
+	For RJ BillingSegment ID starts from 1101 and so on.
+-->
+	<BillingSegmentConfiguration>
+		<BillingSegments>
+			<BillingSegment ID="0">Zero_billing_segment</BillingSegment>
+			<BillingSegment ID="101">Retail</BillingSegment>
+			<BillingSegment ID="102">Wholesale</BillingSegment>
+			<BillingSegment ID="103">Internal</BillingSegment>
+			<BillingSegment ID="104">Non_Billed</BillingSegment>
+			<BillingSegment ID="1001">MP-D72-C406|BHOPAL</BillingSegment>
+			<BillingSegment ID="1002">MP-D217-C993|HOSANGABAD</BillingSegment>
+			<BillingSegment ID="1003">MP-D223-C1020|INDORE</BillingSegment>
+			<BillingSegment ID="1004">MP-D224-C1026|JABALPUR</BillingSegment>
+			<BillingSegment ID="1005">MP-D486-C2332|SHAJAPUR</BillingSegment>
+			<BillingSegment ID="1006">MP-D556-C2589|UJJAIN</BillingSegment>
+			<BillingSegment ID="1101">RJ-D228-C1041|JAIPUR</BillingSegment>
+			<BillingSegment ID="1201">CG-D443-C2106|RAIPUR</BillingSegment>
+			<BillingSegment ID="1301">MH-D366-C1725|MUMBAI</BillingSegment>
+			<BillingSegment ID="1302">MH-D530-C2509|THANE</BillingSegment>
+			<BillingSegment ID="1303">MH-D433-C2073|PUNE</BillingSegment>
+			<BillingSegment ID="1304">MH-D383-C1793|NANDED</BillingSegment>
+			<BillingSegment ID="1305">MH-D387-C1824|NASIK</BillingSegment>
+			<BillingSegment ID="1306">MH-D323-C1479|LATUR</BillingSegment>
+			<BillingSegment ID="1307">MH-D234-C1056|JALNA</BillingSegment>
+			<BillingSegment ID="1308">MH-D233-C2377|SILLOD</BillingSegment>
+			<BillingSegment ID="1309">MH-D27-C819|GANGAPUR</BillingSegment>
+			<BillingSegment ID="1310">MH-D27-C1907|PAITHAN</BillingSegment>
+			<BillingSegment ID="1311">MH-D27-C190|AURANGABAD</BillingSegment>
+			<BillingSegment ID="1312">MH-D615-C977|HINGOLI</BillingSegment>
+			<BillingSegment ID="1313">MH-D366-C2825|NAVI MUMBAI</BillingSegment>
+			<BillingSegment ID="1400">GA-D401-C855|GOA</BillingSegment>
+			<BillingSegment ID="1401">KA-D41-C266|BANGALORE</BillingSegment>
+			<BillingSegment ID="1402">KA-D371-C1748|MYSORE</BillingSegment>
+			<BillingSegment ID="1403">KA-D141-C341|BELGAUM</BillingSegment>
+			<BillingSegment ID="1404">KA-D31-C218|BAGALKOT</BillingSegment>
+			<BillingSegment ID="1500">DL-D514-C1850|DELHI</BillingSegment>
+			<BillingSegment ID="1501">AP-D220-C1007|HYDERABAD</BillingSegment>
+			<BillingSegment ID="1502">AP-D574-C2677|VISAKHAPATNAM</BillingSegment>
+			<BillingSegment ID="1601">HR-D202-C909|GURGAON</BillingSegment>
+			<BillingSegment ID="1602">HR-D170-C782|FARIDABAD</BillingSegment>
+			<BillingSegment ID="1700">CH-D99-C518|CHANDIGARH</BillingSegment>
+			<BillingSegment ID="1701">UP-D185-C832|GAUTAM BUDH NAGAR</BillingSegment>
+			<BillingSegment ID="1702">UP-D187-C843|GHAZIABAD CITY</BillingSegment>
+			<BillingSegment ID="1703">UP-D4-C48|AGRA</BillingSegment>
+			<BillingSegment ID="1704">UP-D12-C89|ALLAHABAD CITY</BillingSegment>
+			<BillingSegment ID="1705">UP-D75-C426|BIJNORE</BillingSegment>
+			<BillingSegment ID="1706">UP-D84-C1325|KHURJA</BillingSegment>
+			<BillingSegment ID="1707">UP-D329-C1497|LUCKNOW CITY</BillingSegment>
+			<BillingSegment ID="1708">UP-D341-C1548|MAINPURI</BillingSegment>
+			<BillingSegment ID="1709">UP-D451-C2151|RAMPUR CITY</BillingSegment>
+			<BillingSegment ID="1710">UP-D178-C2572|TUNDLA</BillingSegment>
+			<BillingSegment ID="1711">UP-D569-C2639|VARANASI</BillingSegment>
+                        <BillingSegment ID="1801">WB-D605-C2755|KOLKATA</BillingSegment>
+                        <BillingSegment ID="1802">WB-D609-C2759|NADIA</BillingSegment>
+                        <BillingSegment ID="1803">WB-D606-C2756|HOWRAH</BillingSegment>
+                        <BillingSegment ID="1804">WB-D604-C2754|HOOGLY</BillingSegment>
+                        <BillingSegment ID="1805">WB-D607-C2757|24PGS(N)</BillingSegment>
+                        <BillingSegment ID="1806">WB-D608-C2758|24PGS(S)</BillingSegment>
+                        <BillingSegment ID="1807">WB-D614-C2764|WEST MIDNAPORE</BillingSegment>
+                        <BillingSegment ID="1808">WB-D613-C2763|BARDHAMAN</BillingSegment>
+                        <BillingSegment ID="1809">WB-D602-C2752|MALDA</BillingSegment>
+                        <BillingSegment ID="1810">WB-D610-C2760|BANKURA</BillingSegment>
+                        <BillingSegment ID="1811">WB-D603-C2753|BIRBHUM</BillingSegment>
+                        <BillingSegment ID="1812">WB-D615-C2765|NORTH DINAJPUR</BillingSegment>
+                        <BillingSegment ID="1813">WB-D611-C2761|SOUTH DINAJPUR</BillingSegment>
+                        <BillingSegment ID="1814">WB-D601-C2751|EAST MIDNAPORE</BillingSegment>
+                        <BillingSegment ID="1815">WB-D612-C2762|DARJEELING</BillingSegment>
+			<BillingSegment ID="9901">Temp1</BillingSegment>
+			<BillingSegment ID="9902">Temp2</BillingSegment>
+			<BillingSegment ID="9903">Temp3</BillingSegment>
+			<BillingSegment ID="9904">Temp4</BillingSegment>
+			<BillingSegment ID="9905">Temp5</BillingSegment>
+			<BillingSegment ID="9906">Temp6</BillingSegment>
+			<BillingSegment ID="9907">Temp7</BillingSegment>
+			<BillingSegment ID="9908">Temp8</BillingSegment>
+			<BillingSegment ID="9909">Temp9</BillingSegment>
+			<BillingSegment ID="9910">Temp10</BillingSegment>
+			<BillingSegment ID="9911">Temp11</BillingSegment>
+			<BillingSegment ID="9912">Temp12</BillingSegment>
+			<BillingSegment ID="9913">Temp13</BillingSegment>
+			<BillingSegment ID="9914">Temp14</BillingSegment>
+			<BillingSegment ID="9915">Temp15</BillingSegment>
+			<BillingSegment ID="9916">Temp16</BillingSegment>
+			<BillingSegment ID="9917">Temp17</BillingSegment>
+			<BillingSegment ID="9918">Temp18</BillingSegment>
+			<BillingSegment ID="9919">Temp19</BillingSegment>
+			<BillingSegment ID="9920">Temp20</BillingSegment>
+			<BillingSegment ID="9921">Temp21</BillingSegment>
+			<BillingSegment ID="9922">Temp22</BillingSegment>
+			<BillingSegment ID="9923">Temp23</BillingSegment>
+			<BillingSegment ID="9924">Temp24</BillingSegment>
+			<BillingSegment ID="9925">Temp25</BillingSegment>
+			<BillingSegment ID="5000">Primary_Point_Bill_Segment</BillingSegment>
+			<BillingSegment ID="5050">Primary_Point_NON_Billing_CITIES_Segment</BillingSegment>
+			<BillingSegment ID="2000">Other_cities_sp_segment</BillingSegment>
+			<BillingSegment ID="5001">JV_Primary_Point_Bill_Segment</BillingSegment>
+		</BillingSegments>
+	</BillingSegmentConfiguration>
+</BusinessConfiguration>

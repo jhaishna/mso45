@@ -1,0 +1,6 @@
+r << XX 1
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /config/invoice_events 102 1
+0 PIN_FLD_EVENTS        ARRAY [247] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months_fdp/mso_sb_dc3"
+XX
+xop PCM_OP_WRITE_FLDS 32 1

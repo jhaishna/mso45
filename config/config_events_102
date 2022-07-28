@@ -1,0 +1,657 @@
+# number of field entries allocated 334, used 334
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /config/invoice_events 102 50
+0 PIN_FLD_CREATED_T    TSTAMP [0] (1389161847) Wed Jan  8 11:47:27 2014
+0 PIN_FLD_MOD_T        TSTAMP [0] (1574142000) Tue Nov 19 11:10:00 2019
+0 PIN_FLD_READ_ACCESS     STR [0] "G"
+0 PIN_FLD_WRITE_ACCESS    STR [0] "S"
+0 PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 1 0
+0 PIN_FLD_DESCR           STR [0] "Standard Event Types"
+0 PIN_FLD_HOSTNAME        STR [0] "-"
+0 PIN_FLD_NAME            STR [0] "Eventtypes"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "-"
+0 PIN_FLD_VALUE           STR [0] ""
+0 PIN_FLD_VERSION         STR [0] ""
+0 PIN_FLD_EVENTS        ARRAY [205] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [206] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [207] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [208] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [209] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [210] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [211] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [212] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [213] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [214] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [215] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [216] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [217] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [218] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [219] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/cm"
+0 PIN_FLD_EVENTS        ARRAY [220] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/cm"
+0 PIN_FLD_EVENTS        ARRAY [221] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [222] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [223] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [224] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [225] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [226] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [227] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [228] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [229] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [230] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [231] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [232] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [233] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [234] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [235] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/remittance"
+0 PIN_FLD_EVENTS        ARRAY [236] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/ws"
+0 PIN_FLD_EVENTS        ARRAY [237] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/ws/incollect"
+0 PIN_FLD_EVENTS        ARRAY [238] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/ws/outcollect"
+0 PIN_FLD_EVENTS        ARRAY [239] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/delayed/session/telco"
+0 PIN_FLD_EVENTS        ARRAY [240] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/mso_et"
+0 PIN_FLD_EVENTS        ARRAY [241] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/late_fee"
+0 PIN_FLD_EVENTS        ARRAY [242] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [243] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [244] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [245] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [246] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/cm/post"
+0 PIN_FLD_EVENTS        ARRAY [247] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [248] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [249] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [250] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [251] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [252] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/dcm/post"
+0 PIN_FLD_EVENTS        ARRAY [253] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [254] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [255] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [256] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [257] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [258] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [259] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/cm/pre"
+0 PIN_FLD_EVENTS        ARRAY [260] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/dcm/pre"
+0 PIN_FLD_EVENTS        ARRAY [261] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/huwr/pre"
+0 PIN_FLD_EVENTS        ARRAY [262] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/nd/pre"
+0 PIN_FLD_EVENTS        ARRAY [263] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/wlnd/pre"
+0 PIN_FLD_EVENTS        ARRAY [264] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/nwifi/pre"
+0 PIN_FLD_EVENTS        ARRAY [265] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/crsoho/pre"
+0 PIN_FLD_EVENTS        ARRAY [266] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_amc/cr/pre"
+0 PIN_FLD_EVENTS        ARRAY [267] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [268] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [269] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [270] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [271] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [272] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [273] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_nine_months/mso_hw_rental/ip"
+0 PIN_FLD_EVENTS        ARRAY [274] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly"
+0 PIN_FLD_EVENTS        ARRAY [275] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [276] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [277] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [278] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_elevenmonthly"
+0 PIN_FLD_EVENTS        ARRAY [279] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_elevenmonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [280] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_elevenmonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [281] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_elevenmonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [282] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_fivemonthly"
+0 PIN_FLD_EVENTS        ARRAY [283] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_fivemonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [284] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_fivemonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [285] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_fivemonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [286] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sevenmonthly"
+0 PIN_FLD_EVENTS        ARRAY [287] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sevenmonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [288] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sevenmonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [289] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sevenmonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [290] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_eightmonthly"
+0 PIN_FLD_EVENTS        ARRAY [291] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_eightmonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [292] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_eightmonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [293] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_eightmonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [294] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_daily"
+0 PIN_FLD_EVENTS        ARRAY [295] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_daily/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [296] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_daily/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [297] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_daily/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [298] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [299] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [300] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninemonthly"
+0 PIN_FLD_EVENTS        ARRAY [301] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninemonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [302] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninemonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [303] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninemonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [304] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_tenmonthly"
+0 PIN_FLD_EVENTS        ARRAY [305] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_tenmonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [306] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_tenmonthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [307] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_tenmonthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [308] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ten_day"
+0 PIN_FLD_EVENTS        ARRAY [309] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ten_day/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [310] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ten_day/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [311] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ten_day/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [312] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_norm/trial"
+0 PIN_FLD_EVENTS        ARRAY [313] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual_fdp/mso_sb_norm/trial"
+0 PIN_FLD_EVENTS        ARRAY [314] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_norm/trial"
+0 PIN_FLD_EVENTS        ARRAY [315] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_dc2/trial"
+0 PIN_FLD_EVENTS        ARRAY [316] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_dc3/trial"
+0 PIN_FLD_EVENTS        ARRAY [317] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_dc3/trial"
+0 PIN_FLD_EVENTS        ARRAY [318] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_norm/trial"
+0 PIN_FLD_EVENTS        ARRAY [319] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_dc2/trial"
+0 PIN_FLD_EVENTS        ARRAY [320] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_dc3/trial"
+0 PIN_FLD_EVENTS        ARRAY [321] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_fib/trial"
+0 PIN_FLD_EVENTS        ARRAY [105] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [106] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_thirty_days/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [107] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_thirty_days/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [108] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_thirty_days/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [109] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninety_days/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [110] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninety_days/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [111] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_ninety_days/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [112] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sixty_days/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [113] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sixty_days/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [114] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_sixty_days/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [115] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_oneeighty_days/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [116] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_oneeighty_days/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [117] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_oneeighty_days/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [0] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/debit"
+0 PIN_FLD_EVENTS        ARRAY [1] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/adjustment/account"
+0 PIN_FLD_EVENTS        ARRAY [2] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/adjustment/event"
+0 PIN_FLD_EVENTS        ARRAY [3] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/adjustment/item"
+0 PIN_FLD_EVENTS        ARRAY [4] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/adjustment/tax_event"
+0 PIN_FLD_EVENTS        ARRAY [5] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/tax"
+0 PIN_FLD_EVENTS        ARRAY [6] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/discount"
+0 PIN_FLD_EVENTS        ARRAY [7] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/discount/mostcalled"
+0 PIN_FLD_EVENTS        ARRAY [8] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/fold"
+0 PIN_FLD_EVENTS        ARRAY [9] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/cash"
+0 PIN_FLD_EVENTS        ARRAY [10] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/cc"
+0 PIN_FLD_EVENTS        ARRAY [11] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/check"
+0 PIN_FLD_EVENTS        ARRAY [12] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/dd"
+0 PIN_FLD_EVENTS        ARRAY [13] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/payorder"
+0 PIN_FLD_EVENTS        ARRAY [14] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/postalorder"
+0 PIN_FLD_EVENTS        ARRAY [15] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/wtransfer"
+0 PIN_FLD_EVENTS        ARRAY [16] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/payment/voucher"
+0 PIN_FLD_EVENTS        ARRAY [17] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/vouchertopup"
+0 PIN_FLD_EVENTS        ARRAY [18] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/incentive"
+0 PIN_FLD_EVENTS        ARRAY [19] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/fee/failed_payment"
+0 PIN_FLD_EVENTS        ARRAY [20] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cancel"
+0 PIN_FLD_EVENTS        ARRAY [21] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle"
+0 PIN_FLD_EVENTS        ARRAY [22] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear"
+0 PIN_FLD_EVENTS        ARRAY [23] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/mso_catv_commitment"
+0 PIN_FLD_EVENTS        ARRAY [24] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_pkg_dpop"
+0 PIN_FLD_EVENTS        ARRAY [25] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_annual/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [26] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_bimonthly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [27] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_et"
+0 PIN_FLD_EVENTS        ARRAY [28] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_hw_rental"
+0 PIN_FLD_EVENTS        ARRAY [29] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [30] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_alc_fta"
+0 PIN_FLD_EVENTS        ARRAY [31] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_alc_paid"
+0 PIN_FLD_EVENTS        ARRAY [32] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_pkg_bst"
+0 PIN_FLD_EVENTS        ARRAY [33] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_pkg_dpop"
+0 PIN_FLD_EVENTS        ARRAY [34] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_pkg_dprp"
+0 PIN_FLD_EVENTS        ARRAY [35] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_monthly/mso_sb_pkg_dstp"
+0 PIN_FLD_EVENTS        ARRAY [36] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_quarterly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [37] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_semiannual/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [38] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_arrear_yearly/mso_hw_amc"
+0 PIN_FLD_EVENTS        ARRAY [39] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc"
+0 PIN_FLD_EVENTS        ARRAY [40] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [41] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [42] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [43] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [44] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_alc_fta"
+0 PIN_FLD_EVENTS        ARRAY [45] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_alc_paid"
+0 PIN_FLD_EVENTS        ARRAY [46] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_pkg_bst"
+0 PIN_FLD_EVENTS        ARRAY [47] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [48] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [49] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental"
+0 PIN_FLD_EVENTS        ARRAY [50] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_pkg_dstp"
+0 PIN_FLD_EVENTS        ARRAY [51] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_pkg_dpop"
+0 PIN_FLD_EVENTS        ARRAY [52] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_pkg_dprp"
+0 PIN_FLD_EVENTS        ARRAY [53] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [54] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [55] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [56] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_sb_adn_normal"
+0 PIN_FLD_EVENTS        ARRAY [57] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_et"
+0 PIN_FLD_EVENTS        ARRAY [58] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_arrear"
+0 PIN_FLD_EVENTS        ARRAY [59] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly"
+0 PIN_FLD_EVENTS        ARRAY [60] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly"
+0 PIN_FLD_EVENTS        ARRAY [61] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly"
+0 PIN_FLD_EVENTS        ARRAY [62] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual"
+0 PIN_FLD_EVENTS        ARRAY [63] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual"
+0 PIN_FLD_EVENTS        ARRAY [64] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/purchase"
+0 PIN_FLD_EVENTS        ARRAY [65] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/cash"
+0 PIN_FLD_EVENTS        ARRAY [66] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/cc"
+0 PIN_FLD_EVENTS        ARRAY [67] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/check"
+0 PIN_FLD_EVENTS        ARRAY [68] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/dd"
+0 PIN_FLD_EVENTS        ARRAY [69] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/payorder"
+0 PIN_FLD_EVENTS        ARRAY [70] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/postalorder"
+0 PIN_FLD_EVENTS        ARRAY [71] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/refund/wtransfer"
+0 PIN_FLD_EVENTS        ARRAY [72] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/cc"
+0 PIN_FLD_EVENTS        ARRAY [73] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/check"
+0 PIN_FLD_EVENTS        ARRAY [74] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/dd"
+0 PIN_FLD_EVENTS        ARRAY [75] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/payorder"
+0 PIN_FLD_EVENTS        ARRAY [76] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/postalorder"
+0 PIN_FLD_EVENTS        ARRAY [77] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/wtransfer"
+0 PIN_FLD_EVENTS        ARRAY [78] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/voucher"
+0 PIN_FLD_EVENTS        ARRAY [79] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/reversal/failed"
+0 PIN_FLD_EVENTS        ARRAY [80] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/event"
+0 PIN_FLD_EVENTS        ARRAY [81] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/item"
+0 PIN_FLD_EVENTS        ARRAY [82] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/settlement/tax_event"
+0 PIN_FLD_EVENTS        ARRAY [83] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/account"
+0 PIN_FLD_EVENTS        ARRAY [84] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/bill"
+0 PIN_FLD_EVENTS        ARRAY [85] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/billinfo"
+0 PIN_FLD_EVENTS        ARRAY [86] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/item"
+0 PIN_FLD_EVENTS        ARRAY [87] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/tax_account"
+0 PIN_FLD_EVENTS        ARRAY [88] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/tax_bill"
+0 PIN_FLD_EVENTS        ARRAY [89] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/tax_billinfo"
+0 PIN_FLD_EVENTS        ARRAY [90] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff_reversal"
+0 PIN_FLD_EVENTS        ARRAY [91] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff_reversal/tax"
+0 PIN_FLD_EVENTS        ARRAY [92] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/writeoff/tax_item"
+0 PIN_FLD_EVENTS        ARRAY [93] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/dispute/event"
+0 PIN_FLD_EVENTS        ARRAY [94] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/dispute/item"
+0 PIN_FLD_EVENTS        ARRAY [95] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/dispute/tax_event"
+0 PIN_FLD_EVENTS        ARRAY [96] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/session"
+0 PIN_FLD_EVENTS        ARRAY [97] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/session/dialup"
+0 PIN_FLD_EVENTS        ARRAY [98] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/rollover/monthly"
+0 PIN_FLD_EVENTS        ARRAY [99] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/rollover_transfer"
+0 PIN_FLD_EVENTS        ARRAY [100] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/cycle/rollover_correction"
+0 PIN_FLD_EVENTS        ARRAY [101] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/device/associate"
+0 PIN_FLD_EVENTS        ARRAY [102] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/device/disassociate"
+0 PIN_FLD_EVENTS        ARRAY [103] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/corrective_bill"
+0 PIN_FLD_EVENTS        ARRAY [104] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/item/transfer"
+0 PIN_FLD_EVENTS        ARRAY [118] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_onetwenty_days/mso_sb_adn_fdp"
+0 PIN_FLD_EVENTS        ARRAY [119] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_onetwenty_days/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [120] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_onetwenty_days/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [121] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [122] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [123] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_sb_pkg_fdp"
+0 PIN_FLD_EVENTS        ARRAY [124] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [125] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [126] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [127] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_sb_alc_fdp"
+0 PIN_FLD_EVENTS        ARRAY [128] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/mso_et"
+0 PIN_FLD_EVENTS        ARRAY [129] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/mso_cr_dr_note"
+0 PIN_FLD_EVENTS        ARRAY [130] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/mso_penalty"
+0 PIN_FLD_EVENTS        ARRAY [131] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/mso_refund_credit"
+0 PIN_FLD_EVENTS        ARRAY [132] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/mso_refund_debit"
+0 PIN_FLD_EVENTS        ARRAY [133] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc"
+0 PIN_FLD_EVENTS        ARRAY [134] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [135] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [136] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [137] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/cm"
+0 PIN_FLD_EVENTS        ARRAY [138] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [139] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [140] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [141] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [142] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [143] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [144] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [145] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [146] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [147] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [148] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_annual_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [149] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_et"
+0 PIN_FLD_EVENTS        ARRAY [150] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_gr_tod"
+0 PIN_FLD_EVENTS        ARRAY [151] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [152] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [153] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [154] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental"
+0 PIN_FLD_EVENTS        ARRAY [155] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/cm"
+0 PIN_FLD_EVENTS        ARRAY [156] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [157] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [158] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [159] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [160] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [161] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [162] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [163] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [164] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [165] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [166] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [167] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_sb_tod"
+0 PIN_FLD_EVENTS        ARRAY [168] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly/mso_ssp"
+0 PIN_FLD_EVENTS        ARRAY [169] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [170] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [171] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [172] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_monthly_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [173] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [174] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [175] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [176] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/cm"
+0 PIN_FLD_EVENTS        ARRAY [177] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [178] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [179] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [180] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [181] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [182] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [183] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [184] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [185] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [186] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [187] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quarterly_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [188] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_amc/cr"
+0 PIN_FLD_EVENTS        ARRAY [189] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_amc/nd"
+0 PIN_FLD_EVENTS        ARRAY [190] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_amc/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [191] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/cm"
+0 PIN_FLD_EVENTS        ARRAY [192] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/cr"
+0 PIN_FLD_EVENTS        ARRAY [193] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/crsoho"
+0 PIN_FLD_EVENTS        ARRAY [194] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/dcm"
+0 PIN_FLD_EVENTS        ARRAY [195] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/huwr"
+0 PIN_FLD_EVENTS        ARRAY [196] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/nd"
+0 PIN_FLD_EVENTS        ARRAY [197] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/nwifi"
+0 PIN_FLD_EVENTS        ARRAY [198] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual/mso_hw_rental/wlnd"
+0 PIN_FLD_EVENTS        ARRAY [199] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual_fdp/mso_sb_dc2"
+0 PIN_FLD_EVENTS        ARRAY [200] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual_fdp/mso_sb_dc3"
+0 PIN_FLD_EVENTS        ARRAY [201] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual_fdp/mso_sb_fib"
+0 PIN_FLD_EVENTS        ARRAY [202] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_semiannual_fdp/mso_sb_norm"
+0 PIN_FLD_EVENTS        ARRAY [203] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_bimonthly/mso_hw_rental/cm"
+0 PIN_FLD_EVENTS        ARRAY [204] allocated 20, used 1
+1     PIN_FLD_TYPE_STR        STR [0] "/event/billing/product/fee/cycle/cycle_forward_quadmonthly/mso_hw_rental/cm"

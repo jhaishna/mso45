@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BusinessConfiguration
+	xmlns="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig BusinessConfiguration.xsd"> 
+
+	<!-- Sample input file for pin_bill_accts containing parameters for bill run management -->
+	<!-- Modify according to guidelines -->
+	<BillRunConfiguration> 
+		<!-- List of billing segments for this bill run -->
+		<BillSegmentList>
+			<BillSegment>101</BillSegment>
+			<BillSegment>102</BillSegment>
+			<BillSegment>1001</BillSegment>
+			<BillSegment>1002</BillSegment>
+			<BillSegment>1003</BillSegment>
+			<BillSegment>1004</BillSegment>
+			<BillSegment>1005</BillSegment>
+			<BillSegment>1006</BillSegment>
+			<BillSegment>1101</BillSegment>
+			<BillSegment>1201</BillSegment>
+		</BillSegmentList>
+	</BillRunConfiguration> 
+</BusinessConfiguration>

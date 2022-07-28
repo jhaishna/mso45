@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--==================================================================================
+ Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved. 
+        This material is the confidential property of Oracle Corporation or its
+        licensors and may be used, reproduced, stored or transmitted only in
+        accordance with a valid Oracle license or sublicense agreement.
+        =================================================================================--> 
+ <BusinessConfiguration 
+	xmlns="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation=
+		"http://www.portal.com/schemas/BusinessConfig 
+			       	/home/pin/opt/portal/7.5/sys/data/config/business_configuration.xsd">
+
+ <!-- Sample file. Modify according to guidelines -->
+
+ <BusinessProfileConfiguration>
+	
+	<!-- List business profiles -->
+	<BusinessProfileList>
+ 	
+                <BusinessProfile name="CATVMUMBAIInvoice_Corporate" type="Invoice">
+                        <Desc> CATV MUMBAI invoice corporate postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="CATV_MUMBAI_Corporate_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="CATV_MUMBAI_Corporate_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="CATVMUMBAIInvoice" type="Invoice">
+                        <Desc> CATV MUMBAI invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="CATV_MUMBAI_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="CATV_MUMBAI_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="CATVKOLKATAInvoice" type="Invoice">
+                        <Desc> CATV KOLKATA invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="CATV_KOLKATA_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="CATV_KOLKATA_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="CATVDELHIInvoice" type="Invoice">
+                        <Desc> CATV DELHI invoice template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="CATV_DELHI_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="CATV_DELHI_Postpaid_Invoice" />
+                </BusinessProfile>
+				 <BusinessProfile name="BBMUMBAIInvoice_Corporate" type="Invoice">
+                        <Desc> BB MUMBAI invoice Corporate postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BB_MUMBAI_Corporate_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BB_MUMBAI_Corporate_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="BBMUMBAIInvoice" type="Invoice">
+                        <Desc> BB MUMBAI invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BB_MUMBAI_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BB_MUMBAI_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="BBKOLKATAInvoice" type="Invoice">
+                        <Desc> CATV KOLKATA invoice template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BB_KOLKATA_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BB_KOLKATA_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="BBDELHIInvoice" type="Invoice">
+                        <Desc> BB DELHI invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BB_DELHI_Postpaid_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BB_DELHI_Postpaid_Invoice" />
+                </BusinessProfile>
+                <BusinessProfile name="BBInvoice" type="Invoice">
+                        <Desc>BB Invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BB_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BB_Invoice_Template" />
+                </BusinessProfile>
+                <BusinessProfile name="DepositInvoice" type="Invoice">
+                        <Desc>Deposit Invoice postpaid template</Desc>
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="Deposit_Invoice_Report" />
+                        <NameValue key="Template_Name" value="Deposit_Invoice_Template" />
+                </BusinessProfile>
+		<!-- List business profiles to delete -->
+		<BusinessProfile name="Postpaid" action = "delete" />
+  	</BusinessProfileList>
+	<!-- List templates -->
+ 	<TemplateList> 
+ 		<Template name="Service A" type="/service" >
+
+ 			<Desc> Description of the template </Desc>
+			
+			<!-- List the rules for validating the service -->
+  			<Iscript>
+ 			</Iscript>
+
+			<!-- List key values -->
+  			<NameValue key="Service Gold" value="Yes" /> 
+
+ 		 </Template>
+                <Template  name="InvoiceIntegration"  type="/billinfo">
+                        <Desc> Description of the template </Desc>
+                        <!-- List the rules for validating the billinfo -->
+                       <Iscript>
+			pinlog(3, "input Flist\n" + flistToStr( IN ));
+			String billinfo_id = flistGetStr(IN,PIN_FLD_BILLINFO_ID);  
+			Poid inPoid = flistGetPoid(IN,PIN_FLD_ACCOUNT_OBJ);
+			if (billinfo_id == "BB") {
+
+				String dbID = poidGetDbStr( inPoid );	   		
+				Flist search = flistCreate();
+				Poid p = poidCreate (dbID,"/search", -1);
+				flistSetPoid( search, PIN_FLD_POID, p );
+				flistSetStr(search, PIN_FLD_PARAMETERS, "account_nameinfo");
+				flistSetStr(search, PIN_FLD_TEMPLATE, "select X from /account where F1 = V1 ");
+				flistSetLong(search, PIN_FLD_FLAGS, 256);                                    
+
+				Flist argFlist = flistCreate();
+				//Poid cpPoid = poidCreate (dbID,"/account", inPoid);
+				flistSetPoid( argFlist, PIN_FLD_POID, inPoid );
+				flistSetElem( search, PIN_FLD_ARGS, argFlist, 1 );
+
+				Flist resFlist = flistCreate();
+				flistSetElem( search, PIN_FLD_RESULTS, resFlist, 1 );      
+
+				pinlog(3, "Search Flist\n" + flistToStr( search ) );
+
+				// Do a readobject
+				Flist out = pcmOpCatch(7, 0, search, PINERR);
+				pinlog(3, "Result Flist\n\n" + flistToStr( out) );
+
+				Flist acctFlist = flistGetElem(out, PIN_FLD_RESULTS, 0);
+				flistSetEnum(OUT, PIN_FLD_RESULT, 1);
+				pinlog(3, "OUT Flist 1\n\n" + flistToStr( OUT) );
+				pinlog(3, "test_001: " );		
+				Long business_type = flistGetEnum(acctFlist, PIN_FLD_BUSINESS_TYPE);
+				String parentFlag = strSubstr(longToStr(business_type),2,2);
+				pinlog(3, "parentFlag: " + parentFlag );  
+				Iterator j = flistGetElements( acctFlist, PIN_FLD_NAMEINFO );
+				String city;
+				while( iteratorHasMore( j ) ) {
+					pinlog(3, "test_002: " );
+					Flist h = iteratorGetNext( j );
+					pinlog(3, "nameinfo:\n" + flistToStr( h ) );
+					Long recid = iteratorGetRecId( j );
+					if (recid == 1) {
+						pinlog(3, "test_003: " );
+						city = flistGetStr(h,PIN_FLD_CITY);
+						pinlog(3, "CITY value : " + city );
+					}
+				}
+				if(parentFlag == "39") {
+					//flistSetStr(OUT, PIN_FLD_NAME, "BBMUMBAIInvoice_Corporate");
+					flistSetStr(OUT, PIN_FLD_NAME, "BBInvoice");
+				} else {
+				//	if(city == "DELHI") {
+				//		flistSetStr(OUT, PIN_FLD_NAME, "BBDELHIInvoice");
+				//	} else if(city == "KOLKATA") {
+				//		flistSetStr(OUT, PIN_FLD_NAME, "BBKOLKATAInvoice");
+				//	} else if(city == "MUMBAI") {
+				//		flistSetStr(OUT, PIN_FLD_NAME, "BBMUMBAIInvoice");
+				//	} else {
+				//		flistSetStr(OUT, PIN_FLD_NAME, "BBMUMBAIInvoice");
+				//	}
+					flistSetStr(OUT, PIN_FLD_NAME, "BBInvoice");
+				}
+			} else if(billinfo_id == "CATV") {
+				String dbID = poidGetDbStr( inPoid );	   		
+				Flist search = flistCreate();
+				Poid p = poidCreate (dbID,"/search", -1);
+				flistSetPoid( search, PIN_FLD_POID, p );
+				flistSetStr(search, PIN_FLD_PARAMETERS, "account_nameinfo");
+				flistSetStr(search, PIN_FLD_TEMPLATE, "select X from /account where F1 = V1 ");
+				flistSetLong(search, PIN_FLD_FLAGS, 256);                                    
+
+				Flist argFlist = flistCreate();
+				//Poid cpPoid = poidCreate (dbID,"/account", inPoid);
+				flistSetPoid( argFlist, PIN_FLD_POID, inPoid );
+				flistSetElem( search, PIN_FLD_ARGS, argFlist, 1 );
+
+				Flist resFlist = flistCreate();
+				flistSetElem( search, PIN_FLD_RESULTS, resFlist, 1 );      
+
+				pinlog(3, "Search Flist\n" + flistToStr( search ) );
+
+				// Do a readobject
+				Flist out = pcmOpCatch(7, 0, search, PINERR);
+				pinlog(3, "Result Flist\n\n" + flistToStr( out) );
+
+				Flist acctFlist = flistGetElem(out, PIN_FLD_RESULTS, 0);
+				flistSetEnum(OUT, PIN_FLD_RESULT, 1);
+				pinlog(3, "OUT Flist 1\n\n" + flistToStr( OUT) );
+				pinlog(3, "test_001: " );		
+				Long business_type = flistGetEnum(acctFlist, PIN_FLD_BUSINESS_TYPE);
+				String parentFlag = strSubstr(longToStr(business_type),2,2);
+				pinlog(3, "parentFlag: " + parentFlag );  
+				Iterator j = flistGetElements( acctFlist, PIN_FLD_NAMEINFO );
+				String city;
+				while( iteratorHasMore( j ) ) {
+					pinlog(3, "test_002: " );
+					Flist h = iteratorGetNext( j );
+					pinlog(3, "nameinfo:\n" + flistToStr( h ) );
+					Long recid = iteratorGetRecId( j );
+					if (recid == 1) {
+						pinlog(3, "test_003: " );
+						city = flistGetStr(h,PIN_FLD_CITY);
+						pinlog(3, "CITY value : " + city );
+					}
+				}
+				if(parentFlag == "39") {
+					flistSetStr(OUT, PIN_FLD_NAME, "CATVMUMBAIInvoice_Corporate");
+				} else {
+					if(city == "DELHI") {
+						flistSetStr(OUT, PIN_FLD_NAME, "CATVDELHIInvoice");
+					} else if(city == "KOLKATA") {
+						flistSetStr(OUT, PIN_FLD_NAME, "CATVKOLKATAInvoice");
+					} else if(city == "MUMBAI") {
+						flistSetStr(OUT, PIN_FLD_NAME, "CATVMUMBAIInvoice");
+					} else {
+						flistSetStr(OUT, PIN_FLD_NAME, "CATVMUMBAIInvoice");
+					}
+				}
+			} 
+			else if(billinfo_id == "DEPOSIT_BB") {
+				flistSetEnum(OUT, PIN_FLD_RESULT, 1);
+				flistSetStr(OUT, PIN_FLD_NAME, "DepositInvoice");
+				pinlog(3, "OUT Flist Deposit\n\n" + flistToStr( OUT) );
+			} else {
+				flistSetStr(OUT, PIN_FLD_NAME, "CATVMUMBAIInvoice");
+			}
+						pinlog(3, "test_003: " );
+						pinlog(3, "OUT Flist\n\n" + flistToStr( OUT) );
+                        </Iscript>
+                        <!-- List key values -->
+                </Template>
+		<Template name="Balance Group" type="/balance_group">
+
+		  <Desc>Balance group with a check for zero limit </Desc>
+			
+		  <!-- List the rules for validating the balance group -->
+		  <Iscript>
+		   </Iscript>
+
+		  <!-- List key values -->
+  		  <NameValue key="Credit Limit" value="0" /> 
+
+		</Template>		
+
+ </TemplateList>
+  </BusinessProfileConfiguration>
+
+  </BusinessConfiguration>

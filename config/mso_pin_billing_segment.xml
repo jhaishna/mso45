@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--==================================================================================
+	Copyright (c) 2003 - 2006 Oracle. All rights reserved.
+	This material is the confidential property of Oracle Corporation or its
+	licensors and may be used, reproduced, stored or transmitted only in
+	accordance with a valid Oracle license or sublicense agreement.
+	=================================================================================-->
+<BusinessConfiguration xmlns="http://www.portal.com/schemas/BusinessConfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig /home/pin/opt/portal/7.5/mso/config/business_configuration.xsd">
+<!-- Using the Billing Segment ID aligned per State base in sequence
+	e.g For MP BillingSegment ID starts from 1001
+	For RJ BillingSegment ID starts from 1101 and so on.
+-->
+	<BillingSegmentConfiguration>
+		<BillingSegments>
+                        <BillingSegment ID="200">Deposit</BillingSegment>
+			<BillingSegment ID="0">Zero_billing_segment</BillingSegment>
+			<BillingSegment ID="101">Retail</BillingSegment>
+			<BillingSegment ID="102">Wholesale</BillingSegment>
+			<BillingSegment ID="103">Internal</BillingSegment>
+			<BillingSegment ID="104">Non_Billed</BillingSegment>
+			<BillingSegment ID="1000">MP</BillingSegment>
+			<BillingSegment ID="1100">RJ</BillingSegment>
+			<BillingSegment ID="1200">CG</BillingSegment>
+			<BillingSegment ID="1300">MH</BillingSegment>
+			<BillingSegment ID="1400">GA</BillingSegment>
+			<BillingSegment ID="1401">KA</BillingSegment>
+			<BillingSegment ID="1500">DL</BillingSegment>
+			<BillingSegment ID="1501">AP</BillingSegment>
+			<BillingSegment ID="1600">HR</BillingSegment>
+			<BillingSegment ID="1700">CH</BillingSegment>
+			<BillingSegment ID="1701">UP</BillingSegment>
+            		<BillingSegment ID="1800">WB</BillingSegment>
+			<BillingSegment ID="5000">Primary_Point_Bill_Segment</BillingSegment>
+			<BillingSegment ID="5050">Primary_Point_NON_Billing_CITIES_Segment</BillingSegment>
+			<BillingSegment ID="2000">Other_cities_sp_segment</BillingSegment>
+			<BillingSegment ID="5001">JV_Primary_Point_Bill_Segment</BillingSegment>
+		</BillingSegments>
+	</BillingSegmentConfiguration>
+</BusinessConfiguration>

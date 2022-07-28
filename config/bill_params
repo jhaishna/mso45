@@ -1,0 +1,183 @@
+# number of field entries allocated 46, used 46
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /config/business_params 2541523276 0
+0 PIN_FLD_CREATED_T    TSTAMP [0] (1435174838) Thu Jun 25 01:10:38 2015
+0 PIN_FLD_MOD_T        TSTAMP [0] (1435174838) Thu Jun 25 01:10:38 2015
+0 PIN_FLD_READ_ACCESS     STR [0] "G"
+0 PIN_FLD_WRITE_ACCESS    STR [0] "S"
+0 PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 1 0
+0 PIN_FLD_DESCR           STR [0] "Business logic parameters for Billing"
+0 PIN_FLD_HOSTNAME        STR [0] "-"
+0 PIN_FLD_NAME            STR [0] "billing"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "load_pin_bus_params"
+0 PIN_FLD_VALUE           STR [0] ""
+0 PIN_FLD_VERSION         STR [0] ""
+0 PIN_FLD_PARAMS        ARRAY [31] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter allows to enable/disable the check, whether billing parent should be billed or not provided Subordinate is billed successfully. If disabled(0) then parent billing will fail if subordinate billing has issues. If enabled(1) then skip the above check."
+1     PIN_FLD_PARAM_NAME      STR [0] "skip_check_for_subordinates_billed"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [32] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter enables cycle fee processing in parallel by service. Valid values: 0 - Disabled (Default), 1 - Parallel by service, 2 - Parallel by service with enforcement of fee processing before billing, 3 - Parallel by service with fees aggregated to account level item, 4 - Parallel by service with enforcement of fee processing before billing and fees aggregated to account level item."
+1     PIN_FLD_PARAM_NAME      STR [0] "staged_billing_fee_processing"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [33] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Creation of journal for the event with non-currency resource id will be decided based on this parameter value. i.e All or None or +:XXX,YYY or -:XXX,YYY. where XXX and YYY are resource ids. The default value is 'All'."
+1     PIN_FLD_PARAM_NAME      STR [0] "noncurrency_resource_journaling"
+1     PIN_FLD_PARAM_TYPE      INT [0] 5
+1     PIN_FLD_PARAM_VALUE     STR [0] "All"
+0 PIN_FLD_PARAMS        ARRAY [34] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter is for applying the reactivation fee if the reactivation period is more than 90 days in a single year."
+1     PIN_FLD_PARAM_NAME      STR [0] "apply_reactivation_fee"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [1] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "The offset from the start of the day for the billing cycle. This value is in hours and the default is 0 (12 AM). Max 23."
+1     PIN_FLD_PARAM_NAME      STR [0] "billing_cycle_offset"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [2] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "The direction to apply billing when a BDOM is not contained in the month. The default is to use the first day of the next month."
+1     PIN_FLD_PARAM_NAME      STR [0] "move_day_forward"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "1"
+0 PIN_FLD_PARAMS        ARRAY [3] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether sponsoree account must be removed from sponsor group upon closure of sponsoree account."
+1     PIN_FLD_PARAM_NAME      STR [0] "remove_sponsoree"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "1"
+0 PIN_FLD_PARAMS        ARRAY [4] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "The delay (in days) for cancellation of a 2g service when going to a 3g service or vice-versa during plan transition."
+1     PIN_FLD_PARAM_NAME      STR [0] "prod_end_offset_plan_transition"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "10"
+0 PIN_FLD_PARAMS        ARRAY [5] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether to generate epsilon journal and delta for item"
+1     PIN_FLD_PARAM_NAME      STR [0] "generate_journal_epsilon"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [6] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether to apply cycle fees during bill now."
+1     PIN_FLD_PARAM_NAME      STR [0] "apply_cycle_fees_for_bill_now"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [7] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "If delayed CDRs borrow against the free resources already consumed by the new cycle CDRs in the delay period, then the new cycle CDRs need to rerated. This parameter indicates whether during billing, the rerating criteria should be evaluated and rerating triggered. By default, this feature is disabled (0)"
+1     PIN_FLD_PARAM_NAME      STR [0] "rerate_during_billing"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [8] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter indicates a count of days before the next billing time when disabling of auto-triggering of billing is allowed. Value 0 indicates to enable auto-triggering."
+1     PIN_FLD_PARAM_NAME      STR [0] "auto_triggering_limit"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "2"
+0 PIN_FLD_PARAMS        ARRAY [9] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to enable exclusion validation for discounts. Default is 0 (disabled)."
+1     PIN_FLD_PARAM_NAME      STR [0] "validate_discount_dependency"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [10] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "If delayed CDRs consume free resources in the delay period, then the rollover that happened at the beginning of the delay period might need to be corrected. This parameter indicates whether during billing, the need for rollover correction should be evaluated and the correction recorded. By default, this feature is disabled (0)."
+1     PIN_FLD_PARAM_NAME      STR [0] "rollover_correction_during_billing"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [11] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "To turn on ARA for out of cycle billing by setting parameter as 1"
+1     PIN_FLD_PARAM_NAME      STR [0] "enable_ara"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [12] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "To enable the creation of 2 Bill_Now bills in delay period set parameter as 1"
+1     PIN_FLD_PARAM_NAME      STR [0] "create_two_bill_now_bills_in_delay"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [13] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter is to define the expiration of sub balance bucket for products during line transfer. The parameter values can be 0 (cut), 1 (maintain), 2 (align). Default is 0 (cut)."
+1     PIN_FLD_PARAM_NAME      STR [0] "sub_bal_validity"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [14] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter specifies whether sequential cycle discounting feature is enabled to apply the cycle fee discounts sequentially,possible values are disabled(0) or enabled(1)"
+1     PIN_FLD_PARAM_NAME      STR [0] "sequential_cycle_discounting"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [15] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to enable/disable Object Cache Residency Distinction feature. Default is 0 (disabled)"
+1     PIN_FLD_PARAM_NAME      STR [0] "cache_residency_distinction"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [16] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "The default value of business profile is 0(Convergent)"
+1     PIN_FLD_PARAM_NAME      STR [0] "default_business_profile"
+1     PIN_FLD_PARAM_TYPE      INT [0] 5
+1     PIN_FLD_PARAM_VALUE     STR [0] "Convergent"
+0 PIN_FLD_PARAMS        ARRAY [17] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "The cut off period used by rel to determine the item to be used for rated amount assignment. Default is -1 (Undefined)"
+1     PIN_FLD_PARAM_NAME      STR [0] "acct_cycle_delay_period"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "-1"
+0 PIN_FLD_PARAMS        ARRAY [18] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Enable/Disable General Ledger Reporting . The parameter values can be 0 (disabled), 1 (enabled). Default is 1 (enabled)."
+1     PIN_FLD_PARAM_NAME      STR [0] "general_ledger_reporting"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "1"
+0 PIN_FLD_PARAMS        ARRAY [19] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether backdating past GL posted date is allowed or not. The parameter values can be 0 (disabled) or 1 (enabled). Default is 0 (disabled)."
+1     PIN_FLD_PARAM_NAME      STR [0] "backdating_past_gl_posted_date"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [20] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Enable/disable customization of general ledger journal entries before they are updated in database. Value can be 0 (disabled) or 1 (enabled). Default is 0."
+1     PIN_FLD_PARAM_NAME      STR [0] "custom_journal_update"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [21] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter is used to tune the behavior of BRM, especially with respect to performance. Bit fields of the integer value are used to specify the configuration options. Currently, only bits 0 and 1 are used. Bit 0: Controls setting of item number during billing. Bit 1: Controls updating transfer events during billing.Default value is 0. For more details, refer to BRM documentation."
+1     PIN_FLD_PARAM_NAME      STR [0] "perf_advanced_tuning_settings"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [22] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate that the Corrective Invoicing feature is on. The parameter has two values: 0 - Corrective Invoicing feature is not used (Default), and 1 - Corrective Invoicing feature is used."
+1     PIN_FLD_PARAM_NAME      STR [0] "enable_corrective_invoices"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [23] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether Corrective Bills can be generated for paid bills. The parameter has two values: 0 - do not allow to generate Corrective Bills for paid bills (default), 1 - allow to generate Corrective Bills for paid bills."
+1     PIN_FLD_PARAM_NAME      STR [0] "allow_corrective_paid_bills"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [24] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate whether to reject a payment if the passing bill_no does not coincide with the bill_no from the last bill. The parameter has two values: 0 - accept payment (default), 1 - reject payment."
+1     PIN_FLD_PARAM_NAME      STR [0] "reject_payments_for_previous_bill"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [25] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate the minimum correction amount for which a Corrective bills is allowed. The parameter value is an integer number. Value 0 (default) means that validation for minimum correction amount is not provided."
+1     PIN_FLD_PARAM_NAME      STR [0] "corrective_bill_threshold"
+1     PIN_FLD_PARAM_TYPE      INT [0] 14
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [26] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Parameter to indicate which pin_sequence to use in order to generate a bill number for a corrective bill. Values are 0 (use pin_sequence for the regular bill) or 1 (use pin_sequence for the corrective bill, this is default)."
+1     PIN_FLD_PARAM_NAME      STR [0] "generate_corrective_bill_no"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "1"
+0 PIN_FLD_PARAMS        ARRAY [27] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter indicates the refresh rate interval at which the exchange rates from the BRM database is refreshed during billing."
+1     PIN_FLD_PARAM_NAME      STR [0] "refresh_exchange_rate"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [28] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "Enable/Disable the application of cycle fee for AR parent first, prior to applying for the subordinate. The parameter values can be disabled (0), 1 (enabled). Default is 0 (disabled)."
+1     PIN_FLD_PARAM_NAME      STR [0] "apply_ar_parent_cycle_fee_first"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [29] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter is used to suppress or generate bill objects for non paying child accounts during bill now"
+1     PIN_FLD_PARAM_NAME      STR [0] "generate_bill_for_child_billnow"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"
+0 PIN_FLD_PARAMS        ARRAY [30] allocated 20, used 4
+1     PIN_FLD_DESCR           STR [0] "This parameter enables flexible sponsorship item creation. By default it is disabled(0) and only /item/sponsor will be created at account level.When enabled(3) subtype of /item/sponsor may be created and these items will point to member services. Additionally this parameter may only be switched on for onlyRealTime(1) or onlyBatch(2)."
+1     PIN_FLD_PARAM_NAME      STR [0] "split_sponsor_item_by_member"
+1     PIN_FLD_PARAM_TYPE      INT [0] 1
+1     PIN_FLD_PARAM_VALUE     STR [0] "0"

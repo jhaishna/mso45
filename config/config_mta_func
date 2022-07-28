@@ -1,0 +1,14 @@
+0 PIN_FLD_POID                      POID [0] 0.0.0.1 /config/mta -1 0
+0 PIN_FLD_ACCOUNT_OBJ               POID [0] 0.0.0.1 /account 1 0
+0 PIN_FLD_DESCR                      STR [0] ""
+0 PIN_FLD_HOSTNAME                   STR [0] "host"
+0 PIN_FLD_NAME                       STR [0] "Config MTA"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "MTA"
+0 PIN_FLD_VALUE                      STR [0] ""
+0 PIN_FLD_VERSION                    STR [0] ""
+0 PIN_FLD_CONFIG_MTA               ARRAY [0] allocated 3, used 3
+1     PIN_FLD_LIBRARY                STR [0] "mso_clean_rsvns.so"
+1     PIN_FLD_NAME                   STR [0] "pin_clean_rsvns"
+1     PIN_FLD_FUNCTION_MAP           ARRAY [0] allocated 2, used 2
+2         PIN_FLD_FUNCTION           STR [0] "pin_mta_worker_opcode"
+2         PIN_FLD_NAME               STR [0] "mso_mta_worker_opcode"

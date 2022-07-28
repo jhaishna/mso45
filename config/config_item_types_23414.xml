@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<ItemTypeConfiguration xmlns="http://www.portal.com/PortalXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portal.com/PortalXMLSchema /home/pin105/opt/portal/7.5/xsd/config_item_types.xsd">
+   <ItemTypeElement>
+      <ItemTag>mso_sb_adn_fdp</ItemTag>
+      <ItemDescription>Cycle Forward Addon fixed Duration Package Item</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_forward/mso_sb_adn_fdp</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_et</ItemTag>
+      <ItemDescription>Cycle Arrear Entertainment tax</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_et</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_hw_amc</ItemTag>
+      <ItemDescription>Cycle Arrear Annual Maintenance Charge</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_hw_amc</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_pkg_bst</ItemTag>
+      <ItemDescription>Cycle Foward Package Basic Service Tier</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_pkg_bst</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_pkg_dstp</ItemTag>
+      <ItemDescription>Cycle Arrear Package Digital Starter Package</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_pkg_dstp</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_pkg_dpop</ItemTag>
+      <ItemDescription>Cycle Arrear Package Digital Popular Package</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_pkg_dpop</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_pkg_dprp</ItemTag>
+      <ItemDescription>Cycle Arrear Package Digital Premium Package</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_pkg_dprp</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_alc_paid</ItemTag>
+      <ItemDescription>Cycle Arrear Ala-Carte Paid</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_alc_paid</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_alc_fta</ItemTag>
+      <ItemDescription>Cycle Arrear Ala-Carte Free to Air</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_alc_fta</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_sb_adn_normal</ItemTag>
+      <ItemDescription>Cycle Arrear Addon Normal</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_sb_adn_normal</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>cycle_arrear</ItemTag>
+      <ItemDescription>Cycle arrear</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_hw_rental</ItemTag>
+      <ItemDescription>Cycle Arrear Hardware Rental</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_arrear/mso_hw_rental</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>cycle_forward_arrear</ItemTag>
+      <ItemDescription>Cycle forward arrear</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_forward_arrear</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>cycle_forward</ItemTag>
+      <ItemDescription>Cycle forward</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/cycle_forward</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>remittance</ItemTag>
+      <ItemDescription>Remittance</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "remitt">/item/remittance</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>incentive</ItemTag>
+      <ItemDescription>Incentive</ItemDescription>
+      <ItemType precreate="false" type="individual">/item/incentive</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>cycle_tax</ItemTag>
+      <ItemDescription>Cycle Tax</ItemDescription>
+      <ItemType precreate="false" type="cumulative">/item/cycle_tax</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>roaming_settlement</ItemTag>
+      <ItemDescription>Roaming Settlement</ItemDescription>
+      <ItemType precreate="true" type="cumulative">/item/settlement/roaming</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_vat</ItemTag>
+      <ItemDescription>VAT</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/VAT</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_st</ItemTag>
+      <ItemDescription>Service Tax</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/Service_Tax</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_edu_cess</ItemTag>
+      <ItemDescription>Education Cess</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/Education_Cess</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_shecess</ItemTag>
+      <ItemDescription>Secondary Higher Education Cess</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/Secondary_Higher_Education_Cess</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_deposit</ItemTag>
+      <ItemDescription>MSO Deposit</ItemDescription>
+      <ItemType precreate="false" type="individual">/item/payment/mso_deposit</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_min_commitment</ItemTag>
+      <ItemDescription>MSO Minimum Commitment Correction</ItemDescription>
+      <ItemType precreate="false" type="individual">/item/mso_catv_commitment</ItemType>
+   </ItemTypeElement>
+   <ItemTypeElement>
+      <ItemTag>mso_settlement_ws</ItemTag>
+      <ItemDescription>Wholesale settlement</ItemDescription>
+      <ItemType precreate="false" type="cumulative" sub_type = "recurring">/item/settlement/ws</ItemType>
+   </ItemTypeElement>
+</ItemTypeConfiguration>

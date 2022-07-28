@@ -1,0 +1,257 @@
+#
+#=======================================================================
+#
+# @(#)% % 
+# 
+# Copyright (c) 2001, 2009, Oracle and/or its affiliates. All rights reserved. 
+# 
+# This material is the confidential property of Oracle Corporation
+# or its licensors and may be used, reproduced, stored or transmitted
+# only in accordance with a valid Oracle license or sublicense agreement.
+#
+#
+#======================================================================
+
+#======================================================================
+# This is the input file that the load_pin_config_business_type
+# utility reads to load business types definitions into the Infranet database.
+#
+# Use this file to define all the business types you want on your system.
+#
+# The format is an integer value plus a quoated string.  The string may be 
+# placed on several lines by closing the quote before the carage return and
+# reopening it on the next line such as
+# 10 "this is the 10th"
+#    "Business type";
+# always end a business type def with a ';'.
+# the total string length must be less than 1024 characters.
+
+#======================================================================
+# Hathway Customisation:
+#    Considering from leftmost digit--
+#	First 2 digits:  Account Type  
+#	Next  2 digits:  Subscriber type
+#	Next  1 digits:  Account Model
+#	Next  3 digits:  Reserved 
+#
+#	Example Business Type Value 12181000 means
+#	"SUBSCRIBER|STATE BANK OF INDIA|Residential|Reserved"
+#       12 18 1 000
+#       Account Type=SUBSCRIBER=12
+#	Subscriber type=STATE BANK OF INDIA=18
+#	Account Model=Residential=1
+#	
+#======================================================================
+1    "Consumer";
+2    "Business";
+00000000	"OTHERS|Unknown|Unknown|Reserved";
+01000000	"CSR_ADMIN|Unknown|Unknown|Reserved";
+02000000	"CSR|Unknown|Unknown|Reserved";
+03000000	"LCO|Unknown|Unknown|Reserved";
+04000000	"JV|Unknown|Unknown|Reserved";
+05000000	"DISTRIBUTOR|Unknown|Unknown|Reserved";
+06000000	"SUB_DISTRIBUTOR|Unknown|Unknown|Reserved";
+07000000	"OPERATION|Unknown|Unknown|Reserved";
+08000000	"FIELD_SERVICE|Unknown|Unknown|Reserved";
+09000000	"LOGISTICS|Unknown|Unknown|Reserved";
+10000000	"COLLECTION_AGENT|Unknown|Unknown|Reserved";
+11000000	"SALES_PERSON|Unknown|Unknown|Reserved";
+00001000	"OTHERS|Unknown|Residential|Reserved";
+01001000	"CSR_ADMIN|Unknown|Residential|Reserved";
+02001000	"CSR|Unknown|Residential|Reserved";
+03001000	"LCO|Unknown|Residential|Reserved";
+04001000	"JV|Unknown|Residential|Reserved";
+05001000	"DISTRIBUTOR|Unknown|Residential|Reserved";
+06001000	"SUB_DISTRIBUTOR|Unknown|Residential|Reserved";
+07001000	"OPERATION|Unknown|Residential|Reserved";
+08001000	"FIELD_SERVICE|Unknown|Residential|Reserved";
+09001000	"LOGISTICS|Unknown|Residential|Reserved";
+10001000	"COLLECTION_AGENT|Unknown|Residential|Reserved";
+11001000	"SALES_PERSON|Unknown|Residential|Reserved";
+00002000	"OTHERS|Unknown|Commercial/Corporate|Reserved";
+01002000	"CSR_ADMIN|Unknown|Commercial/Corporate|Reserved";
+02002000	"CSR|Unknown|Commercial/Corporate|Reserved";
+03002000	"LCO|Unknown|Commercial/Corporate|Reserved";
+04002000	"JV|Unknown|Commercial/Corporate|Reserved";
+05002000	"DISTRIBUTOR|Unknown|Commercial/Corporate|Reserved";
+06002000	"SUB_DISTRIBUTOR|Unknown|Commercial/Corporate|Reserved";
+07002000	"OPERATION|Unknown|Commercial/Corporate|Reserved";
+08002000	"FIELD_SERVICE|Unknown|Commercial/Corporate|Reserved";
+09002000	"LOGISTICS|Unknown|Commercial/Corporate|Reserved";
+10002000	"COLLECTION_AGENT|Unknown|Commercial/Corporate|Reserved";
+11003000	"SALES_PERSON|Unknown|Society/MDU|Reserved";
+00003000	"OTHERS|Unknown|Society/MDU|Reserved";
+01003000	"CSR_ADMIN|Unknown|Society/MDU|Reserved";
+02003000	"CSR|Unknown|Society/MDU|Reserved";
+02410000	"CSR|Payment_Clerk|Unknown|Reserved";
+03003000	"LCO|Unknown|Society/MDU|Reserved";
+04003000	"JV|Unknown|Society/MDU|Reserved";
+05003000	"DISTRIBUTOR|Unknown|Society/MDU|Reserved";
+06003000	"SUB_DISTRIBUTOR|Unknown|Society/MDU|Reserved";
+07003000	"OPERATION|Unknown|Society/MDU|Reserved";
+08003000	"FIELD_SERVICE|Unknown|Society/MDU|Reserved";
+09003000	"LOGISTICS|Unknown|Society/MDU|Reserved";
+10003000	"COLLECTION_AGENT|Unknown|Society/MDU|Reserved";
+11003000	"SALES_PERSON|Unknown|Society/MDU|Reserved";
+99000000	"SUBSCRIBER|Unknown|Unknown|Reserved";
+99010000	"SUBSCRIBER|24Online Leased Line Subscriber|Unknown|Reserved";
+99020000	"SUBSCRIBER|24Online Normal Subscriber|Unknown|Reserved";
+99030000	"SUBSCRIBER|CYBER CAFE|Unknown|Reserved";
+99040000	"SUBSCRIBER|OPERATOR|Unknown|Reserved";
+99050000	"SUBSCRIBER|HATHWAY OFF|Unknown|Reserved";
+99060000	"SUBSCRIBER|HATHWAY EMPLOYEE|Unknown|Reserved";
+99070000	"SUBSCRIBER|VIP RESIDENCE|Unknown|Reserved";
+99080000	"SUBSCRIBER|VIP CORPORATE|Unknown|Reserved";
+99090000	"SUBSCRIBER|NORMAL RESIDENCE|Unknown|Reserved";
+99100000	"SUBSCRIBER|NORMAL CORPORATE|Unknown|Reserved";
+99110000	"SUBSCRIBER|DEMO SUBSCRIBER|Unknown|Reserved";
+99120000	"SUBSCRIBER|MONEY BACK|Unknown|Reserved";
+99130000	"SUBSCRIBER|ARMY CUST|Unknown|Reserved";
+99140000	"SUBSCRIBER|GALLELO CUST|Unknown|Reserved";
+99150000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Unknown|Reserved";
+99160000	"SUBSCRIBER|MAKERS CHAMBER|Unknown|Reserved";
+99170000	"SUBSCRIBER|ACROPOLIS|Unknown|Reserved";
+99180000	"SUBSCRIBER|STATE BANK OF INDIA|Unknown|Reserved";
+99190000	"SUBSCRIBER|RENTAL RESIDENCY|Unknown|Reserved";
+99200000	"SUBSCRIBER|TOPPER LEARNING|Unknown|Reserved";
+99210000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Unknown|Reserved";
+99220000	"SUBSCRIBER|FIBER2 Point to Point connection|Unknown|Reserved";
+99230000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Unknown|Reserved";
+99240000	"SUBSCRIBER|SME Gold/Silver/SME customers|Unknown|Reserved";
+99250000	"SUBSCRIBER|COMBO HD|Unknown|Reserved";
+99260000	"SUBSCRIBER|COMBO STB|Unknown|Reserved";
+99270000	"SUBSCRIBER|RESIDENTIAL|Unknown|Reserved";
+99280000	"SUBSCRIBER|FREE|Unknown|Reserved";
+99290000	"SUBSCRIBER|VIP|Unknown|Reserved";
+99300000	"SUBSCRIBER|HOTEL|Unknown|Reserved";
+99310000	"SUBSCRIBER|SOCIETY|Unknown|Reserved";
+99320000	"SUBSCRIBER|COMMERCIAL|Unknown|Reserved";
+99330000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Unknown|Reserved";
+99340000	"SUBSCRIBER|DEMO|Unknown|Reserved";
+99350000	"SUBSCRIBER|HATHWAY EMPLOYEE|Unknown|Reserved";
+99360000	"SUBSCRIBER|HATHWAY OFFICE|Unknown|Reserved";
+99370000	"SUBSCRIBER|DAS|Unknown|Reserved";
+99380000	"SUBSCRIBER|FORMAT|Unknown|Reserved";
+99001000	"SUBSCRIBER|Unknown|Residential|Reserved";
+99011000	"SUBSCRIBER|24Online Leased Line Subscriber|Residential|Reserved";
+99021000	"SUBSCRIBER|24Online Normal Subscriber|Residential|Reserved";
+99031000	"SUBSCRIBER|CYBER CAFE|Residential|Reserved";
+99041000	"SUBSCRIBER|OPERATOR|Residential|Reserved";
+99051000	"SUBSCRIBER|HATHWAY OFF|Residential|Reserved";
+99061000	"SUBSCRIBER|HATHWAY EMPLOYEE|Residential|Reserved";
+99071000	"SUBSCRIBER|VIP RESIDENCE|Residential|Reserved";
+99081000	"SUBSCRIBER|VIP CORPORATE|Residential|Reserved";
+99091000	"SUBSCRIBER|NORMAL RESIDENCE|Residential|Reserved";
+99101000	"SUBSCRIBER|NORMAL CORPORATE|Residential|Reserved";
+99111000	"SUBSCRIBER|DEMO SUBSCRIBER|Residential|Reserved";
+99121000	"SUBSCRIBER|MONEY BACK|Residential|Reserved";
+99131000	"SUBSCRIBER|ARMY CUST|Residential|Reserved";
+99141000	"SUBSCRIBER|GALLELO CUST|Residential|Reserved";
+99151000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Residential|Reserved";
+99161000	"SUBSCRIBER|MAKERS CHAMBER|Residential|Reserved";
+99171000	"SUBSCRIBER|ACROPOLIS|Residential|Reserved";
+99181000	"SUBSCRIBER|STATE BANK OF INDIA|Residential|Reserved";
+99191000	"SUBSCRIBER|RENTAL RESIDENCY|Residential|Reserved";
+99201000	"SUBSCRIBER|TOPPER LEARNING|Residential|Reserved";
+99211000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Residential|Reserved";
+99221000	"SUBSCRIBER|FIBER2 Point to Point connection|Residential|Reserved";
+99231000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Residential|Reserved";
+99241000	"SUBSCRIBER|SME Gold/Silver/SME customers|Residential|Reserved";
+99251000	"SUBSCRIBER|COMBO HD|Residential|Reserved";
+99261000	"SUBSCRIBER|COMBO STB|Residential|Reserved";
+99271000	"SUBSCRIBER|RESIDENTIAL|Residential|Reserved";
+99281000	"SUBSCRIBER|FREE|Residential|Reserved";
+99291000	"SUBSCRIBER|VIP|Residential|Reserved";
+99301000	"SUBSCRIBER|HOTEL|Residential|Reserved";
+99311000	"SUBSCRIBER|SOCIETY|Residential|Reserved";
+99321000	"SUBSCRIBER|COMMERCIAL|Residential|Reserved";
+99331000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Residential|Reserved";
+99341000	"SUBSCRIBER|DEMO|Residential|Reserved";
+99351000	"SUBSCRIBER|HATHWAY EMPLOYEE|Residential|Reserved";
+99361000	"SUBSCRIBER|HATHWAY OFFICE|Residential|Reserved";
+99371000	"SUBSCRIBER|DAS|Residential|Reserved";
+99381000	"SUBSCRIBER|FORMAT|Residential|Reserved";
+99002000	"SUBSCRIBER|Unknown|Commercial/Corporate|Reserved";
+99012000	"SUBSCRIBER|24Online Leased Line Subscriber|Commercial/Corporate|Reserved";
+99022000	"SUBSCRIBER|24Online Normal Subscriber|Commercial/Corporate|Reserved";
+99032000	"SUBSCRIBER|CYBER CAFE|Commercial/Corporate|Reserved";
+99042000	"SUBSCRIBER|OPERATOR|Commercial/Corporate|Reserved";
+99052000	"SUBSCRIBER|HATHWAY OFF|Commercial/Corporate|Reserved";
+99062000	"SUBSCRIBER|HATHWAY EMPLOYEE|Commercial/Corporate|Reserved";
+99072000	"SUBSCRIBER|VIP RESIDENCE|Commercial/Corporate|Reserved";
+99082000	"SUBSCRIBER|VIP CORPORATE|Commercial/Corporate|Reserved";
+99092000	"SUBSCRIBER|NORMAL RESIDENCE|Commercial/Corporate|Reserved";
+99102000	"SUBSCRIBER|NORMAL CORPORATE|Commercial/Corporate|Reserved";
+99112000	"SUBSCRIBER|DEMO SUBSCRIBER|Commercial/Corporate|Reserved";
+99122000	"SUBSCRIBER|MONEY BACK|Commercial/Corporate|Reserved";
+99132000	"SUBSCRIBER|ARMY CUST|Commercial/Corporate|Reserved";
+99142000	"SUBSCRIBER|GALLELO CUST|Commercial/Corporate|Reserved";
+99152000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Commercial/Corporate|Reserved";
+99162000	"SUBSCRIBER|MAKERS CHAMBER|Commercial/Corporate|Reserved";
+99172000	"SUBSCRIBER|ACROPOLIS|Commercial/Corporate|Reserved";
+99182000	"SUBSCRIBER|STATE BANK OF INDIA|Commercial/Corporate|Reserved";
+99192000	"SUBSCRIBER|RENTAL RESIDENCY|Commercial/Corporate|Reserved";
+99202000	"SUBSCRIBER|TOPPER LEARNING|Commercial/Corporate|Reserved";
+99212000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Commercial/Corporate|Reserved";
+99222000	"SUBSCRIBER|FIBER2 Point to Point connection|Commercial/Corporate|Reserved";
+99232000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Commercial/Corporate|Reserved";
+99242000	"SUBSCRIBER|SME Gold/Silver/SME customers|Commercial/Corporate|Reserved";
+99252000	"SUBSCRIBER|COMBO HD|Commercial/Corporate|Reserved";
+99262000	"SUBSCRIBER|COMBO STB|Commercial/Corporate|Reserved";
+99272000	"SUBSCRIBER|RESIDENTIAL|Commercial/Corporate|Reserved";
+99282000	"SUBSCRIBER|FREE|Commercial/Corporate|Reserved";
+99292000	"SUBSCRIBER|VIP|Commercial/Corporate|Reserved";
+99302000	"SUBSCRIBER|HOTEL|Commercial/Corporate|Reserved";
+99312000	"SUBSCRIBER|SOCIETY|Commercial/Corporate|Reserved";
+99322000	"SUBSCRIBER|COMMERCIAL|Commercial/Corporate|Reserved";
+99332000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Commercial/Corporate|Reserved";
+99342000	"SUBSCRIBER|DEMO|Commercial/Corporate|Reserved";
+99352000	"SUBSCRIBER|HATHWAY EMPLOYEE|Commercial/Corporate|Reserved";
+99362000	"SUBSCRIBER|HATHWAY OFFICE|Commercial/Corporate|Reserved";
+99372000	"SUBSCRIBER|DAS|Commercial/Corporate|Reserved";
+99382000	"SUBSCRIBER|FORMAT|Commercial/Corporate|Reserved";
+99392000	"SUBSCRIBER|PARENT|Commercial/Corporate|Reserved";
+99402000	"SUBSCRIBER|CHILD|Commercial/Corporate|Reserved";
+99003000	"SUBSCRIBER|Unknown|Society/MDU|Reserved";
+99013000	"SUBSCRIBER|24Online Leased Line Subscriber|Society/MDU|Reserved";
+99023000	"SUBSCRIBER|24Online Normal Subscriber|Society/MDU|Reserved";
+99033000	"SUBSCRIBER|CYBER CAFE|Society/MDU|Reserved";
+99043000	"SUBSCRIBER|OPERATOR|Society/MDU|Reserved";
+99053000	"SUBSCRIBER|HATHWAY OFF|Society/MDU|Reserved";
+99063000	"SUBSCRIBER|HATHWAY EMPLOYEE|Society/MDU|Reserved";
+99073000	"SUBSCRIBER|VIP RESIDENCE|Society/MDU|Reserved";
+99083000	"SUBSCRIBER|VIP CORPORATE|Society/MDU|Reserved";
+99093000	"SUBSCRIBER|NORMAL RESIDENCE|Society/MDU|Reserved";
+99103000	"SUBSCRIBER|NORMAL CORPORATE|Society/MDU|Reserved";
+99113000	"SUBSCRIBER|DEMO SUBSCRIBER|Society/MDU|Reserved";
+99123000	"SUBSCRIBER|MONEY BACK|Society/MDU|Reserved";
+99133000	"SUBSCRIBER|ARMY CUST|Society/MDU|Reserved";
+99143000	"SUBSCRIBER|GALLELO CUST|Society/MDU|Reserved";
+99153000	"SUBSCRIBER|BOMBAY MUNCIPALITY CORPORATION|Society/MDU|Reserved";
+99163000	"SUBSCRIBER|MAKERS CHAMBER|Society/MDU|Reserved";
+99173000	"SUBSCRIBER|ACROPOLIS|Society/MDU|Reserved";
+99183000	"SUBSCRIBER|STATE BANK OF INDIA|Society/MDU|Reserved";
+99193000	"SUBSCRIBER|RENTAL RESIDENCY|Society/MDU|Reserved";
+99203000	"SUBSCRIBER|TOPPER LEARNING|Society/MDU|Reserved";
+99213000	"SUBSCRIBER|FIBER1 Direct fibre lease line|Society/MDU|Reserved";
+99223000	"SUBSCRIBER|FIBER2 Point to Point connection|Society/MDU|Reserved";
+99233000	"SUBSCRIBER|VAS  Co location/Web hosting /Corp mailing/Value added|Society/MDU|Reserved";
+99243000	"SUBSCRIBER|SME Gold/Silver/SME customers|Society/MDU|Reserved";
+99253000	"SUBSCRIBER|COMBO HD|Society/MDU|Reserved";
+99263000	"SUBSCRIBER|COMBO STB|Society/MDU|Reserved";
+99273000	"SUBSCRIBER|RESIDENTIAL|Society/MDU|Reserved";
+99283000	"SUBSCRIBER|FREE|Society/MDU|Reserved";
+99293000	"SUBSCRIBER|VIP|Society/MDU|Reserved";
+99303000	"SUBSCRIBER|HOTEL|Society/MDU|Reserved";
+99313000	"SUBSCRIBER|SOCIETY|Society/MDU|Reserved";
+99323000	"SUBSCRIBER|COMMERCIAL|Society/MDU|Reserved";
+99333000	"SUBSCRIBER|RESIDENTIAL SOCIETY|Society/MDU|Reserved";
+99343000	"SUBSCRIBER|DEMO|Society/MDU|Reserved";
+99353000	"SUBSCRIBER|HATHWAY EMPLOYEE|Society/MDU|Reserved";
+99363000	"SUBSCRIBER|HATHWAY OFFICE|Society/MDU|Reserved";
+99373000	"SUBSCRIBER|DAS|Society/MDU|Reserved";
+99383000	"SUBSCRIBER|FORMAT|Society/MDU|Reserved";
+13000000	"HTW|Unknown|Unknown|Reserved";                  
+13001000	"HTW|Unknown|Residential|Reserved";              
+13002000	"HTW|Unknown|Commercial/Corporate|Reserved";     
+13003000	"HTW|Unknown|Society/MDU|Reserved";              

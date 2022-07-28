@@ -1,0 +1,101 @@
+#
+# @(#)% %
+#
+# Copyright (c) 2006-2007 Oracle. All rights reserved.
+#
+# This material is the confidential property of Oracle Corporation or its 
+# licensors and may be used, reproduced, stored or transmitted only in 
+# accordance with a valid Oracle license or sublicense agreement.
+#
+##########################################################################
+#
+#  Sample provisioning tags input file for load_pin_telco_tags
+#  utility program.
+# 
+#  The file will be in simple text format, as described below :
+#  
+#  The file contains two types/blocks of information in the text file :
+# 	-> Provisioning tag
+# 	-> Account ERA
+#  
+#  Provisioning tag related info starts with the keyword 'provisioning_tag' 
+#  and the account ERA related info starts with the keyword 'account_era'.
+# 
+#  The "provisioning tag" contains information about
+# 
+# 	provisioning tag
+# 		- class name (/config/telco/xxx/xxx)
+# 		- name of the provisioning tag
+# 		- description of the provisioning tag
+# 		- indicate if cancellation of the product should 
+#		  trigger unprovisioning (for a VMBOX product it could be 
+#		  "n" to avoid resting the mailbox parameters, for example)
+# 	features
+# 		- one or more string values for feature names
+# 	service ERA
+# 		- name of service ERA (Integrate DB Key)
+#		- String Id for name of service ERA. Key to local display.
+# 		- String Id for description of service ERA. Key to local display.
+# 		- if provisioning is required or not
+# 		- Service ERA Label to store type of ERA. This is an optional field.
+# 	service extension
+# 		- service extension name
+#		- service extension value
+#
+#  The "account ERA" tag contains information about
+# 	account ERA
+# 		- name of account ERA
+#		- String Id for name of account ERA. Key to local display.
+# 		- String Id for description of account ERA. Key to local display.
+#  
+# 
+#  The format of file is (keywords and the values that follow) :
+# 
+#  provisioning_tag	<Class> <ProvTag> <PTDescription> <DelayedProvReqd>
+#  features		<OneOrMoreFeatureNameStringValues>
+#  service_era		<ServiceERA> <StringIdERA> <StringIdServiceERADesc> <ProvBool> <ERALabel>
+#  service_extn		<Extention Type Name> <Extention Value>
+#  account_era		<AccountERA> <StringIdERA> <StringIdAccountERADesc>
+# 
+#  Example 1 : (Note : Refer to data/config/msgs/eradescr/era_descr.* file for the
+#		correct string id mappings.)
+# 
+#  provisioning_tag	"/config/telco" "VoicePremium" "Desc" "y"
+#  features		"CFU" "BICRO"
+#  service_era		"HCA" 3  4 "y"
+#  service_era		"FAF" 5  6 "n"
+#  service_extn		"BEARER_SERVICE" "BS70"
+# 
+#  Example 2 :
+#
+#  provisioning_tag	"/config/telco" "VoiceFamily"  "Desc" "n"
+#  features		"CLIP"
+#  service_era		"FAF" 5  6 "n"
+# 
+#  Example 3 :
+#
+#  provisioning_tag	"/config/telco/gsm/telephony" "VoiceStandard"  "Desc" "n"
+#  features		"CLIP"
+#  service_era		"FAF" 5  6 "n"
+#  service_era          "FAF" 5  6 "y" "Official"
+#  service_era          "FAF" 5  6 "n" "Personal"
+# 
+#  Example 4 :
+# 
+#  account_era		"CA" 7  8
+#  account_era		"BD" 9  10
+#
+#  In above examples, the string ids 3 and 5 are HCA and FAF; 4 and 6 are HCA and
+#  FAF descriptions; 7 and 9 are CA and BD; 8 and 10 are CA and BD descriptions.
+#  
+#  Note that each keyword followed by the value(s) must be in a single line.
+#  The input text file can contain zero or more occurences of provisioning
+#  tags and account ERA definitions.
+# 
+##########################################################################
+
+
+####################### Sample Price Plan Tags ###########################
+
+# Broadband service provisioning tag example.
+provisioning_tag        "/config/telco/broadband" "Broadband Basic"             "Broadband basic service package"     "y"

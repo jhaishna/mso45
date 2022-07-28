@@ -1,0 +1,82 @@
+######################################################################
+# File: pin_device_state
+#
+# Copyright (c) 2001, 2009, Oracle and/or its affiliates.All rights reserved. 
+#
+# This material is the confidential property of Oracle Corporation
+# or its licensors and may be used, reproduced, stored or transmitted
+# only in accordance with a valid Oracle license or sublicense agreement.
+######################################################################
+
+# The storable class to be loaded
+#
+/config/device_state/vc
+
+# The type of device for this config file
+#
+/device/vc
+
+######################################################################
+# Syntax:
+# State_id: state_type: string_id: string_ver: opcode_num: flags
+#           next_id1: opcode_num1: flags1
+#           next_id2: opcode_num2: flags2
+#
+# Where :
+# state_id      Defined in include/pin_<device_subclass>.h file
+# state_type    Defined in include/pin_device.h  (i.e. 0=raw)
+# string_id     Referenced from /strings
+# string_ver    Referenced from /strings
+# opcode_num    The opcode to be called when the transition is made
+#               into this state (For no opcode, provide a '0')
+# flags         The flag value used when calling opcode_num
+# next_id1      The state_id of the resulting state in the transition
+# opcode_num1   The opcode to be called when the transition is made
+#               from stated_id to next_id1
+# flags1        The flag value used when calling opcode_num1
+#
+# Note:
+# For this file, the string id and version values are mapped to the
+# sys/msgs/devicestates/device_state.<locale> file(s) and need to be kept
+# synchronized.
+######################################################################
+
+# Raw -> Good
+#
+0: 0: 0: 1: 0: 0
+	1: 0: 0
+
+# Good -> Allocated or Faulty or Preactive
+#
+1: 1: 1: 1: 0: 0
+	2: 0: 0
+	3: 0: 0
+	6: 0: 0
+
+# Preactive -> Allocated
+#
+6: 2: 6: 1: 0: 0
+	2: 0: 0
+	3: 0: 0
+	1: 0: 0
+
+# Allocated -> Good or Faulty
+#
+2: 2: 2: 1: 0: 0
+	3: 0: 0
+	1: 0: 0
+
+# Faulty -> Repairing
+#
+3: 2: 3: 1: 0: 0
+	4: 0: 0
+	7: 0: 0
+# Repairing -> Good or Dead
+#
+4: 2: 4: 1: 0: 0
+	1: 0: 0
+	5: 0: 0
+
+# Dead -> Dead (terminating state)
+#
+5: 3: 5: 1: 0: 0

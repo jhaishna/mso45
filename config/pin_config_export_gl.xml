@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--==================================================================================
+	Copyright (c) 2007 Oracle. All rights reserved.
+	This material is the confidential property of Oracle Corporation or its
+	licensors and may be used, reproduced, stored or transmitted only in
+	accordance with a valid Oracle license or sublicense agreement.
+	=================================================================================-->
+<BusinessConfiguration 
+  xmlns="http://www.portal.com/schemas/BusinessConfig"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig /home/pin/opt/portal/7.5/sys/data/config/business_configuration.xsd">
+
+<GLReportConfiguration> 
+ <SourceSystemID>India</SourceSystemID>
+ <OutputDirectory>
+	/apps/pindev5/opt/portal/7.5/mso/apps/pin_glid
+ </OutputDirectory>
+
+ <FileNamePrefix>
+	AAA
+ </FileNamePrefix>
+
+<ReportInitialStartDate>
+  <Segment name=".">
+   <Year>2014</Year>
+   <Month>--01--</Month>
+   <Day>---10</Day>
+  </Segment>
+</ReportInitialStartDate>
+<SegmentList>
+		<Segment name =".">
+			<Frequency>Monthly</Frequency>
+			<DayOfMonth>---30</DayOfMonth>
+			<RevenueTypeList>
+				<RevenueType>Billed</RevenueType>
+				<RevenueType>Billed earned</RevenueType>
+				<RevenueType>Unbilled earned</RevenueType>
+			</RevenueTypeList>
+			<ReportLevel>Summary</ReportLevel>
+			<ResourceType>Monetary</ResourceType>
+			<!--<ExcludeNonMonetary>
+				<ResourceID>1000010</ResourceID>
+				<ResourceID>1000008</ResourceID>
+				<ResourceID>1000020</ResourceID>
+				<ResourceID>1000003</ResourceID>
+				<ResourceID>1000004</ResourceID>
+			</ExcludeNonMonetary>-->
+		</Segment>
+</SegmentList>
+</GLReportConfiguration>
+</BusinessConfiguration> 

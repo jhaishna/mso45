@@ -1,0 +1,163 @@
+Framework_Opcode: PCM_OP_TELCO_AUTHORIZE
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TCF_AAA_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_AUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/broadband, MSO_OP_RATE_AAA_AUTHORIZE_PREP_INPUT
+
+
+#Framework_Opcode: PCM_OP_TELCO_REAUTHORIZE
+#Processing_Stage: PREP_INPUT
+#Opcode_Map: /service/telco, PCM_OP_TCF_AAA_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_REAUTHORIZE_PREP_INPUT
+#Opcode_Map: /service/telco/broadband, MSO_OP_RATE_AAA_REAUTHORIZE_PREP_INPUT
+
+
+Framework_Opcode: PCM_OP_TELCO_CANCEL_AUTHORIZATION
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TELCO_PREP_INPUT
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_PREP_INPUT
+
+
+Framework_Opcode: PCM_OP_TELCO_START_ACCOUNTING
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TELCO_PREP_INPUT
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_PREP_INPUT
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_PREP_INPUT
+
+
+Framework_Opcode: PCM_OP_TCF_AAA_UPDATE_ACCOUNTING
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TCF_AAA_UPDATE_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_UPDATE_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_UPDATE_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_UPDATE_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_UPDATE_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_UPDATE_ACCOUNTING_PREP_INPUT
+
+
+Framework_Opcode: PCM_OP_TELCO_STOP_ACCOUNTING
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TCF_AAA_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/broadband, MSO_OP_RATE_AAA_STOP_ACCOUNTING_PREP_INPUT
+
+
+Framework_Opcode: PCM_OP_TELCO_AUTHORIZE
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_REAUTHORIZE
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_CANCEL_AUTHORIZATION
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_START_ACCOUNTING
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_UPDATE_ACCOUNTING
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_STOP_ACCOUNTING
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TELCO_ACCOUNTING_ON
+Processing_Stage: ACC_ON_OFF_SEARCH
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_ACC_ON_OFF_SEARCH
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_ACC_ON_OFF_SEARCH
+
+
+Framework_Opcode: PCM_OP_TELCO_ACCOUNTING_OFF
+Processing_Stage: ACC_ON_OFF_SEARCH
+Opcode_Map: /service/telco/gprs, PCM_OP_GPRS_AAA_POL_ACC_ON_OFF_SEARCH
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_ACC_ON_OFF_SEARCH
+
+
+Framework_Opcode: PCM_OP_TELCO_REAUTHORIZE
+Processing_Stage: POST_PROCESS
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_POST_PROCESS
+
+
+Framework_Opcode: PCM_OP_TELCO_UPDATE_AND_REAUTHORIZE
+Processing_Stage: POST_PROCESS
+Opcode_Map: /service/telco/gsm/data, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/fax, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/sms, PCM_OP_GSM_AAA_POL_POST_PROCESS
+Opcode_Map: /service/telco/gsm/telephony, PCM_OP_GSM_AAA_POL_POST_PROCESS
+
+
+Framework_Opcode: PCM_OP_TCF_AAA_ACCOUNTING
+Processing_Stage: SEARCH_SESSION
+Opcode_Map: /service/telco, PCM_OP_TELCO_SEARCH_SESSION
+
+
+Framework_Opcode: PCM_OP_TCF_AAA_ACCOUNTING
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TCF_AAA_STOP_ACCOUNTING_PREP_INPUT
+Opcode_Map: /service/telco/broadband, MSO_OP_RATE_AAA_STOP_ACCOUNTING_PREP_INPUT
+
+Framework_Opcode: PCM_OP_TCF_AAA_REAUTHORIZE
+Processing_Stage: PREP_INPUT
+Opcode_Map: /service/telco, PCM_OP_TCF_AAA_REAUTHORIZE_PREP_INPUT
+Opcode_Map: /service/telco/broadband, MSO_OP_RATE_AAA_REAUTHORIZE_PREP_INPUT

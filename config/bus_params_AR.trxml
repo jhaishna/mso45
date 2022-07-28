@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><BusinessConfiguration xmlns="http://www.portal.com/schemas/BusinessConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig business_configuration.xsd">
+<BusParamConfiguration>
+<BusParamConfigurationList>
+<ParamClass name="ar" desc="Business logic parameters for AR">
+<Param>
+<Name>search_bill_amount_enable</Name>
+<Desc>
+				Enable/Disable Search of Bill Object by matching Bill Amount. The parameter values can be 0 (disabled), 1 (enabled). Default is 0 (disabled).
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>auto_writeoff_reversal_enable</Name>
+<Desc>
+				Enable/Disable automatic write-off reversal on Payment receipt.The Parameter values can be 0 (disabled), 1 (enabled). Default is 0 (disabled).
+			</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>writeoff_level</Name>
+<Desc>
+				Level of writeoff to be tracked for the purpose of writeoff reversal.Default is account and currently only account level is supported.
+			</Desc>
+<Type>STR</Type>
+<Value>account</Value>
+</Param>
+<Param>
+<Name>payment_incentive_enable</Name>
+<Desc>
+			Enable/Disable Payment incentives on early payment in full. The parameter values can be 0 (disabled), 1 (enabled). Default is 0 (disabled).
+		</Desc>
+<Type>INT</Type>
+<Value>0</Value>
+</Param>
+<Param>
+<Name>payment_suspense_enable</Name>
+<Desc>
+				Enable/Disable Payment Suspense Management . The parameter values can be 0 (disabled), 1 (enabled). Default is 0 (disabled).
+			</Desc>
+<Type>INT</Type>
+<Value>1</Value>
+</Param>
+<Param>
+<Name>nonrefundable_credit_items</Name>
+<Desc>
+				Types of items which will NOT be refunded in case of outstanding credit balance.
+The values should be separated by commas. Default is /item/refund .
+                        </Desc>
+<Type>STR</Type>
+<Value>/item/refund</Value>
+</Param>
+</ParamClass>
+</BusParamConfigurationList>
+</BusParamConfiguration>
+</BusinessConfiguration>

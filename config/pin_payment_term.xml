@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BusinessConfiguration 
+	xmlns="http://www.portal.com/schemas/BusinessConfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig ../../sys/data/config/business_configuration.xsd">
+
+	<!-- Sample file. Modify according to guidelines -->
+	<PaymentTermConfiguration>
+		<PaymentTerms>
+			<PaymentTerm ID="101">15 days</PaymentTerm>
+			<PaymentTerm ID="102">13 days</PaymentTerm>
+			<PaymentTerm ID="103">0 days</PaymentTerm>
+			<PaymentTerm ID="104">22 days</PaymentTerm>
+		</PaymentTerms>
+	</PaymentTermConfiguration>
+
+</BusinessConfiguration>
